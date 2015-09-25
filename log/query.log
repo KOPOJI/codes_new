@@ -170,3 +170,7 @@
 2015-09-25 22:21:44  [11177] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
 2015-09-25 22:21:44  [11177] UPDATE users SET updated_at='2015-09-25T22:21:44' WHERE id=1
 2015-09-25 22:21:44  [11177] [COMMIT] [databaseId:0]
+2015-09-26 00:24:49  [16727] [BEGIN] [databaseId:0]
+2015-09-26 00:24:49  [16727] SELECT COUNT(1) FROM codes
+2015-09-26 00:24:49  [16727] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-26 00:24:49  [16727] [COMMIT] [databaseId:0]

@@ -12,3 +12,4 @@
 2015-09-26 00:05:08 WARN  [15700] Reading a socket timed out after 10 seconds. Descriptor:11
 2015-09-26 00:11:52 WARN  [15872] Reading a socket timed out after 10 seconds. Descriptor:13
 2015-09-26 00:11:52 WARN  [15871] Reading a socket timed out after 10 seconds. Descriptor:11
+2015-09-26 00:24:45 ERROR [16723] Local socket error : 2
