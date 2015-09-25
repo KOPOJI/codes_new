@@ -59,8 +59,12 @@
 <% tfetch(QString, error) %>
 <% tfetch(QString, warning) %>
 <% tfetch(QString, success) %>
-
-<%== H::getFlash(QMap<QString, QString>(){"notice", notice}, {"alert", error}, {"success", success}, {"warning", warning}) %>
+<% QMap<QString, QString> flashes;
+flashes.insert("notice", notice);
+flashes.insert("alert", error);
+flashes.insert("success", success);
+flashes.insert("warning", warning); %>
+<%== H::getFlash(flashes) %>
 
       <%== yield() %>
     </div>
