@@ -254,7 +254,7 @@ QString ApplicationHelper::tr(const char *sourceText, const char *disambiguation
 QString ApplicationHelper::imageResize(const QString& imagePath, const QString& imageType, const int &MAX_WIDTH, const int &MAX_HEIGHT, const bool &isAvatar)
 {
     //generate new image name
-    const QString& hash = QCryptographicHash::hash(std::to_string(QDateTime::currentMSecsSinceEpoch()).c_str(), QCryptographicHash::Sha3_256).toHex();
+    const QString& hash = QCryptographicHash::hash(std::to_string(QDateTime::currentMSecsSinceEpoch()).c_str(), QCryptographicHash::Sha256).toHex();
     const QString& dir = QString("./public/images/%1/").arg(isAvatar ? "avatars" : "uploads");
     const QString& newImageName = QString("image%1.%2").arg(hash).arg(imageType.toLower());
 
