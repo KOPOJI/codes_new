@@ -1,0 +1,31 @@
+<%#include "codes.h" %>
+<div class="post">
+        <h2><%= H::tr("Users list") %></h2>
+
+        <% if(!Users::count()) { %>
+                <%= H::tr("Users not found") %>
+        <% } else { %>
+                <table class="table table-hover">
+                        <thead>
+                                <tr>
+                                        <th><%= H::tr("Username") %></th>
+                                        <th><%= H::tr("Registration date") %></th>
+                                        <th><%= H::tr("Messages count") %></th>
+                                        <th><%= H::tr("Last visit") %></th>
+                                        <th><%= H::tr("Avatar") %></th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                        <% for(const auto& user: Users::getAll()) { %>
+                                        <tr>
+                                                <td><%== H::userStatusImage(user.isOnline()) %> <b><%== linkTo(user.username(), H::createUrl({"user", QString::number(user.id())})) %></b></td>
+                                                <td><%= user.createdAt().toString("dd.MM.yyyy в hh:mm:ss") %></td>
+                           <td><%== linkTo(QString::number(Codes::userCodesCount(user.id())), H::createUrl({"codes", "find_by_user", QString::number(user.id())}), Tf::Get, "", a("class", "link")) %></td>
+                                                <td><%= user.lastSignInAt().toString("dd.MM.yyyy в hh:mm:ss") %></td>
+                                                <td style="text-align:center"><%#= user.profile.avatar? ? image_tag(user.profile.avatar_url, class: 'photo-icon') : ' - ' %></td>
+                                        </tr>
+                                <% } %>
+                        </tbody>
+                </table>
+        <% } %>
+</div>

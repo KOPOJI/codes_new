@@ -1,0 +1,172 @@
+2015-09-25 21:35:01  [7219] [BEGIN] [databaseId:0]
+2015-09-25 21:35:01  [7219] SELECT COUNT(1) FROM codes
+2015-09-25 21:35:01  [7219] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 21:35:01  [7219] [COMMIT] [databaseId:0]
+2015-09-25 21:35:08  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:08  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE email='kopojiq@mail.ru' LIMIT 1
+2015-09-25 21:35:09  [7220] UPDATE users SET sign_in_count=102, current_sign_in_at='2015-09-25T21:35:09', updated_at='2015-09-25T21:35:09' WHERE id=1
+2015-09-25 21:35:09  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:09  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:09  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:09  [7220] UPDATE users SET updated_at='2015-09-25T21:35:09' WHERE id=1
+2015-09-25 21:35:09  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:13  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:13  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:13  [7220] UPDATE users SET updated_at='2015-09-25T21:35:13' WHERE id=1
+2015-09-25 21:35:13  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:15  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:15  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:15  [7220] UPDATE users SET updated_at='2015-09-25T21:35:15' WHERE id=1
+2015-09-25 21:35:16  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:17  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:17  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:17  [7220] UPDATE users SET updated_at='2015-09-25T21:35:17' WHERE id=1
+2015-09-25 21:35:17  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:20  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:20  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:20  [7220] UPDATE users SET updated_at='2015-09-25T21:35:20' WHERE id=1
+2015-09-25 21:35:20  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:20  [7220] UPDATE users SET updated_at='2015-09-25T21:35:20' WHERE id=1
+2015-09-25 21:35:20  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:20  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:22  [7220] [BEGIN] [databaseId:0]
+2015-09-25 21:35:22  [7220] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments
+2015-09-25 21:35:22  [7220] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:22  [7220] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=81 LIMIT 1
+2015-09-25 21:35:22  [7220] [COMMIT] [databaseId:0]
+2015-09-25 21:35:23  [7246] [BEGIN] [databaseId:0]
+2015-09-25 21:35:23  [7246] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:35:23  [7246] UPDATE users SET updated_at='2015-09-25T21:35:23' WHERE id=1
+2015-09-25 21:35:23  [7246] [COMMIT] [databaseId:0]
+2015-09-25 21:40:09  [7423] [BEGIN] [databaseId:0]
+2015-09-25 21:40:09  [7423] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:40:09  [7423] UPDATE users SET updated_at='2015-09-25T21:40:09' WHERE id=1
+2015-09-25 21:40:10  [7423] SELECT COUNT(1) FROM codes
+2015-09-25 21:40:10  [7423] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 21:40:10  [7423] [COMMIT] [databaseId:0]
+2015-09-25 21:50:38  [8209] [BEGIN] [databaseId:0]
+2015-09-25 21:50:38  [8209] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:50:38  [8209] UPDATE users SET updated_at='2015-09-25T21:50:38' WHERE id=1
+2015-09-25 21:50:38  [8209] SELECT COUNT(1) FROM codes
+2015-09-25 21:50:38  [8209] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 21:50:38  [8209] [COMMIT] [databaseId:0]
+2015-09-25 21:50:41  [8212] [BEGIN] [databaseId:0]
+2015-09-25 21:50:41  [8212] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:50:41  [8212] UPDATE users SET updated_at='2015-09-25T21:50:41' WHERE id=1
+2015-09-25 21:50:41  [8212] [COMMIT] [databaseId:0]
+2015-09-25 21:50:42  [8212] [BEGIN] [databaseId:0]
+2015-09-25 21:50:42  [8212] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:50:42  [8212] UPDATE users SET updated_at='2015-09-25T21:50:42' WHERE id=1
+2015-09-25 21:50:42  [8212] [COMMIT] [databaseId:0]
+2015-09-25 21:50:44  [8209] [BEGIN] [databaseId:0]
+2015-09-25 21:50:44  [8209] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:50:44  [8209] UPDATE users SET updated_at='2015-09-25T21:50:44' WHERE id=1
+2015-09-25 21:50:44  [8209] [COMMIT] [databaseId:0]
+2015-09-25 21:51:15  [8289] [BEGIN] [databaseId:0]
+2015-09-25 21:51:15  [8289] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:51:15  [8289] UPDATE users SET updated_at='2015-09-25T21:51:15' WHERE id=1
+2015-09-25 21:51:15  [8289] SELECT COUNT(1) FROM codes
+2015-09-25 21:51:15  [8289] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 21:51:15  [8289] [COMMIT] [databaseId:0]
+2015-09-25 21:52:06  [8354] [BEGIN] [databaseId:0]
+2015-09-25 21:52:06  [8354] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 21:52:06  [8354] UPDATE users SET updated_at='2015-09-25T21:52:06' WHERE id=1
+2015-09-25 21:52:06  [8354] SELECT COUNT(1) FROM codes
+2015-09-25 21:52:06  [8354] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 21:52:06  [8354] [COMMIT] [databaseId:0]
+2015-09-25 22:05:39  [9439] [BEGIN] [databaseId:0]
+2015-09-25 22:05:39  [9439] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:05:39  [9439] UPDATE users SET updated_at='2015-09-25T22:05:39' WHERE id=1
+2015-09-25 22:05:39  [9439] SELECT COUNT(1) FROM codes
+2015-09-25 22:05:39  [9439] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 22:05:39  [9439] [COMMIT] [databaseId:0]
+2015-09-25 22:20:49  [11088] [BEGIN] [databaseId:0]
+2015-09-25 22:20:49  [11088] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:20:49  [11088] UPDATE users SET updated_at='2015-09-25T22:20:49' WHERE id=1
+2015-09-25 22:20:49  [11088] SELECT COUNT(1) FROM codes
+2015-09-25 22:20:49  [11088] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-09-25 22:20:49  [11088] [COMMIT] [databaseId:0]
+2015-09-25 22:20:54  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:20:54  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments
+2015-09-25 22:20:54  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:20:54  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=81 LIMIT 1
+2015-09-25 22:20:54  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:20:56  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:20:56  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:20:56  [11094] UPDATE users SET updated_at='2015-09-25T22:20:56' WHERE id=1
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM users
+2015-09-25 22:20:56  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)
+2015-09-25 22:20:56  [11094] SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?
+2015-09-25 22:20:56  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:00  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:00  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:00  [11094] UPDATE users SET updated_at='2015-09-25T22:21:00' WHERE id=1
+2015-09-25 22:21:00  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=81 ORDER BY id DESC
+2015-09-25 22:21:00  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:01  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:01  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:01  [11094] UPDATE users SET updated_at='2015-09-25T22:21:01' WHERE id=1
+2015-09-25 22:21:01  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=78 LIMIT 1
+2015-09-25 22:21:01  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=78 ORDER BY id DESC
+2015-09-25 22:21:01  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:02  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:02  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:02  [11094] UPDATE users SET updated_at='2015-09-25T22:21:02' WHERE id=1
+2015-09-25 22:21:02  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=73 LIMIT 1
+2015-09-25 22:21:02  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=73 ORDER BY id DESC
+2015-09-25 22:21:02  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:03  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:03  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:03  [11094] UPDATE users SET updated_at='2015-09-25T22:21:03' WHERE id=1
+2015-09-25 22:21:03  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=68 LIMIT 1
+2015-09-25 22:21:03  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=68 ORDER BY id DESC
+2015-09-25 22:21:03  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:08  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:08  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:08  [11094] UPDATE users SET updated_at='2015-09-25T22:21:08' WHERE id=1
+2015-09-25 22:21:08  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=67 LIMIT 1
+2015-09-25 22:21:08  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=67 ORDER BY id DESC
+2015-09-25 22:21:08  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:09  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:09  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:09  [11094] UPDATE users SET updated_at='2015-09-25T22:21:09' WHERE id=1
+2015-09-25 22:21:09  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=69 LIMIT 1
+2015-09-25 22:21:09  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=69 ORDER BY id DESC
+2015-09-25 22:21:09  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:11  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:11  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:11  [11094] UPDATE users SET updated_at='2015-09-25T22:21:11' WHERE id=1
+2015-09-25 22:21:11  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=69 LIMIT 1
+2015-09-25 22:21:11  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:11  [11094] UPDATE users SET updated_at='2015-09-25T22:21:11' WHERE id=1
+2015-09-25 22:21:11  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=69 ORDER BY id DESC
+2015-09-25 22:21:11  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:16  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:16  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:16  [11094] UPDATE users SET updated_at='2015-09-25T22:21:16' WHERE id=1
+2015-09-25 22:21:16  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:18  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:18  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:18  [11094] UPDATE users SET updated_at='2015-09-25T22:21:18' WHERE id=1
+2015-09-25 22:21:18  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=73 LIMIT 1
+2015-09-25 22:21:18  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=73 ORDER BY id DESC
+2015-09-25 22:21:19  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:20  [11094] [BEGIN] [databaseId:0]
+2015-09-25 22:21:20  [11094] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:20  [11094] UPDATE users SET updated_at='2015-09-25T22:21:20' WHERE id=1
+2015-09-25 22:21:20  [11094] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=72 LIMIT 1
+2015-09-25 22:21:20  [11094] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=72 ORDER BY id DESC
+2015-09-25 22:21:20  [11094] [COMMIT] [databaseId:0]
+2015-09-25 22:21:44  [11177] [BEGIN] [databaseId:0]
+2015-09-25 22:21:44  [11177] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE username='KOPOJI' LIMIT 1
+2015-09-25 22:21:44  [11177] UPDATE users SET updated_at='2015-09-25T22:21:44' WHERE id=1
+2015-09-25 22:21:44  [11177] [COMMIT] [databaseId:0]

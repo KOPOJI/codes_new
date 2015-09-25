@@ -1,0 +1,14 @@
+2015-09-25 21:27:34 ERROR [6571] Local socket error : 2
+2015-09-25 21:34:55 ERROR [7213] Local socket error : 2
+2015-09-25 21:40:03 ERROR [7418] Local socket error : 2
+2015-09-25 21:50:32 ERROR [8205] Local socket error : 2
+2015-09-25 21:51:12 ERROR [8284] Local socket error : 2
+2015-09-25 21:52:01 ERROR [8349] Local socket error : 2
+2015-09-25 21:59:05 ERROR [8798] Local socket error : 2
+2015-09-25 22:05:20 ERROR [9434] Local socket error : 2
+2015-09-25 22:20:47 ERROR [11082] Local socket error : 2
+2015-09-25 22:21:11 WARN  [11094] QString::arg: Argument missing: #%d, 69 (tools/qstring.cpp:7098 QString QString::arg(const QString&, int, QChar) const)
+2015-09-26 00:05:08 WARN  [15701] Reading a socket timed out after 10 seconds. Descriptor:13
+2015-09-26 00:05:08 WARN  [15700] Reading a socket timed out after 10 seconds. Descriptor:11
+2015-09-26 00:11:52 WARN  [15872] Reading a socket timed out after 10 seconds. Descriptor:13
+2015-09-26 00:11:52 WARN  [15871] Reading a socket timed out after 10 seconds. Descriptor:11

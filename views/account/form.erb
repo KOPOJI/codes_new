@@ -1,0 +1,22 @@
+<%== renderPartial("_form_header"); %>
+
+<h2><%= H::tr("Sign in") %></h2>
+
+<%== formTag(H::createUrl({"user", "login"})) %>
+    <div>
+      E-mail
+      <input type="email" name="username" value="" class="form-input" autofocus="true" required>
+    </div>
+<br>
+    <div>
+    <%= H::tr("Password") %>
+    <input type="password" name="password" class="form-input" required>
+    </div>
+
+          <br>
+    <div>
+    <input type="submit" value="<%= H::tr("Sign") %>" class="button">
+    </div>
+</form>
+
+<%== renderPartial("_form_footer"); %>
