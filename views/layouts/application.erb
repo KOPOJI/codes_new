@@ -60,7 +60,7 @@
 <% tfetch(QString, warning) %>
 <% tfetch(QString, success) %>
 
-<%== H::getFlash(QMap<QString, QString({"notice", notice}, {"alert", error}, {"success", success}, {"warning", warning})) %>
+<%== H::getFlash(QMap<QString, QString(){"notice", notice}, {"alert", error}, {"success", success}, {"warning", warning}) %>
 
       <%== yield() %>
     </div>
