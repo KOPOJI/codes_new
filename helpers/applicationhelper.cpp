@@ -173,7 +173,12 @@ QString ApplicationHelper::getFlash(const QMap<QString, QString>& flash)
 {
     if(flash.empty())
         return "";
-    QMap<QString, QString> classes{{"notice", "info"}, {"alert", "danger"}, {"success", "success"}, {"warning", "warning"}};
+    QMap<QString, QString> classes;
+    classes.insert("notice", "info");
+    classes.insert("alert", "danger");
+    classes.insert("success", "success");
+    classes.insert("warning", "warning");
+
     QString result = "";
 
     for(const auto& msg: flash.toStdMap())
