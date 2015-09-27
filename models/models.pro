@@ -23,3 +23,6 @@ SOURCES += attachments.cpp
 HEADERS += sqlobjects/profilesobject.h
 HEADERS += profiles.h
 SOURCES += profiles.cpp
+HEADERS += sqlobjects/privatemessagesobject.h
+HEADERS += privatemessages.h
+SOURCES += privatemessages.cpp

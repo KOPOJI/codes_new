@@ -16,7 +16,7 @@
         <location filename="../views/attachments/edit.erb" line="13"/>
         <location filename="../views/attachments/show.erb" line="7"/>
         <location filename="../views/attachments/entry.erb" line="11"/>
-        <location filename="../helpers/applicationhelper.cpp" line="103"/>
+        <location filename="../helpers/applicationhelper.cpp" line="107"/>
         <source>Code</source>
         <translation>Code</translation>
     </message>
@@ -109,11 +109,13 @@
     <message>
         <location filename="../views/attachments/index.erb" line="27"/>
         <location filename="../views/codes/edit.erb" line="55"/>
+        <location filename="../views/privatemessages/index.erb" line="27"/>
         <source>Destroy</source>
         <translation>Delete</translation>
     </message>
     <message>
         <location filename="../views/attachments/index.erb" line="30"/>
+        <location filename="../views/privatemessages/index.erb" line="27"/>
         <source>Are you sure?</source>
         <translation>Are you sure?</translation>
     </message>
@@ -509,6 +511,46 @@
         <location filename="../views/codes/entry.erb" line="34"/>
         <source>Note: If picture less than 150x150, it will be resized to it</source>
         <translation>Note: If picture less than 150x150, it will be resized to it</translation>
+    </message>
+    <message>
+        <location filename="../views/partial/private_messages_links.erb" line="2"/>
+        <source>Go to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/partial/private_messages_links.erb" line="2"/>
+        <source>inbox</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/partial/private_messages_links.erb" line="4"/>
+        <source>outbox</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/partial/private_messages_links.erb" line="6"/>
+        <source>Or</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/partial/private_messages_links.erb" line="7"/>
+        <source>New Private message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/privatemessages/index.erb" line="10"/>
+        <source>To</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/privatemessages/index.erb" line="15"/>
+        <source>From</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../views/privatemessages/index.erb" line="25"/>
+        <source>Show</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

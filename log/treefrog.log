@@ -13,3 +13,54 @@
 2015-09-26 00:11:52 WARN  [15872] Reading a socket timed out after 10 seconds. Descriptor:13
 2015-09-26 00:11:52 WARN  [15871] Reading a socket timed out after 10 seconds. Descriptor:11
 2015-09-26 00:24:45 ERROR [16723] Local socket error : 2
+2015-09-26 20:19:08 ERROR [4330] Local socket error : 2
+2015-09-26 20:47:56 ERROR [5390] Local socket error : 2
+2015-09-26 20:48:09 ERROR [5400] view null pointer.  action:inbox
+2015-09-26 20:50:49 ERROR [5483] Local socket error : 2
+2015-09-26 21:59:32 ERROR [7539] Local socket error : 2
+2015-09-26 22:00:06 ERROR [7605] Local socket error : 2
+2015-09-26 22:00:17 WARN  [7614] Reading a socket timed out after 10 seconds. Descriptor:21
+2015-09-26 22:00:43 ERROR [7669] Local socket error : 2
+2015-09-26 22:04:47 ERROR [8086] Local socket error : 2
+2015-09-26 22:05:26 ERROR [8149] Local socket error : 2
+2015-09-27 20:17:09 ERROR [6143] Local socket error : 2
+2015-09-27 20:17:27 WARN  [6169] Reading a socket timed out after 10 seconds. Descriptor:17
+2015-09-27 20:17:27 WARN  [6168] Reading a socket timed out after 10 seconds. Descriptor:16
+2015-09-27 20:17:27 WARN  [6167] Reading a socket timed out after 10 seconds. Descriptor:15
+2015-09-27 20:17:27 WARN  [6166] Reading a socket timed out after 10 seconds. Descriptor:14
+2015-09-27 20:17:27 WARN  [6165] Reading a socket timed out after 10 seconds. Descriptor:13
+2015-09-27 20:27:07 ERROR [6426] Local socket error : 2
+2015-09-27 20:28:57 WARN  [6512] QString::arg: Argument missing: #%d, 82 (tools/qstring.cpp:7098 QString QString::arg(const QString&, int, QChar) const)
+2015-09-27 20:30:49 WARN  [6569] QString::arg: Argument missing: #%d, 82 (tools/qstring.cpp:7098 QString QString::arg(const QString&, int, QChar) const)
+2015-09-27 20:30:57 WARN  [6572] Reading a socket timed out after 10 seconds. Descriptor:17
+2015-09-27 20:38:16 ERROR [6843] Local socket error : 2
+2015-09-27 20:38:29 WARN  [6851] Reading a socket timed out after 10 seconds. Descriptor:17
+2015-09-27 20:40:10 ERROR [7137] Local socket error : 2
+2015-09-27 20:42:10 ERROR [7305] Local socket error : 2
+2015-09-27 20:44:32 ERROR [7573] Local socket error : 2
+2015-09-27 20:44:47 ERROR [7638] Local socket error : 2
+2015-09-27 20:47:03 ERROR [7749] Local socket error : 2
+2015-09-27 20:48:28 ERROR [7823] Listen failed  port:8800
+2015-09-27 20:48:28 ERROR [7823] Invalid socket descriptor: 0
+2015-09-27 20:48:31 ERROR [7855] Local socket error : 2
+2015-09-27 20:49:42 ERROR [7946] Local socket error : 2
+2015-09-27 20:50:49 ERROR [8024] Local socket error : 2
+2015-09-27 20:51:26 ERROR [8094] Local socket error : 2
+2015-09-27 20:54:46 ERROR [8248] Local socket error : 2
+2015-09-27 20:55:37 ERROR [8341] Local socket error : 2
+2015-09-27 20:56:28 ERROR [8412] Local socket error : 2
+2015-09-27 20:56:39 WARN  [8423] Reading a socket timed out after 10 seconds. Descriptor:28
+2015-09-27 20:57:11 ERROR [8479] Local socket error : 2
+2015-09-27 20:57:59 ERROR [8555] Local socket error : 2
+2015-09-27 20:58:32 ERROR [8647] Local socket error : 2
+2015-09-27 20:59:04 ERROR [8719] Local socket error : 2
+2015-09-27 20:59:50 ERROR [8804] Local socket error : 2
+2015-09-27 21:00:09 WARN  [8808] QString::arg: Argument missing: #%d, 82 (tools/qstring.cpp:7098 QString QString::arg(const QString&, int, QChar) const)
+2015-09-27 21:03:48 ERROR [9026] Local socket error : 2
+2015-09-27 21:04:36 ERROR [9103] Local socket error : 2
+2015-09-27 21:04:51 ERROR [9181] Listen failed  port:8800
+2015-09-27 21:04:51 ERROR [9181] Invalid socket descriptor: 0
+2015-09-27 21:04:56 ERROR [9184] Local socket error : 2
+2015-09-27 21:05:24 ERROR [9248] Local socket error : 2
+2015-09-27 21:06:17 ERROR [9314] Local socket error : 2
+2015-09-27 21:06:46 ERROR [9388] Local socket error : 2

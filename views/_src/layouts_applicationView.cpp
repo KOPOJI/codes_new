@@ -14,7 +14,7 @@ public:
 
 QString layouts_applicationView::toString()
 {
-  responsebody.reserve(4918);
+  responsebody.reserve(5015);
     responsebody += tr("<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"keywords\" content=\"заметка, добавить заметку, pastebin, загрузка картинок\">\n  <meta name=\"description\" content=\"SaveCode.RU - это сайт, где Вы можете сохранить любой текст с картинками или без них, без регистрации и навязчивой рекламы.\">\n  <title>");
   responsebody += THttpUtility::htmlEscape(controller()->name() + ": " + controller()->activeAction());
   responsebody += tr("</title>\n  <!--[if lt IE 9]>\n  <script src=\"//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js\" type=\"text/javascript\"></script>\n  <![endif]-->\n  ");
@@ -58,7 +58,12 @@ QString layouts_applicationView::toString()
   tfetch(QString, error);
   tfetch(QString, warning);
   tfetch(QString, success);
-  responsebody += QVariant(H::getFlash({{"notice", notice}, {"alert", error}, {"success", success}, {"warning", warning}})).toString();
+  QMap<QString, QString> flashes;
+flashes.insert("notice", notice);
+flashes.insert("alert", error);
+flashes.insert("success", success);
+flashes.insert("warning", warning);
+  responsebody += QVariant(H::getFlash(flashes)).toString();
   responsebody += tr("\n\n      ");
   responsebody += QVariant(yield()).toString();
   responsebody += tr("\n    </div>\n  </div>\n</div>\n\n<footer class=\"navbar-fixed-bottom\">\n  <div class=\"container\">\n    Just for fun. Just for save.\n  </div>\n</footer>\n\n</body>\n</html>\n");

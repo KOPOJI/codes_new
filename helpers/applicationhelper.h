@@ -43,9 +43,11 @@ public:
     static QString imageResize(const QString &imagePath, const QString &imageType, const int& width = 1280, const int& MAX_HEIGHT = 960, const bool& isAvatar = false);
 
     static QString specifiedClass(const QString& value);
-    static QString specifiedText(const QString& value);
+    static QString specifiedText(const QString& value, const QString& returnValue = QString());
 
     static bool imageExists(const QString& path);
+
+    static QString cycle(const QStringList& values);
 };
 
 typedef ApplicationHelper H;

@@ -59,11 +59,17 @@ SOURCES       = account_formView.cpp \
 		codes_indexView.cpp \
 		codes_showView.cpp \
 		layouts_applicationView.cpp \
+		mailer_mailView.cpp \
 		partial__form_footerView.cpp \
 		partial__form_headerView.cpp \
 		partial_errorView.cpp \
 		partial_linksView.cpp \
-		partial_user_linksView.cpp 
+		partial_private_messages_linksView.cpp \
+		partial_user_linksView.cpp \
+		privatemessages_editView.cpp \
+		privatemessages_entryView.cpp \
+		privatemessages_indexView.cpp \
+		privatemessages_showView.cpp 
 OBJECTS       = account_formView.o \
 		account_profileView.o \
 		account_registerView.o \
@@ -78,11 +84,17 @@ OBJECTS       = account_formView.o \
 		codes_indexView.o \
 		codes_showView.o \
 		layouts_applicationView.o \
+		mailer_mailView.o \
 		partial__form_footerView.o \
 		partial__form_headerView.o \
 		partial_errorView.o \
 		partial_linksView.o \
-		partial_user_linksView.o
+		partial_private_messages_linksView.o \
+		partial_user_linksView.o \
+		privatemessages_editView.o \
+		privatemessages_entryView.o \
+		privatemessages_indexView.o \
+		privatemessages_showView.o
 DIST          = ../../config/database.ini \
 		../../config/mongodb.ini \
 		../../config/routes.cfg \
@@ -191,11 +203,17 @@ DIST          = ../../config/database.ini \
 		codes_indexView.cpp \
 		codes_showView.cpp \
 		layouts_applicationView.cpp \
+		mailer_mailView.cpp \
 		partial__form_footerView.cpp \
 		partial__form_headerView.cpp \
 		partial_errorView.cpp \
 		partial_linksView.cpp \
-		partial_user_linksView.cpp
+		partial_private_messages_linksView.cpp \
+		partial_user_linksView.cpp \
+		privatemessages_editView.cpp \
+		privatemessages_entryView.cpp \
+		privatemessages_indexView.cpp \
+		privatemessages_showView.cpp
 QMAKE_TARGET  = view
 DESTDIR       = ../../lib/#avoid trailing-slash linebreak
 TARGET        = libview.so.1.0.0
@@ -432,7 +450,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d .tmp/view1.0.0 || mkdir -p .tmp/view1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/view1.0.0/ && $(COPY_FILE) --parents account_formView.moc account_profileView.moc account_registerView.moc account_usersView.moc attachments_editView.moc attachments_entryView.moc attachments_indexView.moc attachments_showView.moc codes_editView.moc codes_entryView.moc codes_find_by_userView.moc codes_indexView.moc codes_showView.moc layouts_applicationView.moc partial__form_footerView.moc partial__form_headerView.moc partial_errorView.moc partial_linksView.moc partial_user_linksView.moc ../codes/edit.erb ../codes/entry.erb ../codes/index.erb ../codes/show.erb ../layouts/application.erb ../account/users.erb ../codes/find_by_user.erb ../attachments/index.erb ../attachments/edit.erb ../attachments/entry.erb ../attachments/show.erb ../account/profile.erb .tmp/view1.0.0/ && $(COPY_FILE) --parents account_formView.cpp account_profileView.cpp account_registerView.cpp account_usersView.cpp attachments_editView.cpp attachments_entryView.cpp attachments_indexView.cpp attachments_showView.cpp codes_editView.cpp codes_entryView.cpp codes_find_by_userView.cpp codes_indexView.cpp codes_showView.cpp layouts_applicationView.cpp partial__form_footerView.cpp partial__form_headerView.cpp partial_errorView.cpp partial_linksView.cpp partial_user_linksView.cpp .tmp/view1.0.0/ && (cd `dirname .tmp/view1.0.0` && $(TAR) view1.0.0.tar view1.0.0 && $(COMPRESS) view1.0.0.tar) && $(MOVE) `dirname .tmp/view1.0.0`/view1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/view1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/view1.0.0/ && $(COPY_FILE) --parents account_formView.moc account_profileView.moc account_registerView.moc account_usersView.moc attachments_editView.moc attachments_entryView.moc attachments_indexView.moc attachments_showView.moc codes_editView.moc codes_entryView.moc codes_find_by_userView.moc codes_indexView.moc codes_showView.moc layouts_applicationView.moc mailer_mailView.moc partial__form_footerView.moc partial__form_headerView.moc partial_errorView.moc partial_linksView.moc partial_private_messages_linksView.moc partial_user_linksView.moc privatemessages_editView.moc privatemessages_entryView.moc privatemessages_indexView.moc privatemessages_showView.moc ../codes/edit.erb ../codes/entry.erb ../codes/index.erb ../codes/show.erb ../layouts/application.erb ../account/users.erb ../codes/find_by_user.erb ../attachments/index.erb ../attachments/edit.erb ../attachments/entry.erb ../attachments/show.erb ../account/profile.erb ../privatemessages/index.erb ../privatemessages/entry.erb .tmp/view1.0.0/ && $(COPY_FILE) --parents account_formView.cpp account_profileView.cpp account_registerView.cpp account_usersView.cpp attachments_editView.cpp attachments_entryView.cpp attachments_indexView.cpp attachments_showView.cpp codes_editView.cpp codes_entryView.cpp codes_find_by_userView.cpp codes_indexView.cpp codes_showView.cpp layouts_applicationView.cpp mailer_mailView.cpp partial__form_footerView.cpp partial__form_headerView.cpp partial_errorView.cpp partial_linksView.cpp partial_private_messages_linksView.cpp partial_user_linksView.cpp privatemessages_editView.cpp privatemessages_entryView.cpp privatemessages_indexView.cpp privatemessages_showView.cpp .tmp/view1.0.0/ && (cd `dirname .tmp/view1.0.0` && $(TAR) view1.0.0.tar view1.0.0 && $(COMPRESS) view1.0.0.tar) && $(MOVE) `dirname .tmp/view1.0.0`/view1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/view1.0.0
 
 
 clean:compiler_clean 
@@ -462,9 +480,9 @@ compiler_rcc_make_all:
 compiler_rcc_clean:
 compiler_moc_header_make_all:
 compiler_moc_header_clean:
-compiler_moc_source_make_all: account_formView.moc account_profileView.moc account_registerView.moc account_usersView.moc attachments_editView.moc attachments_entryView.moc attachments_indexView.moc attachments_showView.moc codes_editView.moc codes_entryView.moc codes_find_by_userView.moc codes_indexView.moc codes_showView.moc layouts_applicationView.moc partial__form_footerView.moc partial__form_headerView.moc partial_errorView.moc partial_linksView.moc partial_user_linksView.moc
+compiler_moc_source_make_all: account_formView.moc account_profileView.moc account_registerView.moc account_usersView.moc attachments_editView.moc attachments_entryView.moc attachments_indexView.moc attachments_showView.moc codes_editView.moc codes_entryView.moc codes_find_by_userView.moc codes_indexView.moc codes_showView.moc layouts_applicationView.moc mailer_mailView.moc partial__form_footerView.moc partial__form_headerView.moc partial_errorView.moc partial_linksView.moc partial_private_messages_linksView.moc partial_user_linksView.moc privatemessages_editView.moc privatemessages_entryView.moc privatemessages_indexView.moc privatemessages_showView.moc
 compiler_moc_source_clean:
-	-$(DEL_FILE) account_formView.moc account_profileView.moc account_registerView.moc account_usersView.moc attachments_editView.moc attachments_entryView.moc attachments_indexView.moc attachments_showView.moc codes_editView.moc codes_entryView.moc codes_find_by_userView.moc codes_indexView.moc codes_showView.moc layouts_applicationView.moc partial__form_footerView.moc partial__form_headerView.moc partial_errorView.moc partial_linksView.moc partial_user_linksView.moc
+	-$(DEL_FILE) account_formView.moc account_profileView.moc account_registerView.moc account_usersView.moc attachments_editView.moc attachments_entryView.moc attachments_indexView.moc attachments_showView.moc codes_editView.moc codes_entryView.moc codes_find_by_userView.moc codes_indexView.moc codes_showView.moc layouts_applicationView.moc mailer_mailView.moc partial__form_footerView.moc partial__form_headerView.moc partial_errorView.moc partial_linksView.moc partial_private_messages_linksView.moc partial_user_linksView.moc privatemessages_editView.moc privatemessages_entryView.moc privatemessages_indexView.moc privatemessages_showView.moc
 account_formView.moc: ../../helpers/applicationhelper.h \
 		account_formView.cpp
 	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include account_formView.cpp -o account_formView.moc
@@ -559,6 +577,13 @@ layouts_applicationView.moc: ../../models/codes.h \
 		layouts_applicationView.cpp
 	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include layouts_applicationView.cpp -o layouts_applicationView.moc
 
+mailer_mailView.moc: ../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		../../models/privatemessages.h \
+		mailer_mailView.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include mailer_mailView.cpp -o mailer_mailView.moc
+
 partial__form_footerView.moc: ../../helpers/applicationhelper.h \
 		partial__form_footerView.cpp
 	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include partial__form_footerView.cpp -o partial__form_footerView.moc
@@ -575,9 +600,41 @@ partial_linksView.moc: ../../helpers/applicationhelper.h \
 		partial_linksView.cpp
 	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include partial_linksView.cpp -o partial_linksView.moc
 
+partial_private_messages_linksView.moc: ../../helpers/applicationhelper.h \
+		partial_private_messages_linksView.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include partial_private_messages_linksView.cpp -o partial_private_messages_linksView.moc
+
 partial_user_linksView.moc: ../../helpers/applicationhelper.h \
 		partial_user_linksView.cpp
 	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include partial_user_linksView.cpp -o partial_user_linksView.moc
+
+privatemessages_editView.moc: ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_editView.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessages_editView.cpp -o privatemessages_editView.moc
+
+privatemessages_entryView.moc: ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_entryView.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessages_entryView.cpp -o privatemessages_entryView.moc
+
+privatemessages_indexView.moc: ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_indexView.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessages_indexView.cpp -o privatemessages_indexView.moc
+
+privatemessages_showView.moc: ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_showView.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/views/_src -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessages_showView.cpp -o privatemessages_showView.moc
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -683,6 +740,13 @@ layouts_applicationView.o: layouts_applicationView.cpp ../../models/codes.h \
 		layouts_applicationView.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o layouts_applicationView.o layouts_applicationView.cpp
 
+mailer_mailView.o: mailer_mailView.cpp ../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		../../models/privatemessages.h \
+		mailer_mailView.moc
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mailer_mailView.o mailer_mailView.cpp
+
 partial__form_footerView.o: partial__form_footerView.cpp ../../helpers/applicationhelper.h \
 		partial__form_footerView.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o partial__form_footerView.o partial__form_footerView.cpp
@@ -699,9 +763,41 @@ partial_linksView.o: partial_linksView.cpp ../../helpers/applicationhelper.h \
 		partial_linksView.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o partial_linksView.o partial_linksView.cpp
 
+partial_private_messages_linksView.o: partial_private_messages_linksView.cpp ../../helpers/applicationhelper.h \
+		partial_private_messages_linksView.moc
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o partial_private_messages_linksView.o partial_private_messages_linksView.cpp
+
 partial_user_linksView.o: partial_user_linksView.cpp ../../helpers/applicationhelper.h \
 		partial_user_linksView.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o partial_user_linksView.o partial_user_linksView.cpp
+
+privatemessages_editView.o: privatemessages_editView.cpp ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_editView.moc
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessages_editView.o privatemessages_editView.cpp
+
+privatemessages_entryView.o: privatemessages_entryView.cpp ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_entryView.moc
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessages_entryView.o privatemessages_entryView.cpp
+
+privatemessages_indexView.o: privatemessages_indexView.cpp ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_indexView.moc
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessages_indexView.o privatemessages_indexView.cpp
+
+privatemessages_showView.o: privatemessages_showView.cpp ../../models/privatemessages.h \
+		../../models/users.h \
+		../../helpers/applicationhelper.h \
+		../../models/profiles.h \
+		privatemessages_showView.moc
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessages_showView.o privatemessages_showView.cpp
 
 ####### Install
 

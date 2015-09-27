@@ -32,3 +32,7 @@ OTHER_FILES += \
     ../translations/en.ts
 HEADERS += attachmentscontroller.h
 SOURCES += attachmentscontroller.cpp
+HEADERS += informationmailer.h
+SOURCES += informationmailer.cpp
+HEADERS += privatemessagescontroller.h
+SOURCES += privatemessagescontroller.cpp

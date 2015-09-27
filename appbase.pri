@@ -26,4 +26,5 @@ OTHER_FILES += \
     ../views/account/register.erb \
     ../views/account/users.erb \
     ../views/codes/find_by_user.erb \
-    ../views/account/profile.erb
+    ../views/account/profile.erb \
+    ../views/partial/private_messages_links.erb

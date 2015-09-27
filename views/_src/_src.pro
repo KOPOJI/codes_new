@@ -55,7 +55,9 @@ HEADERS += \
     ../attachments/edit.erb \
     ../attachments/entry.erb \
     ../attachments/show.erb \
-    ../account/profile.erb
+    ../account/profile.erb \
+    ../privatemessages/index.erb \
+    ../privatemessages/entry.erb
 
 OTHER_FILES += \
     ../partial/_form_footer.erb \
@@ -68,4 +70,5 @@ OTHER_FILES += \
     ../../public/js/jquery-2.1.4.min.js \
     ../../public/js/prettyPhoto.js \
     ../account/form.erb \
-    ../account/register.erb
+    ../account/register.erb \
+    ../mailer/mail.erb

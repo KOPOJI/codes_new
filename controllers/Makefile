@@ -48,18 +48,24 @@ OBJECTS_DIR   = ./
 SOURCES       = applicationcontroller.cpp \
 		codescontroller.cpp \
 		accountcontroller.cpp \
-		attachmentscontroller.cpp moc_applicationcontroller.cpp \
+		attachmentscontroller.cpp \
+		informationmailer.cpp \
+		privatemessagescontroller.cpp moc_applicationcontroller.cpp \
 		moc_codescontroller.cpp \
 		moc_accountcontroller.cpp \
-		moc_attachmentscontroller.cpp
+		moc_attachmentscontroller.cpp \
+		moc_privatemessagescontroller.cpp
 OBJECTS       = applicationcontroller.o \
 		codescontroller.o \
 		accountcontroller.o \
 		attachmentscontroller.o \
+		informationmailer.o \
+		privatemessagescontroller.o \
 		moc_applicationcontroller.o \
 		moc_codescontroller.o \
 		moc_accountcontroller.o \
-		moc_attachmentscontroller.o
+		moc_attachmentscontroller.o \
+		moc_privatemessagescontroller.o
 DIST          = /usr/lib/i386-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/common/shell-unix.conf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/common/unix.conf \
@@ -141,7 +147,9 @@ DIST          = /usr/lib/i386-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		controllers.pro applicationcontroller.cpp \
 		codescontroller.cpp \
 		accountcontroller.cpp \
-		attachmentscontroller.cpp
+		attachmentscontroller.cpp \
+		informationmailer.cpp \
+		privatemessagescontroller.cpp
 QMAKE_TARGET  = controller
 DESTDIR       = ../lib/#avoid trailing-slash linebreak
 TARGET        = libcontroller.so.1.0.0
@@ -376,7 +384,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d .tmp/controller1.0.0 || mkdir -p .tmp/controller1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.h codescontroller.h accountcontroller.h attachmentscontroller.h .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.cpp codescontroller.cpp accountcontroller.cpp attachmentscontroller.cpp .tmp/controller1.0.0/ && (cd `dirname .tmp/controller1.0.0` && $(TAR) controller1.0.0.tar controller1.0.0 && $(COMPRESS) controller1.0.0.tar) && $(MOVE) `dirname .tmp/controller1.0.0`/controller1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/controller1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.h codescontroller.h accountcontroller.h attachmentscontroller.h informationmailer.h privatemessagescontroller.h .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.cpp codescontroller.cpp accountcontroller.cpp attachmentscontroller.cpp informationmailer.cpp privatemessagescontroller.cpp .tmp/controller1.0.0/ && (cd `dirname .tmp/controller1.0.0` && $(TAR) controller1.0.0.tar controller1.0.0 && $(COMPRESS) controller1.0.0.tar) && $(MOVE) `dirname .tmp/controller1.0.0`/controller1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/controller1.0.0
 
 
 clean:compiler_clean 
@@ -400,9 +408,9 @@ check: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_applicationcontroller.cpp moc_codescontroller.cpp moc_accountcontroller.cpp moc_attachmentscontroller.cpp
+compiler_moc_header_make_all: moc_applicationcontroller.cpp moc_codescontroller.cpp moc_accountcontroller.cpp moc_attachmentscontroller.cpp moc_privatemessagescontroller.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_applicationcontroller.cpp moc_codescontroller.cpp moc_accountcontroller.cpp moc_attachmentscontroller.cpp
+	-$(DEL_FILE) moc_applicationcontroller.cpp moc_codescontroller.cpp moc_accountcontroller.cpp moc_attachmentscontroller.cpp moc_privatemessagescontroller.cpp
 moc_applicationcontroller.cpp: ../helpers/applicationhelper.h \
 		../models/codes.h \
 		../models/users.h \
@@ -433,6 +441,14 @@ moc_attachmentscontroller.cpp: applicationcontroller.h \
 		../models/profiles.h \
 		attachmentscontroller.h
 	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include attachmentscontroller.h -o moc_attachmentscontroller.cpp
+
+moc_privatemessagescontroller.cpp: applicationcontroller.h \
+		../helpers/applicationhelper.h \
+		../models/codes.h \
+		../models/users.h \
+		../models/profiles.h \
+		privatemessagescontroller.h
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessagescontroller.h -o moc_privatemessagescontroller.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -478,6 +494,22 @@ attachmentscontroller.o: attachmentscontroller.cpp attachmentscontroller.h \
 		../models/attachments.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o attachmentscontroller.o attachmentscontroller.cpp
 
+informationmailer.o: informationmailer.cpp informationmailer.h \
+		../models/users.h \
+		../helpers/applicationhelper.h \
+		../models/profiles.h \
+		../models/privatemessages.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o informationmailer.o informationmailer.cpp
+
+privatemessagescontroller.o: privatemessagescontroller.cpp privatemessagescontroller.h \
+		applicationcontroller.h \
+		../helpers/applicationhelper.h \
+		../models/codes.h \
+		../models/users.h \
+		../models/profiles.h \
+		../models/privatemessages.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessagescontroller.o privatemessagescontroller.cpp
+
 moc_applicationcontroller.o: moc_applicationcontroller.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_applicationcontroller.o moc_applicationcontroller.cpp
 
@@ -489,6 +521,9 @@ moc_accountcontroller.o: moc_accountcontroller.cpp
 
 moc_attachmentscontroller.o: moc_attachmentscontroller.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_attachmentscontroller.o moc_attachmentscontroller.cpp
+
+moc_privatemessagescontroller.o: moc_privatemessagescontroller.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_privatemessagescontroller.o moc_privatemessagescontroller.cpp
 
 ####### Install
 

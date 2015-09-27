@@ -94,19 +94,26 @@ QString ApplicationHelper::parseCode(const QString &code, bool getLangOnly)
 
     int s = -1;
 
+    QString ret = "";
+
     while((s = rx.indexIn(result, s+1)) >= 0)
     {
         QString name = codeFile(rx.cap(1).trimmed().toUpper());
         if(getLangOnly)
             return rx.cap(1);
+
+        ret += rx.cap(1);
         result.replace(rx.cap(0), QString("<h6><b>%1 %2</b></h6><pre class='editor' lang='%3'>%4</pre>").arg(
            H::tr("Code"), codeTitle(name).toHtmlEscaped(), name.toHtmlEscaped(), rx.cap(2).toHtmlEscaped()
         ));
-        s+= rx.cap(1).length();
+        s+= rx.cap(0).length();
     }
 
     rx.setPattern("\\[img\\](https?://[^<>]+)\\[/img\\]");
     result.replace(rx, "<a href='\\1' rel='prettyPhoto[gallery]'><img src=\\1' class='attach'></a>");
+
+    result.replace("\n", "<br>");
+
 
     const int BB_CODES_COUNT = 4;
     const QString classes[BB_CODES_COUNT] = {"bold", "cursive", "underline", "del"};
@@ -288,13 +295,26 @@ QString ApplicationHelper::specifiedClass(const QString &value)
 {
     return value.trimmed().isEmpty() ? " class='not_specified'" : "";
 }
-QString ApplicationHelper::specifiedText(const QString &value)
+QString ApplicationHelper::specifiedText(const QString &value, const QString &returnValue)
 {
-    return value.trimmed().isEmpty() ? ("not_specified") : value;
+    return value.trimmed().isEmpty() ? "not_specified" : (returnValue.isEmpty() ? value : returnValue);
 }
 
 bool ApplicationHelper::imageExists(const QString &path)
 {
     QFileInfo checkFile("./public/images/" + path);
     return checkFile.exists() && checkFile.isFile();
+}
+
+QString ApplicationHelper::cycle(const QStringList& values)
+{
+    if(values.empty())
+        return "";
+
+    static QStringListIterator it = values;
+
+    if(it.hasNext())
+        return it.next();
+    it.toFront();
+    return it.next();
 }

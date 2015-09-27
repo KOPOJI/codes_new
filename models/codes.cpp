@@ -149,7 +149,7 @@ Codes Codes::get(int id, const bool &updateNeeded)
 {
     static Codes code = Codes();
     static int currentId = id;
-    if(code.isNull() || currentId != id || updateNeeded)
+    if(true || code.isNull() || currentId != id || updateNeeded)
     {
         TSqlORMapper<CodesObject> mapper;
         code = Codes(mapper.findByPrimaryKey(id));
