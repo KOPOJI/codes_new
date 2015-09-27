@@ -42,7 +42,7 @@
 
         <p>
             <strong><%= H::tr("Name") %>:</strong>
-            <span<%= H::specifiedClass(profile.name()) %>><%= profile.name() %></span>
+            <span<%= H::specifiedClass(profile.name()) %>><%= H::specifiedText(profile.name()) %></span>
             <% if(canBeEdited) { %>
                 <%== editLink %>
                 <%== inputTextTag("name", profile.name(), a("class", "hidden")) %>
@@ -51,7 +51,7 @@
 
         <p>
             <strong><%= H::tr("Interests") %>:</strong>
-            <span<%= H::specifiedClass(profile.interests()) %>><%= profile.interests() %></span>
+            <span<%= H::specifiedClass(profile.interests()) %>><%= H::specifiedText(profile.interests()) %></span>
             <% if(canBeEdited) { %>
                 <%== editLink %>
                 <%== inputTextTag("interests", profile.interests(), a("class", "hidden")) %>
@@ -60,7 +60,7 @@
 
         <p>
             <strong><%= H::tr("Experience") %>:</strong>
-            <span<%= H::specifiedClass(profile.exp()) %>><%= profile.exp() %></span>
+            <span<%= H::specifiedClass(profile.exp()) %>><%= H::specifiedText(profile.exp()) %></span>
             <% if(canBeEdited) { %>
                 <%== editLink %>
                 <%== inputTextTag("exp", profile.exp(), a("class", "hidden")) %>
@@ -69,7 +69,7 @@
 
         <p>
             <strong><%= H::tr("About me") %>:</strong>
-            <span<%= H::specifiedClass(profile.aboutMe()) %>><%= profile.aboutMe() %></span>
+            <span<%= H::specifiedClass(profile.aboutMe()) %>><%= H::specifiedText(profile.aboutMe()) %></span>
             <% if(canBeEdited) { %>
                 <%== editLink %>
                 <%== inputTextTag("about_me", profile.aboutMe(), a("class", "hidden")) %>
@@ -78,7 +78,7 @@
 
         <p>
             <strong><%= H::tr("Signature") %>:</strong>
-            <span<%= H::specifiedClass(profile.signature()) %>><%= profile.signature() %></span>
+            <span<%= H::specifiedClass(profile.signature()) %>><%= H::specifiedText(profile.signature()) %></span>
             <% if(canBeEdited) { %>
                 <%== editLink %>
                 <%== inputTextTag("signature", profile.signature(), a("class", "hidden")) %>

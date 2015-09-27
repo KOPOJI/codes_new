@@ -5,7 +5,7 @@
 
 <% tfetch(Users, user) %>
 
-        <h3><%= H::tr("Edit") %> <%= codes["title"].toString().isEmpty() ? QString("#%d").arg(codes["id"].toString()) : codes["title"] %></h3>
+        <h3><%= H::tr("Edit") %> <%= codes["title"].toString().isEmpty() ? QString(H::tr("Code") + " #%1").arg(codes["id"].toString()) : codes["title"] %></h3>
 
 <%== formTag(H::createUrl({"codes", "save", codes["id"].toString()}, httpRequest().queryItemValue("page", "1")), Tf::Post, true) %>
 <input type="hidden" name="codes[id]" value="<%= codes["id"] %>" readonly="readonly" />
@@ -73,12 +73,11 @@
         </div>
 <% } %>
          <div class="actions" style="margin-top: 20px;">
-            <input type="submit" id="save_code" value='<%= H::tr("Update") %>' />
+            <input type="submit" id="save_code" value="<%= H::tr("Save") %>" />
         </div>
         </form>
 
-<%== linkTo("Show", H::createUrl({"codes", codes["id"].toString()})) %> |
-<%== linkTo("Back", H::createUrl("attachments")) %>
+<%== linkTo(H::tr("Show"), H::createUrl({"codes", codes["id"].toString()})) %>
 
 <script type="text/javascript">
         $(function() {

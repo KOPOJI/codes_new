@@ -112,8 +112,10 @@ QString ApplicationHelper::parseCode(const QString &code, bool getLangOnly)
     rx.setPattern("\\[img\\](https?://[^<>]+)\\[/img\\]");
     result.replace(rx, "<a href='\\1' rel='prettyPhoto[gallery]'><img src=\\1' class='attach'></a>");
 
-    result.replace("\n", "<br>");
-
+    rx.setPattern("\\[url\\s*=\\s*([\"'])(.*)\\1\\](.+)\\[/url\\]");
+    result.replace(rx, "<a href='\\2' class='link' target='_blank'>\\3</a>");
+    rx.setPattern("\\[url\\](.+)\\[/url\\]");
+    result.replace(rx, "<a href='\\1' class='link' target='_blank'>\\1</a>");
 
     const int BB_CODES_COUNT = 4;
     const QString classes[BB_CODES_COUNT] = {"bold", "cursive", "underline", "del"};
@@ -125,6 +127,7 @@ QString ApplicationHelper::parseCode(const QString &code, bool getLangOnly)
         result.replace(rx, "<span class='" + classes[i] + "'>\\1</span>");
     }
 
+    result.replace("\n", "<br>");
 
     return result;
 }
@@ -293,11 +296,11 @@ QString ApplicationHelper::imageResize(const QString& imagePath, const QString& 
 
 QString ApplicationHelper::specifiedClass(const QString &value)
 {
-    return value.trimmed().isEmpty() ? " class='not_specified'" : "";
+    return value.trimmed().isEmpty() ? " class=not_specified" : "";
 }
 QString ApplicationHelper::specifiedText(const QString &value, const QString &returnValue)
 {
-    return value.trimmed().isEmpty() ? "not_specified" : (returnValue.isEmpty() ? value : returnValue);
+    return value.trimmed().isEmpty() ? H::tr("not_specified") : (returnValue.trimmed().isEmpty() ? value : returnValue);
 }
 
 bool ApplicationHelper::imageExists(const QString &path)

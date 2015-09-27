@@ -71,4 +71,6 @@ OTHER_FILES += \
     ../../public/js/prettyPhoto.js \
     ../account/form.erb \
     ../account/register.erb \
-    ../mailer/mail.erb
+    ../mailer/mail.erb \
+    ../../public/css/styles.css \
+    ../../public/css/application.css

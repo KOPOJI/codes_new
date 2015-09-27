@@ -15,7 +15,7 @@ public:
 
 QString codes_editView::toString()
 {
-  responsebody.reserve(6772);
+  responsebody.reserve(6682);
       responsebody += tr("\n");
   tfetch(QVariantMap, codes);
   responsebody += tr("\n");
@@ -23,7 +23,7 @@ QString codes_editView::toString()
   responsebody += tr("\n        <h3>");
   responsebody += THttpUtility::htmlEscape(H::tr("Edit"));
   responsebody += tr(" ");
-  responsebody += THttpUtility::htmlEscape(codes["title"].toString().isEmpty() ? QString("#%d").arg(codes["id"].toString()) : codes["title"]);
+  responsebody += THttpUtility::htmlEscape(codes["title"].toString().isEmpty() ? QString(H::tr("Code") + " #%1").arg(codes["id"].toString()) : codes["title"]);
   responsebody += tr("</h3>\n\n");
   responsebody += QVariant(formTag(H::createUrl({"codes", "save", codes["id"].toString()}, httpRequest().queryItemValue("page", "1")), Tf::Post, true)).toString();
   responsebody += tr("\n<input type=\"hidden\" name=\"codes[id]\" value=\"");
@@ -98,12 +98,10 @@ QString codes_editView::toString()
   responsebody += THttpUtility::htmlEscape(codes["showFrom"]);
   responsebody += tr("'>\n        </div>\n");
   };
-  responsebody += tr("         <div class=\"actions\" style=\"margin-top: 20px;\">\n            <input type=\"submit\" id=\"save_code\" value='");
-  responsebody += THttpUtility::htmlEscape(H::tr("Update"));
-  responsebody += tr("' />\n        </div>\n        </form>\n\n");
-  responsebody += QVariant(linkTo("Show", H::createUrl({"codes", codes["id"].toString()}))).toString();
-  responsebody += tr(" |\n");
-  responsebody += QVariant(linkTo("Back", H::createUrl("attachments"))).toString();
+  responsebody += tr("         <div class=\"actions\" style=\"margin-top: 20px;\">\n            <input type=\"submit\" id=\"save_code\" value=\"");
+  responsebody += THttpUtility::htmlEscape(H::tr("Save"));
+  responsebody += tr("\" />\n        </div>\n        </form>\n\n");
+  responsebody += QVariant(linkTo(H::tr("Show"), H::createUrl({"codes", codes["id"].toString()}))).toString();
   responsebody += tr("\n\n<script type=\"text/javascript\">\n        $(function() {\n              $('a.remove').click(function() {\n                  var parent = $(this).parent()\n                  if(!confirm(\"");
   responsebody += THttpUtility::htmlEscape(H::tr("Are you sure?"));
   responsebody += tr("\"))\n                    return false;\n                  $.post($(this).attr('href'), function() {\n                      parent.remove()\n                  })\n                  return false;\n              })\n          })\n</script>\n");

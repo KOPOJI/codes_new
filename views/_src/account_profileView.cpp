@@ -14,7 +14,7 @@ public:
 
 QString account_profileView::toString()
 {
-  responsebody.reserve(7172);
+  responsebody.reserve(7262);
     responsebody += tr("\n");
   tfetch(Users, user);
   tfetch(Profiles, profile);
@@ -57,7 +57,7 @@ QString account_profileView::toString()
   responsebody += tr(":</strong>\n            <span");
   responsebody += THttpUtility::htmlEscape(H::specifiedClass(profile.name()));
   responsebody += tr(">");
-  responsebody += THttpUtility::htmlEscape(profile.name());
+  responsebody += THttpUtility::htmlEscape(H::specifiedText(profile.name()));
   responsebody += tr("</span>\n            ");
   if(canBeEdited) {;
   responsebody += tr("                ");
@@ -71,7 +71,7 @@ QString account_profileView::toString()
   responsebody += tr(":</strong>\n            <span");
   responsebody += THttpUtility::htmlEscape(H::specifiedClass(profile.interests()));
   responsebody += tr(">");
-  responsebody += THttpUtility::htmlEscape(profile.interests());
+  responsebody += THttpUtility::htmlEscape(H::specifiedText(profile.interests()));
   responsebody += tr("</span>\n            ");
   if(canBeEdited) {;
   responsebody += tr("                ");
@@ -85,7 +85,7 @@ QString account_profileView::toString()
   responsebody += tr(":</strong>\n            <span");
   responsebody += THttpUtility::htmlEscape(H::specifiedClass(profile.exp()));
   responsebody += tr(">");
-  responsebody += THttpUtility::htmlEscape(profile.exp());
+  responsebody += THttpUtility::htmlEscape(H::specifiedText(profile.exp()));
   responsebody += tr("</span>\n            ");
   if(canBeEdited) {;
   responsebody += tr("                ");
@@ -99,7 +99,7 @@ QString account_profileView::toString()
   responsebody += tr(":</strong>\n            <span");
   responsebody += THttpUtility::htmlEscape(H::specifiedClass(profile.aboutMe()));
   responsebody += tr(">");
-  responsebody += THttpUtility::htmlEscape(profile.aboutMe());
+  responsebody += THttpUtility::htmlEscape(H::specifiedText(profile.aboutMe()));
   responsebody += tr("</span>\n            ");
   if(canBeEdited) {;
   responsebody += tr("                ");
@@ -113,7 +113,7 @@ QString account_profileView::toString()
   responsebody += tr(":</strong>\n            <span");
   responsebody += THttpUtility::htmlEscape(H::specifiedClass(profile.signature()));
   responsebody += tr(">");
-  responsebody += THttpUtility::htmlEscape(profile.signature());
+  responsebody += THttpUtility::htmlEscape(H::specifiedText(profile.signature()));
   responsebody += tr("</span>\n            ");
   if(canBeEdited) {;
   responsebody += tr("                ");

@@ -14,9 +14,10 @@ public:
 
 QString layouts_applicationView::toString()
 {
-  responsebody.reserve(5015);
-    responsebody += tr("<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"keywords\" content=\"заметка, добавить заметку, pastebin, загрузка картинок\">\n  <meta name=\"description\" content=\"SaveCode.RU - это сайт, где Вы можете сохранить любой текст с картинками или без них, без регистрации и навязчивой рекламы.\">\n  <title>");
-  responsebody += THttpUtility::htmlEscape(controller()->name() + ": " + controller()->activeAction());
+  responsebody.reserve(4990);
+    tfetch(QString, title);
+  responsebody += tr("\n<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"keywords\" content=\"заметка, добавить заметку, pastebin, загрузка картинок\">\n  <meta name=\"description\" content=\"SaveCode.RU - это сайт, где Вы можете сохранить любой текст с картинками или без них, без регистрации и навязчивой рекламы.\">\n  <title>");
+  responsebody += THttpUtility::htmlEscape(title);
   responsebody += tr("</title>\n  <!--[if lt IE 9]>\n  <script src=\"//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js\" type=\"text/javascript\"></script>\n  <![endif]-->\n  ");
   responsebody += QVariant(styleSheetTag("application.css", a("media", "all") | a("data-turbolinks-track", "true") | a("rel", "stylesheet"))).toString();
   responsebody += tr("\n  ");

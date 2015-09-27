@@ -2,13 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name>ApplicationHelper</name>
-    <message>
-        <source>not_specified</source>
-        <translation type="vanished">Не указано</translation>
-    </message>
-</context>
-<context>
     <name>H</name>
     <message>
         <location filename="../models/codes.cpp" line="37"/>
@@ -16,6 +9,7 @@
         <location filename="../views/attachments/edit.erb" line="13"/>
         <location filename="../views/attachments/show.erb" line="7"/>
         <location filename="../views/attachments/entry.erb" line="11"/>
+        <location filename="../views/codes/edit.erb" line="8"/>
         <location filename="../helpers/applicationhelper.cpp" line="107"/>
         <source>Code</source>
         <translation>Код</translation>
@@ -39,15 +33,39 @@
         <translation>Пароль</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="117"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="140"/>
         <location filename="../views/partial/links.erb" line="41"/>
         <source>Sign</source>
         <translation>Авторизация</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="118"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="141"/>
         <location filename="../views/partial/links.erb" line="42"/>
         <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Регистрация</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="119"/>
+        <source>Show user profile</source>
+        <translation>Просмотр профиля пользователя</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="120"/>
+        <source>Show profile</source>
+        <translation>Просмотр профиля</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="128"/>
+        <source>Editing picture</source>
+        <translation>Редактирование изображения</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="135"/>
+        <source>Editing code</source>
+        <translation>Редактирование кода</translation>
     </message>
     <message>
         <location filename="../views/account/users.erb" line="11"/>
@@ -61,6 +79,7 @@
         <translation>Подтверждение пароля</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="121"/>
         <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Список пользователей</translation>
@@ -96,6 +115,7 @@
         <translation>Ни одного изображения еще не добавили</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="133"/>
         <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Просмотр кода</translation>
@@ -144,6 +164,7 @@
         <translation>Показывать только при переходе с сайта</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="134"/>
         <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Добавление нового кода</translation>
@@ -235,7 +256,7 @@
         <translation>загрузить изображение</translation>
     </message>
     <message>
-        <location filename="../views/layouts/application.erb" line="34"/>
+        <location filename="../views/layouts/application.erb" line="36"/>
         <source>Listing codes</source>
         <translation>Список кодов</translation>
     </message>
@@ -270,12 +291,14 @@
         <translation>Изображения</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="126"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
         <source>Listing pictures</source>
         <translation>Список изображений</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="127"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Загрузка изображения</translation>
@@ -305,6 +328,7 @@
         <translation>Назад</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="143"/>
         <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Пользователи</translation>
@@ -315,6 +339,7 @@
         <translation>Список пользователей</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="142"/>
         <location filename="../views/partial/links.erb" line="37"/>
         <source>Profile</source>
         <translation>Профиль</translation>
@@ -515,42 +540,48 @@
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="2"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти к</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="2"/>
         <source>inbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Входящие</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="4"/>
         <source>outbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Исходящие</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="6"/>
         <source>Or</source>
-        <translation type="unfinished"></translation>
+        <translation>Или</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="7"/>
         <source>New Private message</source>
-        <translation type="unfinished"></translation>
+        <translation>Написать новое сообщение</translation>
     </message>
     <message>
         <location filename="../views/privatemessages/index.erb" line="10"/>
         <source>To</source>
-        <translation type="unfinished"></translation>
+        <translation>Кому</translation>
     </message>
     <message>
         <location filename="../views/privatemessages/index.erb" line="15"/>
         <source>From</source>
-        <translation type="unfinished"></translation>
+        <translation>От кого</translation>
     </message>
     <message>
+        <location filename="../views/codes/edit.erb" line="80"/>
         <location filename="../views/privatemessages/index.erb" line="25"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотр</translation>
+    </message>
+    <message>
+        <location filename="../helpers/applicationhelper.cpp" line="303"/>
+        <source>not_specified</source>
+        <translation>Не указано</translation>
     </message>
 </context>
 </TS>

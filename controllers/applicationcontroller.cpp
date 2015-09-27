@@ -88,7 +88,7 @@ void ApplicationController::language(const QString &language)
     }
 
     QString success = ("Language changed to " + QString(language.left(MAX_SIZE).replace(0,1, language.at(0).toUpper())));
-    tflash(success);
+    texport(success);
 
     redirect(QUrl("/"));
 }
@@ -101,7 +101,58 @@ void ApplicationController::staticRelease()
 
 bool ApplicationController::preFilter()
 {
+    QString title = getTitle();
+    texport(title);
     return true;
+}
+
+QString ApplicationController::getTitle()
+{
+    const QString siteName = "SaveCode.RU";
+
+    QMap<QString, QMap<QString, QString>> titles;
+
+    titles.insert("Account",
+        QMap<QString, QString>({
+            {"login", H::tr("Sign")},
+            {"registration", H::tr("Sign up")},
+            {"showUserProfile", H::tr("Show user profile")},
+            {"profile", H::tr("Show profile")},
+            {"users", H::tr("Users list")}
+        })
+    );
+    titles.insert("Attachments",
+        QMap<QString, QString>({
+            {"index", H::tr("Listing pictures")},
+            {"entry", H::tr("Uploading picture")},
+            {"edit", H::tr("Editing picture")},
+        })
+    );
+    titles.insert("Codes",
+        QMap<QString, QString>({
+            {"show", H::tr("View code")},
+            {"entry", H::tr("Adding new code")},
+            {"edit", H::tr("Editing code")},
+        })
+    );
+    titles.insert("PrivateMessages",
+        QMap<QString, QString>({
+            {"login", H::tr("Sign")},
+            {"registration", H::tr("Sign up")},
+            {"showUserProfile", H::tr("Profile")},
+            {"users", H::tr("Users")}
+        })
+    );
+
+    if(!titles.contains(name()))
+        return siteName;
+
+    const auto currentController = titles[name()];
+
+    if(!currentController.contains(activeAction()))
+        return siteName; // + " - " + activeAction();
+
+    return siteName + " - " + currentController[activeAction()];
 }
 
 

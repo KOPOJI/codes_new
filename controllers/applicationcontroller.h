@@ -31,6 +31,8 @@ public slots:
 
 protected:
     virtual bool preFilter();
+
+    virtual QString getTitle();
 };
 
 T_DECLARE_CONTROLLER(ApplicationController, applicationcontroller)

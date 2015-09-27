@@ -2,13 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name>ApplicationHelper</name>
-    <message>
-        <source>not_specified</source>
-        <translation type="vanished">Not specified</translation>
-    </message>
-</context>
-<context>
     <name>H</name>
     <message>
         <location filename="../models/codes.cpp" line="37"/>
@@ -16,6 +9,7 @@
         <location filename="../views/attachments/edit.erb" line="13"/>
         <location filename="../views/attachments/show.erb" line="7"/>
         <location filename="../views/attachments/entry.erb" line="11"/>
+        <location filename="../views/codes/edit.erb" line="8"/>
         <location filename="../helpers/applicationhelper.cpp" line="107"/>
         <source>Code</source>
         <translation>Code</translation>
@@ -39,15 +33,39 @@
         <translation>Password</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="117"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="140"/>
         <location filename="../views/partial/links.erb" line="41"/>
         <source>Sign</source>
         <translation>Sign</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="118"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="141"/>
         <location filename="../views/partial/links.erb" line="42"/>
         <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Sign up</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="119"/>
+        <source>Show user profile</source>
+        <translation>View user profile</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="120"/>
+        <source>Show profile</source>
+        <translation>View profile</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="128"/>
+        <source>Editing picture</source>
+        <translation>Editing picture</translation>
+    </message>
+    <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="135"/>
+        <source>Editing code</source>
+        <translation>Editing code</translation>
     </message>
     <message>
         <location filename="../views/account/users.erb" line="11"/>
@@ -61,6 +79,7 @@
         <translation>Password Confirmation</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="121"/>
         <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Users list</translation>
@@ -96,6 +115,7 @@
         <translation>Nobody hasn&apos;t added any picture ye</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="133"/>
         <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Show code</translation>
@@ -144,6 +164,7 @@
         <translation>Show only from</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="134"/>
         <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Adding new code</translation>
@@ -235,7 +256,7 @@
         <translation>upload picture</translation>
     </message>
     <message>
-        <location filename="../views/layouts/application.erb" line="34"/>
+        <location filename="../views/layouts/application.erb" line="36"/>
         <source>Listing codes</source>
         <translation>Listing codes</translation>
     </message>
@@ -270,12 +291,14 @@
         <translation>Pictures</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="126"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
         <source>Listing pictures</source>
         <translation>Listing pictures</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="127"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Uploading picture</translation>
@@ -305,6 +328,7 @@
         <translation>Back</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="143"/>
         <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Users</translation>
@@ -315,6 +339,7 @@
         <translation>Listing users</translation>
     </message>
     <message>
+        <location filename="../controllers/applicationcontroller.cpp" line="142"/>
         <location filename="../views/partial/links.erb" line="37"/>
         <source>Profile</source>
         <translation>Profile</translation>
@@ -515,42 +540,48 @@
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="2"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="2"/>
         <source>inbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Inbox</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="4"/>
         <source>outbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Outbox</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="6"/>
         <source>Or</source>
-        <translation type="unfinished"></translation>
+        <translation>Or</translation>
     </message>
     <message>
         <location filename="../views/partial/private_messages_links.erb" line="7"/>
         <source>New Private message</source>
-        <translation type="unfinished"></translation>
+        <translation>New Private message</translation>
     </message>
     <message>
         <location filename="../views/privatemessages/index.erb" line="10"/>
         <source>To</source>
-        <translation type="unfinished"></translation>
+        <translation>To</translation>
     </message>
     <message>
         <location filename="../views/privatemessages/index.erb" line="15"/>
         <source>From</source>
-        <translation type="unfinished"></translation>
+        <translation>From</translation>
     </message>
     <message>
+        <location filename="../views/codes/edit.erb" line="80"/>
         <location filename="../views/privatemessages/index.erb" line="25"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Show</translation>
+    </message>
+    <message>
+        <location filename="../helpers/applicationhelper.cpp" line="303"/>
+        <source>not_specified</source>
+        <translation>Not specified</translation>
     </message>
 </context>
 </TS>
