@@ -1,6 +1,6 @@
 <%#include "codes.h" %>
 <div class="post">
-        <h2><%= H::tr("Users list") %></h2>
+        <h2><%= H::tr("Users list") %> (<%= Users::count() %>)</h2>
 
         <% if(!Users::count()) { %>
                 <%= H::tr("Users not found") %>

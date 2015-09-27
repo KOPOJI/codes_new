@@ -457,6 +457,9 @@ profiles.o: profiles.cpp profiles.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o profiles.o profiles.cpp
 
 privatemessages.o: privatemessages.cpp privatemessages.h \
+		users.h \
+		../helpers/applicationhelper.h \
+		profiles.h \
 		sqlobjects/privatemessagesobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessages.o privatemessages.cpp
 

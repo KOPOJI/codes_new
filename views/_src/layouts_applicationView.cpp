@@ -48,7 +48,7 @@ QString layouts_applicationView::toString()
   responsebody += tr("        <li");
   responsebody += QVariant(uri.contains( QRegExp(QString("/codes/(?:%1|%2).html").arg(code.id()).arg(code.codeUrl()), Qt::CaseInsensitive) ) ? " class=\"current\"" : "").toString();
   responsebody += tr(">\n            ");
-  responsebody += QVariant(linkTo(H::truncate(code.title(), 18), H::createUrl({"codes", QString::number(code.id())}, httpRequest().queryItemValue("page", "1")))).toString();
+  responsebody += QVariant(linkTo(H::truncate(code.title(), 17), H::createUrl({"codes", QString::number(code.id())}, httpRequest().queryItemValue("page", "1")))).toString();
   responsebody += tr("\n        </li>\n               ");
   }
            };

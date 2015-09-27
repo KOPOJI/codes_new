@@ -14,10 +14,12 @@ public:
 
 QString account_usersView::toString()
 {
-  responsebody.reserve(2832);
+  responsebody.reserve(2921);
     responsebody += tr("<div class=\"post\">\n        <h2>");
   responsebody += THttpUtility::htmlEscape(H::tr("Users list"));
-  responsebody += tr("</h2>\n\n        ");
+  responsebody += tr(" (");
+  responsebody += THttpUtility::htmlEscape(Users::count());
+  responsebody += tr(")</h2>\n\n        ");
   if(!Users::count()) {;
   responsebody += tr("                ");
   responsebody += THttpUtility::htmlEscape(H::tr("Users not found"));
