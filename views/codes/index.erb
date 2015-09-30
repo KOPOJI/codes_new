@@ -37,7 +37,7 @@
 <div>
 <br>
 <%= H::tr("try") %>
-<%== linkTo(H::tr("try_code"), urla("new"), Tf::Get, "", a("class", "button link")) %>
+<%== linkTo(H::tr("try_code"), H::createUrl({"codes", "new"}), Tf::Get, "", a("class", "button link")) %>
 <%= H::tr("or") %>
-<%== linkTo(H::tr("try_attach"), url("Attachments", "new"), Tf::Get, "", a("class", "button link")) %>
+<%== linkTo(H::tr("try_attach"), H::createUrl({"attachments", "new"}), Tf::Get, "", a("class", "button link")) %>
 </div>

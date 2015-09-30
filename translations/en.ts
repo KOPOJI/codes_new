@@ -256,7 +256,7 @@
         <translation>upload picture</translation>
     </message>
     <message>
-        <location filename="../views/layouts/application.erb" line="36"/>
+        <location filename="../views/layouts/application.erb" line="38"/>
         <source>Listing codes</source>
         <translation>Listing codes</translation>
     </message>

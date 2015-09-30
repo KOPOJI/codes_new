@@ -13,7 +13,7 @@ public:
 
 QString codes_indexView::toString()
 {
-  responsebody.reserve(2471);
+  responsebody.reserve(2501);
   responsebody += tr("<div class=\"post\">\n        <b>SaveCode.RU</b> - ");
   responsebody += THttpUtility::htmlEscape(H::tr("main_text"));
   responsebody += tr(".<br><br><br>\n        ");
@@ -46,11 +46,11 @@ QString codes_indexView::toString()
   responsebody += tr("\n</div>\n</div>\n<div>\n<br>\n");
   responsebody += THttpUtility::htmlEscape(H::tr("try"));
   responsebody += tr("\n");
-  responsebody += QVariant(linkTo(H::tr("try_code"), urla("new"), Tf::Get, "", a("class", "button link"))).toString();
+  responsebody += QVariant(linkTo(H::tr("try_code"), H::createUrl({"codes", "new"}), Tf::Get, "", a("class", "button link"))).toString();
   responsebody += tr("\n");
   responsebody += THttpUtility::htmlEscape(H::tr("or"));
   responsebody += tr("\n");
-  responsebody += QVariant(linkTo(H::tr("try_attach"), url("Attachments", "new"), Tf::Get, "", a("class", "button link"))).toString();
+  responsebody += QVariant(linkTo(H::tr("try_attach"), H::createUrl({"attachments", "new"}), Tf::Get, "", a("class", "button link"))).toString();
   responsebody += tr("\n</div>\n");
 
   return responsebody;
