@@ -15,11 +15,18 @@ Users ApplicationController::getUser() const
     return Users::getByIdentityKey(identityKeyOfLoginUser());
 }
 
+bool ApplicationController::isUserLoggedIn() const
+{
+    return !httpRequest().cookie("user_id").isEmpty() || TActionController::isUserLoggedIn();
+}
+
 void ApplicationController::updateUser()
 {
     if(isUserLoggedIn())
     {
-        Users user = Users::getByIdentityKey(identityKeyOfLoginUser());
+        Users user = TActionController::isUserLoggedIn() ? Users::getByIdentityKey(identityKeyOfLoginUser()) : Users::get(httpRequest().cookie("user_id").toInt());
+        if(!TActionController::isUserLoggedIn())
+            userLogin(&user);
         if(!user.isNull())
         {
             user.setUpdatedAt(QDateTime::currentDateTime());
@@ -93,7 +100,13 @@ void ApplicationController::language(const QString &language)
     redirect(QUrl("/"));
 }
 
+void ApplicationController::captcha()
+{
+    if (httpRequest().method() != Tf::Post)
+        return;
 
+    renderText(getCaptcha());
+}
 
 void ApplicationController::staticRelease()
 { }
@@ -103,7 +116,19 @@ bool ApplicationController::preFilter()
 {
     QString title = getTitle();
     texport(title);
+
     return true;
+}
+
+QString ApplicationController::getCaptcha()
+{
+    const auto& text = H::getCaptchaCode().toUpper();
+
+    session()["c_id"] = text;
+
+    QByteArray ba = H::getCaptcha(text);
+
+    return ba.toBase64();
 }
 
 QString ApplicationController::getTitle()

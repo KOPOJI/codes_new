@@ -16,6 +16,7 @@ public:
 
     Users getUser() const;
 
+    virtual bool isUserLoggedIn() const;
     void updateUser();
     void loadLanguage(const bool &updateNeeded = false);
 
@@ -28,11 +29,14 @@ public slots:
 
     void language(const QString &language);
 
+    void captcha();
+
 
 protected:
     virtual bool preFilter();
 
     virtual QString getTitle();
+    virtual QString getCaptcha();
 };
 
 T_DECLARE_CONTROLLER(ApplicationController, applicationcontroller)

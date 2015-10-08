@@ -33,37 +33,37 @@
         <translation>Password</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="117"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="140"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="142"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="165"/>
         <location filename="../views/partial/links.erb" line="41"/>
         <source>Sign</source>
         <translation>Sign</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="118"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="141"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="143"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
         <location filename="../views/partial/links.erb" line="42"/>
         <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Sign up</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="119"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="144"/>
         <source>Show user profile</source>
         <translation>View user profile</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="120"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="145"/>
         <source>Show profile</source>
         <translation>View profile</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="128"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="153"/>
         <source>Editing picture</source>
         <translation>Editing picture</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="135"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="160"/>
         <source>Editing code</source>
         <translation>Editing code</translation>
     </message>
@@ -79,7 +79,7 @@
         <translation>Password Confirmation</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="121"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="146"/>
         <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Users list</translation>
@@ -115,7 +115,7 @@
         <translation>Nobody hasn&apos;t added any picture ye</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="133"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="158"/>
         <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Show code</translation>
@@ -164,7 +164,7 @@
         <translation>Show only from</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="134"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="159"/>
         <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Adding new code</translation>
@@ -205,13 +205,13 @@
         <translation>Signature</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="202"/>
-        <location filename="../controllers/accountcontroller.cpp" line="261"/>
+        <location filename="../controllers/accountcontroller.cpp" line="207"/>
+        <location filename="../controllers/accountcontroller.cpp" line="266"/>
         <source>Profile was successfully updated</source>
         <translation>Profile was successfully updated</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="268"/>
+        <location filename="../controllers/accountcontroller.cpp" line="273"/>
         <source>Updating profile failed, sorry</source>
         <translation>Updating profile failed, sorry</translation>
     </message>
@@ -291,14 +291,14 @@
         <translation>Pictures</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="126"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="151"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
         <source>Listing pictures</source>
         <translation>Listing pictures</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="127"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="152"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Uploading picture</translation>
@@ -328,7 +328,7 @@
         <translation>Back</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="143"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="168"/>
         <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Users</translation>
@@ -339,7 +339,7 @@
         <translation>Listing users</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="142"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="167"/>
         <location filename="../views/partial/links.erb" line="37"/>
         <source>Profile</source>
         <translation>Profile</translation>
@@ -360,7 +360,7 @@
         <translation>Language</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="55"/>
+        <location filename="../controllers/accountcontroller.cpp" line="60"/>
         <source>Login failed</source>
         <translation>Wrong username or password</translation>
     </message>
@@ -370,60 +370,60 @@
         <translation>You are already logged in</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="50"/>
+        <location filename="../controllers/accountcontroller.cpp" line="55"/>
         <source>signed_in</source>
         <translation>Signed in successfully.</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="68"/>
-        <location filename="../controllers/accountcontroller.cpp" line="164"/>
+        <location filename="../controllers/accountcontroller.cpp" line="73"/>
+        <location filename="../controllers/accountcontroller.cpp" line="169"/>
         <source>not_authenticated_yet</source>
         <translation>You are not logged in.</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="82"/>
+        <location filename="../controllers/accountcontroller.cpp" line="87"/>
         <source>signed_out</source>
         <translation>Signed out successfully.</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="112"/>
+        <location filename="../controllers/accountcontroller.cpp" line="117"/>
         <source>Enter your username</source>
         <translation>Enter your username</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="114"/>
+        <location filename="../controllers/accountcontroller.cpp" line="119"/>
         <source>Enter your email</source>
         <translation>Enter your E-mail</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="116"/>
+        <location filename="../controllers/accountcontroller.cpp" line="121"/>
         <source>Enter your password</source>
         <translation>Enter your password</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="118"/>
+        <location filename="../controllers/accountcontroller.cpp" line="123"/>
         <source>Password and password confirmation are different</source>
         <translation>Password and password confirmation are different</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="134"/>
+        <location filename="../controllers/accountcontroller.cpp" line="139"/>
         <source>Database error, sorry..</source>
         <translation>Database error, sorry..</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="139"/>
+        <location filename="../controllers/accountcontroller.cpp" line="144"/>
         <source>User</source>
         <translation>User</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="139"/>
+        <location filename="../controllers/accountcontroller.cpp" line="144"/>
         <source>already exists</source>
         <translation>already exists</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="176"/>
-        <location filename="../controllers/accountcontroller.cpp" line="182"/>
-        <location filename="../controllers/accountcontroller.cpp" line="325"/>
+        <location filename="../controllers/accountcontroller.cpp" line="181"/>
+        <location filename="../controllers/accountcontroller.cpp" line="187"/>
+        <location filename="../controllers/accountcontroller.cpp" line="330"/>
         <source>User not found</source>
         <translation>User not found</translation>
     </message>
@@ -443,23 +443,23 @@
         <translation>does not have any posts</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="110"/>
-        <location filename="../controllers/codescontroller.cpp" line="219"/>
+        <location filename="../controllers/codescontroller.cpp" line="129"/>
+        <location filename="../controllers/codescontroller.cpp" line="266"/>
         <source>Code was successfully created</source>
         <translation>Code was successfully created</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="117"/>
+        <location filename="../controllers/codescontroller.cpp" line="136"/>
         <source>Failed to create.</source>
         <translation>Failed to create.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="166"/>
+        <location filename="../controllers/codescontroller.cpp" line="192"/>
         <source>Original data not found. It may have been updated/removed by another transaction.</source>
         <translation>Original data not found. It may have been updated/removed by another transaction.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="226"/>
+        <location filename="../controllers/codescontroller.cpp" line="273"/>
         <source>Failed to update.</source>
         <translation>Failed to update.</translation>
     </message>
@@ -487,7 +487,7 @@
     <message>
         <location filename="../controllers/attachmentscontroller.cpp" line="60"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="156"/>
-        <location filename="../controllers/accountcontroller.cpp" line="233"/>
+        <location filename="../controllers/accountcontroller.cpp" line="238"/>
         <source>Wrong image format</source>
         <translation>Wrong image format</translation>
     </message>
@@ -495,7 +495,7 @@
         <location filename="../controllers/attachmentscontroller.cpp" line="70"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="88"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="166"/>
-        <location filename="../controllers/accountcontroller.cpp" line="243"/>
+        <location filename="../controllers/accountcontroller.cpp" line="248"/>
         <source>An error occurred while downloading picture. Please, try later</source>
         <translation>An error occurred while downloading picture. Please, try later</translation>
     </message>
@@ -573,7 +573,7 @@
         <translation>From</translation>
     </message>
     <message>
-        <location filename="../views/codes/edit.erb" line="80"/>
+        <location filename="../views/codes/edit.erb" line="98"/>
         <location filename="../views/privatemessages/index.erb" line="25"/>
         <source>Show</source>
         <translation>Show</translation>
@@ -582,6 +582,11 @@
         <location filename="../helpers/applicationhelper.cpp" line="303"/>
         <source>not_specified</source>
         <translation>Not specified</translation>
+    </message>
+    <message>
+        <location filename="../views/account/form.erb" line="18"/>
+        <source>Remember me</source>
+        <translation>Remember me</translation>
     </message>
 </context>
 </TS>

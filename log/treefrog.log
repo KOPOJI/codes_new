@@ -1,0 +1,39 @@
+2015-10-08 20:34:48 ERROR [3428] Local socket error : 2
+2015-10-08 20:34:53 WARN  [3444] Invalid descriptor (disconnected) : -1
+2015-10-08 20:39:15 ERROR [3885] Local socket error : 2
+2015-10-08 20:39:28 WARN  [3901] Invalid descriptor (disconnected) : -1
+2015-10-08 20:39:28 WARN  [3900] Invalid descriptor (disconnected) : -1
+2015-10-08 20:40:27 ERROR [3955] Local socket error : 2
+2015-10-08 20:41:02 ERROR [4023] Local socket error : 2
+2015-10-08 20:41:14 WARN  [4040] Invalid descriptor (disconnected) : -1
+2015-10-08 20:42:43 ERROR [4166] Local socket error : 2
+2015-10-08 20:56:01 ERROR [5065] Local socket error : 2
+2015-10-08 20:58:12 ERROR [5526] Local socket error : 2
+2015-10-08 21:00:10 ERROR [5777] Local socket error : 2
+2015-10-08 21:01:25 ERROR [5907] Local socket error : 2
+2015-10-08 21:04:30 ERROR [6117] Local socket error : 2
+2015-10-08 21:05:00 ERROR [6199] Local socket error : 2
+2015-10-08 21:07:49 ERROR [6438] Local socket error : 2
+2015-10-08 21:08:03 WARN  [6453] userLogin: Duplicate login detected. Force logout [user:]
+2015-10-08 21:08:30 ERROR [6543] Local socket error : 2
+2015-10-08 21:08:46 WARN  [6555] userLogin: Duplicate login detected. Force logout [user:]
+2015-10-08 21:27:32 ERROR [7348] Local socket error : 2
+2015-10-08 21:27:47 WARN  [7376] Reading a socket timed out after 10 seconds. Descriptor:31
+2015-10-08 21:27:47 WARN  [7375] Reading a socket timed out after 10 seconds. Descriptor:30
+2015-10-08 21:27:47 WARN  [7374] Reading a socket timed out after 10 seconds. Descriptor:29
+2015-10-08 21:27:47 WARN  [7373] Reading a socket timed out after 10 seconds. Descriptor:28
+2015-10-08 21:27:47 WARN  [7372] Reading a socket timed out after 10 seconds. Descriptor:27
+2015-10-08 21:31:19 ERROR [7504] Local socket error : 2
+2015-10-08 21:33:01 ERROR [7619] Local socket error : 2
+2015-10-08 21:33:37 ERROR [7696] Local socket error : 2
+2015-10-08 21:36:17 ERROR [7827] Local socket error : 2
+2015-10-08 21:40:46 ERROR [8097] Local socket error : 2
+2015-10-08 21:41:56 ERROR [8181] Local socket error : 2
+2015-10-08 21:42:25 ERROR [8239] Local socket error : 2
+2015-10-08 21:42:57 ERROR [8311] Local socket error : 2
+2015-10-08 21:43:10 WARN  [8328] Reading a socket timed out after 10 seconds. Descriptor:29
+2015-10-08 21:43:10 WARN  [8329] Reading a socket timed out after 10 seconds. Descriptor:30
+2015-10-08 21:43:10 WARN  [8327] Reading a socket timed out after 10 seconds. Descriptor:28
+2015-10-08 21:43:10 WARN  [8326] Reading a socket timed out after 10 seconds. Descriptor:27
+2015-10-08 21:43:10 WARN  [8330] Reading a socket timed out after 10 seconds. Descriptor:31
+2015-10-08 21:45:59 ERROR [8411] Local socket error : 2

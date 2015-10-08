@@ -321,3 +321,62 @@ QString ApplicationHelper::cycle(const QStringList& values)
     it.toFront();
     return it.next();
 }
+
+QString ApplicationHelper::getCaptchaCode(const int& length)
+{
+   const QString chars("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
+   const int charsLength = chars.length();
+
+   const int captchaSize = length; // assuming you want random strings of 12 characters
+
+   qsrand(QTime::currentTime().msec());
+
+   QString s;
+
+   for(int i = 0; i < captchaSize; ++i)
+       s.append(chars.at( qrand() % charsLength ));
+
+   return s;
+}
+
+QByteArray ApplicationHelper::getCaptcha(const QString& text, const int &width, const int &height)
+{
+    qsrand(QTime::currentTime().msec());
+
+    QImage image(width, height, QImage::Format_ARGB32);
+    image.fill(QColor::fromRgb(50, 50, qrand() % 200 + 55, qrand() % 50 + 100));
+
+
+    QPainter painter(&image);
+
+
+    QMatrix mat = QMatrix().translate( qrand() % 5 + 1, qrand() % 15 + 15 ).rotate( qrand() % 12 - 5 );
+
+    painter.setMatrix( mat );
+
+    QColor color;
+    color.setRgb(0, 0, 200, 100);
+
+    QFont font;
+    font.setStretch(120 + qrand() % 15);
+    font.setPixelSize(20);
+    font.setBold(qrand() % 2 == 1);
+    font.setStrikeOut(qrand() % 2 == 1);
+    font.setItalic(qrand() % 2 == 1);
+    painter.setFont(font);
+
+    painter.setBrush(Qt::NoBrush);
+    painter.setPen(color);
+
+    painter.drawText(qrand() % 5 + 3, 7, text);
+
+    painter.end();
+
+    QByteArray ba;
+
+    QBuffer buffer(&ba);
+    buffer.open(QIODevice::WriteOnly);
+    image.save(&buffer, "PNG");
+
+    return ba;
+}

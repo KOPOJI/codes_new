@@ -40,6 +40,11 @@ void AccountController::login()
 
         if (!user.isNull()) {
 
+            if(httpRequest().hasFormItem("remember"))
+            {
+                addCookie("user_id", std::to_string(user.id()).c_str(), QDateTime::currentDateTime().addMonths(3), "/");
+                user.setRememberCreatedAt(QDateTime::currentDateTime());
+            }
             user.setCurrentSignInAt(QDateTime::currentDateTime());
             user.setCurrentSignInIp(httpRequest().clientAddress().toString());
             user.setSignInCount(user.signInCount() + 1);

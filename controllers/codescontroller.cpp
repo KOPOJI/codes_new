@@ -58,6 +58,25 @@ void CodesController::create()
 
     auto form = httpRequest().formItems("codes");
 
+    if(!isUserLoggedIn())
+    {
+        if(!httpRequest().hasFormItem("captcha"))
+        {
+            QString error = ("Enter captcha");
+            tflash(error);
+            redirect(H::createUrl({"codes", "new"}));
+            return ;
+        }
+
+        if(!session().contains("c_id") || httpRequest().formItemValue("captcha", "").toUpper() != session()["c_id"].toString().toUpper())
+        {
+            QString error = ("Wrong captcha");
+            tflash(error);
+            redirect(H::createUrl({"codes", "new"}));
+            return ;
+        }
+    }
+
     auto codes = Codes::create(form);
     if (!codes.isNull())
     {
@@ -128,6 +147,13 @@ void CodesController::renderEntry(const QVariantMap &codes)
     texport(user);
 
     texport(codes);
+
+    if(!isUserLoggedIn())
+    {
+        QString captcha = getCaptcha();
+        texport(captcha);
+    }
+
     render("entry");
 }
 
@@ -139,7 +165,7 @@ void CodesController::edit(const QString &pk)
 
     auto codes = Codes::get(id);
 
-    if (!codes.isNull() && codes.canBeEdited(isUserLoggedIn()))
+    if (!codes.isNull() && codes.canBeEdited())
     {
         renderEdit(codes.toVariantMap());
     }
@@ -171,7 +197,28 @@ void CodesController::save(const QString &pk)
 
     auto form = httpRequest().formItems("codes");
 
+
+    if(!isUserLoggedIn())
+    {
+        if(!httpRequest().hasFormItem("captcha"))
+        {
+            QString error = ("Enter captcha");
+            tflash(error);
+            redirect(H::createUrl({"codes", "edit", QString::number(id)}, httpRequest().queryItemValue("page", "1")));
+            return ;
+        }
+
+        if(!session().contains("c_id") || httpRequest().formItemValue("captcha", "").toUpper() != session()["c_id"].toString().toUpper())
+        {
+            QString error = ("Wrong captcha");
+            tflash(error);
+            redirect(H::createUrl({"codes", "edit", QString::number(id)}, httpRequest().queryItemValue("page", "1")));
+            return ;
+        }
+    }
+
     codes.setProperties(form);
+
     if (codes.save())
     {
         //update cashed code
@@ -232,6 +279,12 @@ void CodesController::save(const QString &pk)
 void CodesController::renderEdit(const QVariantMap &codes)
 {
     updateUser();
+
+    if(!isUserLoggedIn())
+    {
+        QString captcha = getCaptcha();
+        texport(captcha);
+    }
 
     texport(codes);
     render("edit");

@@ -15,7 +15,7 @@ public:
 
 QString codes_editView::toString()
 {
-  responsebody.reserve(6682);
+  responsebody.reserve(7344);
       responsebody += tr("\n");
   tfetch(QVariantMap, codes);
   responsebody += tr("\n");
@@ -97,6 +97,12 @@ QString codes_editView::toString()
   responsebody += tr("</label>\n            <input type=\"text\" name=\"codes[showFrom]\" value='");
   responsebody += THttpUtility::htmlEscape(codes["showFrom"]);
   responsebody += tr("'>\n        </div>\n");
+  } else {;
+  responsebody += tr("\n");
+  tfetch(QString, captcha);
+  responsebody += tr("\n<div class=\"field\">\n    <img id=\"captcha_code\" src=\"data:image/png;base64,");
+  responsebody += THttpUtility::htmlEscape(captcha);
+  responsebody += tr("\"><br>\n    <small><a href=\"#\" id=\"update_captcha\" class=\"link\">Update code</a></small><br>\n    <input type=\"text\" name=\"captcha\" value=\"\">\n</div>\n<script type=\"text/javascript\">\n$(\"#update_captcha\").click(function() {\n   $.post('/captcha.html', function(data) {\n       $(\"#captcha_code\").attr(\"src\", \"data:image/png;base64,\" + data);\n   })\n   return false;\n})\n</script>\n\n");
   };
   responsebody += tr("         <div class=\"actions\" style=\"margin-top: 20px;\">\n            <input type=\"submit\" id=\"save_code\" value=\"");
   responsebody += THttpUtility::htmlEscape(H::tr("Save"));

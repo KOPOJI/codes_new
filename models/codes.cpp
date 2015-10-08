@@ -178,10 +178,10 @@ void Codes::updateCount(const int &page)
     count(true);
     getAll(page, true);
 }
-bool Codes::canBeEdited(const bool& isUserLogged) const
+bool Codes::canBeEdited() const
 {
     if(!userId())
-        return isUserLogged;
+        return true;
     auto user = Users::get(userId());
     return !user.isNull() || user.isAdmin();
 }

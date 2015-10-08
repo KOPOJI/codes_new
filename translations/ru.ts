@@ -33,37 +33,37 @@
         <translation>Пароль</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="117"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="140"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="142"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="165"/>
         <location filename="../views/partial/links.erb" line="41"/>
         <source>Sign</source>
         <translation>Авторизация</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="118"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="141"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="143"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
         <location filename="../views/partial/links.erb" line="42"/>
         <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Регистрация</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="119"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="144"/>
         <source>Show user profile</source>
         <translation>Просмотр профиля пользователя</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="120"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="145"/>
         <source>Show profile</source>
         <translation>Просмотр профиля</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="128"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="153"/>
         <source>Editing picture</source>
         <translation>Редактирование изображения</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="135"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="160"/>
         <source>Editing code</source>
         <translation>Редактирование кода</translation>
     </message>
@@ -79,7 +79,7 @@
         <translation>Подтверждение пароля</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="121"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="146"/>
         <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Список пользователей</translation>
@@ -115,7 +115,7 @@
         <translation>Ни одного изображения еще не добавили</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="133"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="158"/>
         <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Просмотр кода</translation>
@@ -164,7 +164,7 @@
         <translation>Показывать только при переходе с сайта</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="134"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="159"/>
         <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Добавление нового кода</translation>
@@ -205,13 +205,13 @@
         <translation>Подпись</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="202"/>
-        <location filename="../controllers/accountcontroller.cpp" line="261"/>
+        <location filename="../controllers/accountcontroller.cpp" line="207"/>
+        <location filename="../controllers/accountcontroller.cpp" line="266"/>
         <source>Profile was successfully updated</source>
         <translation>Профиль был успешно изменен</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="268"/>
+        <location filename="../controllers/accountcontroller.cpp" line="273"/>
         <source>Updating profile failed, sorry</source>
         <translation>Произошла ошибка при изменении профиля</translation>
     </message>
@@ -291,14 +291,14 @@
         <translation>Изображения</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="126"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="151"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
         <source>Listing pictures</source>
         <translation>Список изображений</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="127"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="152"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Загрузка изображения</translation>
@@ -328,7 +328,7 @@
         <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="143"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="168"/>
         <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Пользователи</translation>
@@ -339,7 +339,7 @@
         <translation>Список пользователей</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="142"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="167"/>
         <location filename="../views/partial/links.erb" line="37"/>
         <source>Profile</source>
         <translation>Профиль</translation>
@@ -360,7 +360,7 @@
         <translation>Язык</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="55"/>
+        <location filename="../controllers/accountcontroller.cpp" line="60"/>
         <source>Login failed</source>
         <translation>Неверный логин и/или пароль</translation>
     </message>
@@ -370,60 +370,60 @@
         <translation>Вы уже вошли в систему</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="50"/>
+        <location filename="../controllers/accountcontroller.cpp" line="55"/>
         <source>signed_in</source>
         <translation>Вход в систему выполнен.</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="68"/>
-        <location filename="../controllers/accountcontroller.cpp" line="164"/>
+        <location filename="../controllers/accountcontroller.cpp" line="73"/>
+        <location filename="../controllers/accountcontroller.cpp" line="169"/>
         <source>not_authenticated_yet</source>
         <translation>Вы еще не вошли в систему.</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="82"/>
+        <location filename="../controllers/accountcontroller.cpp" line="87"/>
         <source>signed_out</source>
         <translation>Выход из системы выполнен.</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="112"/>
+        <location filename="../controllers/accountcontroller.cpp" line="117"/>
         <source>Enter your username</source>
         <translation>Введите Ваше имя</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="114"/>
+        <location filename="../controllers/accountcontroller.cpp" line="119"/>
         <source>Enter your email</source>
         <translation>Введите Ваш E-mail</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="116"/>
+        <location filename="../controllers/accountcontroller.cpp" line="121"/>
         <source>Enter your password</source>
         <translation>Введите Ваш пароль</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="118"/>
+        <location filename="../controllers/accountcontroller.cpp" line="123"/>
         <source>Password and password confirmation are different</source>
         <translation>Пароль и подтверждение пароля не совпадают</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="134"/>
+        <location filename="../controllers/accountcontroller.cpp" line="139"/>
         <source>Database error, sorry..</source>
         <translation>Ошибка базы данных, пожалуйста, попробуйте позднее..</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="139"/>
+        <location filename="../controllers/accountcontroller.cpp" line="144"/>
         <source>User</source>
         <translation>Пользователь</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="139"/>
+        <location filename="../controllers/accountcontroller.cpp" line="144"/>
         <source>already exists</source>
         <translation>уже существует</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="176"/>
-        <location filename="../controllers/accountcontroller.cpp" line="182"/>
-        <location filename="../controllers/accountcontroller.cpp" line="325"/>
+        <location filename="../controllers/accountcontroller.cpp" line="181"/>
+        <location filename="../controllers/accountcontroller.cpp" line="187"/>
+        <location filename="../controllers/accountcontroller.cpp" line="330"/>
         <source>User not found</source>
         <translation>Пользователь не найден</translation>
     </message>
@@ -443,23 +443,23 @@
         <translation>не оставлял сообщений</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="110"/>
-        <location filename="../controllers/codescontroller.cpp" line="219"/>
+        <location filename="../controllers/codescontroller.cpp" line="129"/>
+        <location filename="../controllers/codescontroller.cpp" line="266"/>
         <source>Code was successfully created</source>
         <translation>Код был успешно добавлен</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="117"/>
+        <location filename="../controllers/codescontroller.cpp" line="136"/>
         <source>Failed to create.</source>
         <translation>Произошла ошибка при создании.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="166"/>
+        <location filename="../controllers/codescontroller.cpp" line="192"/>
         <source>Original data not found. It may have been updated/removed by another transaction.</source>
         <translation>Исходные данные не найдены. Возможно, истекло время ожидания или запись уже создана/обновлена.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="226"/>
+        <location filename="../controllers/codescontroller.cpp" line="273"/>
         <source>Failed to update.</source>
         <translation>Произошла ошибка при обновлении записи.</translation>
     </message>
@@ -487,7 +487,7 @@
     <message>
         <location filename="../controllers/attachmentscontroller.cpp" line="60"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="156"/>
-        <location filename="../controllers/accountcontroller.cpp" line="233"/>
+        <location filename="../controllers/accountcontroller.cpp" line="238"/>
         <source>Wrong image format</source>
         <translation>Неверный формат изображения</translation>
     </message>
@@ -495,7 +495,7 @@
         <location filename="../controllers/attachmentscontroller.cpp" line="70"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="88"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="166"/>
-        <location filename="../controllers/accountcontroller.cpp" line="243"/>
+        <location filename="../controllers/accountcontroller.cpp" line="248"/>
         <source>An error occurred while downloading picture. Please, try later</source>
         <translation>При загрузке изображения возникла непредвиденная ошибка. Пожалуйста, попробуйте позднее</translation>
     </message>
@@ -573,7 +573,7 @@
         <translation>От кого</translation>
     </message>
     <message>
-        <location filename="../views/codes/edit.erb" line="80"/>
+        <location filename="../views/codes/edit.erb" line="98"/>
         <location filename="../views/privatemessages/index.erb" line="25"/>
         <source>Show</source>
         <translation>Просмотр</translation>
@@ -582,6 +582,11 @@
         <location filename="../helpers/applicationhelper.cpp" line="303"/>
         <source>not_specified</source>
         <translation>Не указано</translation>
+    </message>
+    <message>
+        <location filename="../views/account/form.erb" line="18"/>
+        <source>Remember me</source>
+        <translation>Запомнить меня</translation>
     </message>
 </context>
 </TS>

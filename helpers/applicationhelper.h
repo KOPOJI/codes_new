@@ -14,7 +14,11 @@
 #include <QCryptographicHash>
 #include <QDateTime>
 #include <QImage>
+#include <QPainter>
+
 #include <QRegularExpression>
+
+#include <QBuffer>
 
 class T_HELPER_EXPORT ApplicationHelper
 {
@@ -48,6 +52,10 @@ public:
     static bool imageExists(const QString& path);
 
     static QString cycle(const QStringList& values);
+
+    static QString getCaptchaCode(const int &length = 7);
+
+    static QByteArray getCaptcha(const QString& text = getCaptchaCode(), const int& width = 150, const int& height = 50);
 };
 
 typedef ApplicationHelper H;

@@ -67,7 +67,7 @@ public:
     static QList<Codes> userCodes(const int& userId);
     static int userCodesCount(const int& userId);
 
-    bool canBeEdited(const bool &isUserLogged) const;
+    bool canBeEdited() const;
 
 private:
     QSharedDataPointer<CodesObject> d;
