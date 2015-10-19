@@ -1,0 +1,77 @@
+2015-10-19 22:27:31 ERROR [13497] Local socket error : 2
+2015-10-19 22:27:55 ERROR [13578] Local socket error : 2
+2015-10-19 22:28:07 ERROR [13650] Local socket error : 2
+2015-10-19 22:30:56 ERROR [13829] Local socket error : 2
+2015-10-19 22:32:58 ERROR [13916] Local socket error : 2
+2015-10-19 22:33:00 ERROR [13920] Caught Exception
+2015-10-19 22:33:00 WARN  [13920] Error occurred : error:-1  socket:66f90464-b647-499e-8274-c358e562f223
+2015-10-19 22:33:00 ERROR [13925] Caught Exception
+2015-10-19 22:33:00 WARN  [13925] Error occurred : error:-1  socket:bbd9c95e-ea04-43e3-b0d0-ee7629511bc7
+2015-10-19 22:33:05 ERROR [13929] Caught Exception
+2015-10-19 22:33:05 WARN  [13929] Error occurred : error:-1  socket:ea584c7f-bdeb-4170-908f-432abbfd79e8
+2015-10-19 22:33:06 ERROR [13935] Caught Exception
+2015-10-19 22:33:06 WARN  [13935] Error occurred : error:-1  socket:f1857499-101c-43c4-ab42-b4a5737ace9d
+2015-10-19 22:33:08 ERROR [13962] Local socket error : 2
+2015-10-19 22:33:11 ERROR [13966] Caught Exception
+2015-10-19 22:33:11 WARN  [13966] Error occurred : error:-1  socket:8dd33da1-aefa-4f79-8827-0c38da15faee
+2015-10-19 22:33:19 ERROR [14026] Local socket error : 2
+2015-10-19 22:33:55 ERROR [14097] Local socket error : 2
+2015-10-19 22:34:13 ERROR [14169] Local socket error : 2
+2015-10-19 22:34:14 ERROR [14173] Caught Exception
+2015-10-19 22:34:14 WARN  [14173] Error occurred : error:-1  socket:825dbd54-21b0-47ac-95c5-3ea22fae5992
+2015-10-19 22:34:15 ERROR [14180] Caught Exception
+2015-10-19 22:34:15 WARN  [14180] Error occurred : error:-1  socket:25139667-be72-4918-abb5-dc7983a8ba0d
+2015-10-19 22:34:17 ERROR [14184] Caught Exception
+2015-10-19 22:34:17 WARN  [14184] Error occurred : error:-1  socket:e6c4f35a-4fcb-48b9-a625-5f0f34d8282a
+2015-10-19 22:34:26 ERROR [14242] Local socket error : 2
+2015-10-19 22:34:27 ERROR [14246] Caught Exception
+2015-10-19 22:34:27 WARN  [14246] Error occurred : error:-1  socket:a672e7c6-3c44-4f2f-973b-80652a469b06
+2015-10-19 22:36:35 ERROR [14330] Local socket error : 2
+2015-10-19 22:36:49 ERROR [14403] Local socket error : 2
+2015-10-19 22:37:05 ERROR [14480] Local socket error : 2
+2015-10-19 22:37:14 ERROR [14551] Local socket error : 2
+2015-10-19 22:37:30 ERROR [14631] Local socket error : 2
+2015-10-19 22:37:44 ERROR [14700] Local socket error : 2
+2015-10-19 22:37:58 ERROR [14772] Local socket error : 2
+2015-10-19 22:38:09 ERROR [14842] Local socket error : 2
+2015-10-19 22:38:18 ERROR [14914] Local socket error : 2
+2015-10-19 22:38:30 ERROR [14991] Local socket error : 2
+2015-10-19 22:38:45 ERROR [15063] Local socket error : 2
+2015-10-19 22:38:58 ERROR [15135] Local socket error : 2
+2015-10-19 22:39:08 ERROR [15221] Local socket error : 2
+2015-10-19 22:39:21 ERROR [15292] Local socket error : 2
+2015-10-19 22:39:30 ERROR [15377] Local socket error : 2
+2015-10-19 22:39:43 ERROR [15450] Local socket error : 2
+2015-10-19 22:39:54 ERROR [15523] Local socket error : 2
+2015-10-19 22:40:03 ERROR [15591] Local socket error : 2
+2015-10-19 22:40:14 ERROR [15660] Local socket error : 2
+2015-10-19 22:42:15 ERROR [15755] Local socket error : 2
+2015-10-19 22:42:22 ERROR [15823] Local socket error : 2
+2015-10-19 22:42:36 ERROR [15896] Listen failed  port:8800
+2015-10-19 22:42:36 ERROR [15896] Invalid socket descriptor: 0
+2015-10-19 22:42:40 ERROR [15921] Local socket error : 2
+2015-10-19 22:43:36 ERROR [16001] Local socket error : 2
+2015-10-19 22:46:34 ERROR [16198] Local socket error : 2
+2015-10-19 22:49:30 ERROR [16337] Local socket error : 2
+2015-10-19 22:50:45 ERROR [16392] Local socket error : 2
+2015-10-19 22:58:13 ERROR [16481] Local socket error : 2
+2015-10-19 23:04:30 ERROR [16648] Local socket error : 2
+2015-10-19 23:05:33 ERROR [16691] Local socket error : 2
+2015-10-19 23:07:22 ERROR [16834] Local socket error : 2
+2015-10-19 23:11:24 ERROR [17070] Local socket error : 2
+2015-10-19 23:11:57 ERROR [17103] Local socket error : 2
+2015-10-19 23:14:23 ERROR [17240] Local socket error : 2
+2015-10-19 23:19:35 ERROR [17465] Local socket error : 2
+2015-10-19 23:21:40 ERROR [17556] Local socket error : 2
+2015-10-19 23:26:21 ERROR [17710] Local socket error : 2
+2015-10-19 23:28:06 ERROR [17803] Local socket error : 2
+2015-10-19 23:30:23 ERROR [17949] Local socket error : 2
+2015-10-19 23:42:33 ERROR [18278] Local socket error : 2
+2015-10-19 23:46:57 ERROR [18409] Local socket error : 2
+2015-10-19 23:48:21 ERROR [18482] Local socket error : 2
+2015-10-19 23:49:21 ERROR [18577] Local socket error : 2
+2015-10-19 23:51:01 ERROR [18640] Local socket error : 2
+2015-10-19 23:56:23 ERROR [18800] Listen failed  port:8800
+2015-10-19 23:56:23 ERROR [18800] Invalid socket descriptor: 0
+2015-10-19 23:56:27 ERROR [18831] Local socket error : 2
+2015-10-19 23:57:04 ERROR [18909] Local socket error : 2

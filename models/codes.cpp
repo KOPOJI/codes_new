@@ -34,8 +34,8 @@ QString Codes::title() const
 {
     QString ret = d->title;
     if(ret.isEmpty())
-        ret = H::tr("Code") + "#" + QString::number(id());
-    return ret.replace(QRegExp("unnamed(?=\\s*#\\d+)", Qt::CaseInsensitive), H::tr("Code"));
+        ret = H::tr("Code") + " #" + QString::number(id());
+    return ret.replace(QRegExp("unnamed(?=\\s*#\\d+)", Qt::CaseInsensitive), H::tr("Code") + " ");
 }
 
 void Codes::setTitle(const QString &title)
@@ -182,6 +182,7 @@ bool Codes::canBeEdited() const
 {
     if(!userId())
         return true;
+
     auto user = Users::get(userId());
     return !user.isNull() || user.isAdmin();
 }

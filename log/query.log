@@ -1,0 +1,600 @@
+2015-10-19 22:27:35  [13503] [BEGIN] [databaseId:0]
+2015-10-19 22:27:35  [13503] SELECT COUNT(1) FROM codes
+2015-10-19 22:27:35  [13503] SELECT COUNT(1) FROM codes
+2015-10-19 22:27:35  [13503] SELECT COUNT(1) FROM codes
+2015-10-19 22:27:35  [13503] [COMMIT] [databaseId:0]
+2015-10-19 22:27:57  [13582] [BEGIN] [databaseId:0]
+2015-10-19 22:27:57  [13582] SELECT COUNT(1) FROM codes
+2015-10-19 22:27:57  [13582] SELECT COUNT(1) FROM codes
+2015-10-19 22:27:57  [13582] SELECT COUNT(1) FROM codes
+2015-10-19 22:27:57  [13582] [COMMIT] [databaseId:0]
+2015-10-19 22:28:08  [13654] [BEGIN] [databaseId:0]
+2015-10-19 22:28:08  [13654] SELECT COUNT(1) FROM codes
+2015-10-19 22:28:08  [13654] SELECT COUNT(1) FROM codes
+2015-10-19 22:28:08  [13654] SELECT COUNT(1) FROM codes
+2015-10-19 22:28:08  [13654] [COMMIT] [databaseId:0]
+2015-10-19 22:30:59  [13834] [BEGIN] [databaseId:0]
+2015-10-19 22:30:59  [13834] SELECT COUNT(1) FROM codes
+2015-10-19 22:30:59  [13834] SELECT COUNT(1) FROM codes
+2015-10-19 22:30:59  [13834] SELECT COUNT(1) FROM codes
+2015-10-19 22:30:59  [13834] [COMMIT] [databaseId:0]
+2015-10-19 22:33:20  [14030] [BEGIN] [databaseId:0]
+2015-10-19 22:33:20  [14030] SELECT COUNT(1) FROM codes
+2015-10-19 22:33:20  [14030] SELECT COUNT(1) FROM codes
+2015-10-19 22:33:20  [14030] SELECT COUNT(1) FROM codes
+2015-10-19 22:33:20  [14030] [COMMIT] [databaseId:0]
+2015-10-19 22:33:57  [14101] [BEGIN] [databaseId:0]
+2015-10-19 22:33:57  [14101] SELECT COUNT(1) FROM codes
+2015-10-19 22:33:57  [14101] SELECT COUNT(1) FROM codes
+2015-10-19 22:33:57  [14101] SELECT COUNT(1) FROM codes
+2015-10-19 22:33:57  [14101] [COMMIT] [databaseId:0]
+2015-10-19 22:36:37  [14334] [BEGIN] [databaseId:0]
+2015-10-19 22:36:37  [14334] SELECT COUNT(1) FROM codes
+2015-10-19 22:36:37  [14334] SELECT COUNT(1) FROM codes
+2015-10-19 22:36:37  [14334] SELECT COUNT(1) FROM codes
+2015-10-19 22:36:37  [14334] [COMMIT] [databaseId:0]
+2015-10-19 22:36:50  [14407] [BEGIN] [databaseId:0]
+2015-10-19 22:36:51  [14407] SELECT COUNT(1) FROM codes
+2015-10-19 22:36:51  [14407] SELECT COUNT(1) FROM codes
+2015-10-19 22:36:51  [14407] SELECT COUNT(1) FROM codes
+2015-10-19 22:36:51  [14407] [COMMIT] [databaseId:0]
+2015-10-19 22:37:06  [14484] [BEGIN] [databaseId:0]
+2015-10-19 22:37:06  [14484] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:06  [14484] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:06  [14484] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:06  [14484] [COMMIT] [databaseId:0]
+2015-10-19 22:37:16  [14555] [BEGIN] [databaseId:0]
+2015-10-19 22:37:16  [14555] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:16  [14555] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:16  [14555] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:16  [14555] [COMMIT] [databaseId:0]
+2015-10-19 22:37:19  [14565] [BEGIN] [databaseId:0]
+2015-10-19 22:37:19  [14565] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:19  [14565] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:19  [14565] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:19  [14565] [COMMIT] [databaseId:0]
+2015-10-19 22:37:31  [14635] [BEGIN] [databaseId:0]
+2015-10-19 22:37:31  [14635] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:31  [14635] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:31  [14635] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:31  [14635] [COMMIT] [databaseId:0]
+2015-10-19 22:37:45  [14704] [BEGIN] [databaseId:0]
+2015-10-19 22:37:45  [14704] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:45  [14704] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:45  [14704] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:45  [14704] [COMMIT] [databaseId:0]
+2015-10-19 22:37:59  [14776] [BEGIN] [databaseId:0]
+2015-10-19 22:37:59  [14776] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:59  [14776] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:59  [14776] SELECT COUNT(1) FROM codes
+2015-10-19 22:37:59  [14776] [COMMIT] [databaseId:0]
+2015-10-19 22:38:11  [14846] [BEGIN] [databaseId:0]
+2015-10-19 22:38:11  [14846] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:11  [14846] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:11  [14846] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:11  [14846] [COMMIT] [databaseId:0]
+2015-10-19 22:38:19  [14918] [BEGIN] [databaseId:0]
+2015-10-19 22:38:19  [14918] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:19  [14918] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:19  [14918] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:19  [14918] [COMMIT] [databaseId:0]
+2015-10-19 22:38:21  [14923] [BEGIN] [databaseId:0]
+2015-10-19 22:38:21  [14923] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:21  [14923] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:21  [14923] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:21  [14923] [COMMIT] [databaseId:0]
+2015-10-19 22:38:31  [14995] [BEGIN] [databaseId:0]
+2015-10-19 22:38:31  [14995] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:31  [14995] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:31  [14995] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:31  [14995] [COMMIT] [databaseId:0]
+2015-10-19 22:38:46  [15067] [BEGIN] [databaseId:0]
+2015-10-19 22:38:46  [15067] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:46  [15067] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:46  [15067] SELECT COUNT(1) FROM codes
+2015-10-19 22:38:46  [15067] [COMMIT] [databaseId:0]
+2015-10-19 22:39:00  [15139] [BEGIN] [databaseId:0]
+2015-10-19 22:39:00  [15139] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:00  [15139] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:00  [15139] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:00  [15139] [COMMIT] [databaseId:0]
+2015-10-19 22:39:01  [15146] [BEGIN] [databaseId:0]
+2015-10-19 22:39:01  [15146] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:01  [15146] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:01  [15146] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:01  [15146] [COMMIT] [databaseId:0]
+2015-10-19 22:39:10  [15226] [BEGIN] [databaseId:0]
+2015-10-19 22:39:10  [15226] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:10  [15226] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:10  [15226] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:10  [15226] [COMMIT] [databaseId:0]
+2015-10-19 22:39:23  [15296] [BEGIN] [databaseId:0]
+2015-10-19 22:39:23  [15296] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:23  [15296] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:23  [15296] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:23  [15296] [COMMIT] [databaseId:0]
+2015-10-19 22:39:25  [15303] [BEGIN] [databaseId:0]
+2015-10-19 22:39:25  [15303] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:25  [15303] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:25  [15303] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:25  [15303] [COMMIT] [databaseId:0]
+2015-10-19 22:39:32  [15381] [BEGIN] [databaseId:0]
+2015-10-19 22:39:32  [15381] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:32  [15381] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:32  [15381] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:32  [15381] [COMMIT] [databaseId:0]
+2015-10-19 22:39:45  [15454] [BEGIN] [databaseId:0]
+2015-10-19 22:39:45  [15454] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:45  [15454] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:45  [15454] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:45  [15454] [COMMIT] [databaseId:0]
+2015-10-19 22:39:46  [15463] [BEGIN] [databaseId:0]
+2015-10-19 22:39:46  [15463] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:46  [15463] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:46  [15463] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:46  [15463] [COMMIT] [databaseId:0]
+2015-10-19 22:39:56  [15527] [BEGIN] [databaseId:0]
+2015-10-19 22:39:56  [15527] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:56  [15527] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:56  [15527] SELECT COUNT(1) FROM codes
+2015-10-19 22:39:56  [15527] [COMMIT] [databaseId:0]
+2015-10-19 22:40:06  [15595] [BEGIN] [databaseId:0]
+2015-10-19 22:40:06  [15595] SELECT COUNT(1) FROM codes
+2015-10-19 22:40:06  [15595] SELECT COUNT(1) FROM codes
+2015-10-19 22:40:06  [15595] SELECT COUNT(1) FROM codes
+2015-10-19 22:40:06  [15595] [COMMIT] [databaseId:0]
+2015-10-19 22:40:15  [15664] [BEGIN] [databaseId:0]
+2015-10-19 22:40:15  [15664] SELECT COUNT(1) FROM codes
+2015-10-19 22:40:15  [15664] SELECT COUNT(1) FROM codes
+2015-10-19 22:40:15  [15664] SELECT COUNT(1) FROM codes
+2015-10-19 22:40:15  [15664] [COMMIT] [databaseId:0]
+2015-10-19 22:42:16  [15759] [BEGIN] [databaseId:0]
+2015-10-19 22:42:16  [15759] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:16  [15759] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:16  [15759] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:16  [15759] [COMMIT] [databaseId:0]
+2015-10-19 22:42:23  [15827] [BEGIN] [databaseId:0]
+2015-10-19 22:42:23  [15827] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:23  [15827] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:23  [15827] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:23  [15827] [COMMIT] [databaseId:0]
+2015-10-19 22:42:25  [15832] [BEGIN] [databaseId:0]
+2015-10-19 22:42:25  [15832] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:25  [15832] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:25  [15832] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:25  [15832] [COMMIT] [databaseId:0]
+2015-10-19 22:42:41  [15925] [BEGIN] [databaseId:0]
+2015-10-19 22:42:41  [15925] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:41  [15925] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:41  [15925] SELECT COUNT(1) FROM codes
+2015-10-19 22:42:41  [15925] [COMMIT] [databaseId:0]
+2015-10-19 22:43:38  [16005] [BEGIN] [databaseId:0]
+2015-10-19 22:43:38  [16005] SELECT COUNT(1) FROM codes
+2015-10-19 22:43:38  [16005] SELECT COUNT(1) FROM codes
+2015-10-19 22:43:38  [16005] SELECT COUNT(1) FROM codes
+2015-10-19 22:43:38  [16005] [COMMIT] [databaseId:0]
+2015-10-19 22:43:39  [16011] [BEGIN] [databaseId:0]
+2015-10-19 22:43:39  [16011] SELECT COUNT(1) FROM codes
+2015-10-19 22:43:39  [16011] SELECT COUNT(1) FROM codes
+2015-10-19 22:43:39  [16011] SELECT COUNT(1) FROM codes
+2015-10-19 22:43:39  [16011] [COMMIT] [databaseId:0]
+2015-10-19 22:46:39  [16202] [BEGIN] [databaseId:0]
+2015-10-19 22:46:39  [16202] SELECT COUNT(1) FROM codes
+2015-10-19 22:46:39  [16202] SELECT COUNT(1) FROM codes
+2015-10-19 22:46:39  [16202] SELECT COUNT(1) FROM codes
+2015-10-19 22:46:39  [16202] [COMMIT] [databaseId:0]
+2015-10-19 22:46:43  [16210] [BEGIN] [databaseId:0]
+2015-10-19 22:46:43  [16210] SELECT COUNT(1) FROM codes
+2015-10-19 22:46:43  [16210] SELECT COUNT(1) FROM codes
+2015-10-19 22:46:43  [16210] SELECT COUNT(1) FROM codes
+2015-10-19 22:46:44  [16210] [COMMIT] [databaseId:0]
+2015-10-19 22:49:34  [16343] [BEGIN] [databaseId:0]
+2015-10-19 22:49:34  [16343] SELECT COUNT(1) FROM codes
+2015-10-19 22:49:34  [16343] SELECT COUNT(1) FROM codes
+2015-10-19 22:49:34  [16343] SELECT COUNT(1) FROM codes
+2015-10-19 22:49:34  [16343] [COMMIT] [databaseId:0]
+2015-10-19 22:50:47  [16396] [BEGIN] [databaseId:0]
+2015-10-19 22:50:47  [16396] SELECT COUNT(1) FROM codes
+2015-10-19 22:50:47  [16396] SELECT COUNT(1) FROM codes
+2015-10-19 22:50:47  [16396] SELECT COUNT(1) FROM codes
+2015-10-19 22:50:47  [16396] [COMMIT] [databaseId:0]
+2015-10-19 22:58:35  [16489] [BEGIN] [databaseId:0]
+2015-10-19 22:58:35  [16489] SELECT COUNT(1) FROM codes
+2015-10-19 22:58:35  [16489] SELECT COUNT(1) FROM codes
+2015-10-19 22:58:35  [16489] SELECT COUNT(1) FROM codes
+2015-10-19 22:58:35  [16489] [COMMIT] [databaseId:0]
+2015-10-19 23:02:24  [16558] [BEGIN] [databaseId:0]
+2015-10-19 23:02:24  [16558] SELECT COUNT(1) FROM codes
+2015-10-19 23:02:24  [16558] SELECT COUNT(1) FROM codes
+2015-10-19 23:02:24  [16558] SELECT COUNT(1) FROM codes
+2015-10-19 23:02:24  [16558] [COMMIT] [databaseId:0]
+2015-10-19 23:05:44  [16698] [BEGIN] [databaseId:0]
+2015-10-19 23:05:44  [16698] SELECT COUNT(1) FROM codes
+2015-10-19 23:05:44  [16698] SELECT COUNT(1) FROM codes
+2015-10-19 23:05:44  [16698] SELECT COUNT(1) FROM codes
+2015-10-19 23:05:44  [16698] [COMMIT] [databaseId:0]
+2015-10-19 23:05:47  [16698] [BEGIN] [databaseId:0]
+2015-10-19 23:05:47  [16698] SELECT COUNT(1) FROM codes
+2015-10-19 23:05:47  [16698] SELECT COUNT(1) FROM codes
+2015-10-19 23:05:47  [16698] SELECT COUNT(1) FROM codes
+2015-10-19 23:05:47  [16698] [COMMIT] [databaseId:0]
+2015-10-19 23:07:25  [16839] [BEGIN] [databaseId:0]
+2015-10-19 23:07:25  [16839] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:25  [16839] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:25  [16839] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:25  [16839] [COMMIT] [databaseId:0]
+2015-10-19 23:07:28  [16845] [BEGIN] [databaseId:0]
+2015-10-19 23:07:28  [16845] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:28  [16845] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:28  [16845] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:28  [16845] [COMMIT] [databaseId:0]
+2015-10-19 23:07:41  [16870] [BEGIN] [databaseId:0]
+2015-10-19 23:07:41  [16870] INSERT INTO codes (`title`, `code`, `code_url`, `status`, `created_at`, `updated_at`) VALUES ('', '', NULL, 0, '2015-10-19T23:07:41', '2015-10-19T23:07:41')
+2015-10-19 23:07:41  [16870] SELECT COUNT(1) FROM codes
+2015-10-19 23:07:41  [16870] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:07:41  [16870] [COMMIT] [databaseId:0]
+2015-10-19 23:07:41  [16870] [BEGIN] [databaseId:0]
+2015-10-19 23:07:41  [16870] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:07:41  [16870] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=2 LIMIT 1
+2015-10-19 23:07:41  [16870] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:07:41  [16870] [COMMIT] [databaseId:0]
+2015-10-19 23:07:52  [16872] [BEGIN] [databaseId:0]
+2015-10-19 23:07:52  [16872] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:07:52  [16872] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=10 LIMIT 1
+2015-10-19 23:07:52  [16872] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:07:52  [16872] [COMMIT] [databaseId:0]
+2015-10-19 23:12:11  [17107] [BEGIN] [databaseId:0]
+2015-10-19 23:12:11  [17107] SELECT COUNT(1) FROM codes
+2015-10-19 23:12:11  [17107] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:12:11  [17107] [COMMIT] [databaseId:0]
+2015-10-19 23:12:13  [17112] [BEGIN] [databaseId:0]
+2015-10-19 23:12:13  [17112] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:12:13  [17112] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=2 LIMIT 1
+2015-10-19 23:12:13  [17112] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:12:13  [17112] [COMMIT] [databaseId:0]
+2015-10-19 23:12:15  [17111] [BEGIN] [databaseId:0]
+2015-10-19 23:12:15  [17111] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:12:15  [17111] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=-1220276224 LIMIT 1
+2015-10-19 23:12:15  [17111] [COMMIT] [databaseId:0]
+2015-10-19 23:12:15  [17111] [BEGIN] [databaseId:0]
+2015-10-19 23:12:15  [17111] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:12:15  [17111] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=10 LIMIT 1
+2015-10-19 23:12:15  [17111] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:12:15  [17111] [COMMIT] [databaseId:0]
+2015-10-19 23:12:24  [17110] [BEGIN] [databaseId:0]
+2015-10-19 23:12:24  [17110] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:12:24  [17110] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=10 LIMIT 1
+2015-10-19 23:12:24  [17110] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:12:24  [17110] [COMMIT] [databaseId:0]
+2015-10-19 23:12:36  [17128] [BEGIN] [databaseId:0]
+2015-10-19 23:12:37  [17128] (Query failed) [Unknown column 'email' in 'where clause'] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE email='kopojiq@mail.ru' LIMIT 1
+2015-10-19 23:12:37  [17128] [COMMIT] [databaseId:0]
+2015-10-19 23:12:48  [17135] [BEGIN] [databaseId:0]
+2015-10-19 23:12:48  [17135] (Query failed) [Unknown column 'email' in 'where clause'] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE email='kopojiq@mail.ru' LIMIT 1
+2015-10-19 23:12:48  [17135] [COMMIT] [databaseId:0]
+2015-10-19 23:13:01  [17143] [BEGIN] [databaseId:0]
+2015-10-19 23:13:01  [17143] (Query failed) [Unknown column 'email' in 'where clause'] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE email='kopojiq@mail.ru' LIMIT 1
+2015-10-19 23:13:01  [17143] [COMMIT] [databaseId:0]
+2015-10-19 23:14:23  [17244] [BEGIN] [databaseId:0]
+2015-10-19 23:14:23  [17244] SELECT COUNT(1) FROM codes
+2015-10-19 23:14:23  [17244] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:14:23  [17244] [COMMIT] [databaseId:0]
+2015-10-19 23:14:47  [17257] [BEGIN] [databaseId:0]
+2015-10-19 23:14:47  [17257] (Query failed) [Unknown column 'email' in 'where clause'] SELECT COUNT(1) FROM `users` WHERE `username` = 'KOPOJI' OR `email` = 'kopojiq@mail.ru'
+2015-10-19 23:14:47  [17257] [COMMIT] [databaseId:0]
+2015-10-19 23:19:59  [17469] [BEGIN] [databaseId:0]
+2015-10-19 23:19:59  [17469] SELECT COUNT(1) FROM codes
+2015-10-19 23:19:59  [17469] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:19:59  [17469] [COMMIT] [databaseId:0]
+2015-10-19 23:20:49  [17481] [BEGIN] [databaseId:0]
+2015-10-19 23:20:49  [17481] (Query failed) [Unknown column 'email' in 'where clause'] SELECT COUNT(1) FROM `users` WHERE `username` = 'KOPOJI' OR `email` = 'kopojiq@mail.ru'
+2015-10-19 23:20:49  [17481] [COMMIT] [databaseId:0]
+2015-10-19 23:21:41  [17560] [BEGIN] [databaseId:0]
+2015-10-19 23:21:41  [17560] SELECT COUNT(1) FROM codes
+2015-10-19 23:21:41  [17560] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:21:41  [17560] [COMMIT] [databaseId:0]
+2015-10-19 23:21:53  [17569] [BEGIN] [databaseId:0]
+2015-10-19 23:21:53  [17569] (Query failed) [Unknown column 'email' in 'where clause'] SELECT COUNT(1) FROM `users` WHERE `username` = 'KOPOJI' OR `email` = 'kopojiq@mail.ru'
+2015-10-19 23:21:53  [17569] [COMMIT] [databaseId:0]
+2015-10-19 23:26:26  [17717] [BEGIN] [databaseId:0]
+2015-10-19 23:26:26  [17717] SELECT COUNT(1) FROM codes
+2015-10-19 23:26:26  [17717] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:26:26  [17717] [COMMIT] [databaseId:0]
+2015-10-19 23:28:07  [17808] [BEGIN] [databaseId:0]
+2015-10-19 23:28:07  [17808] SELECT COUNT(1) FROM codes
+2015-10-19 23:28:07  [17808] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:28:07  [17808] [COMMIT] [databaseId:0]
+2015-10-19 23:30:25  [17955] [BEGIN] [databaseId:0]
+2015-10-19 23:30:25  [17955] SELECT COUNT(1) FROM codes
+2015-10-19 23:30:25  [17955] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:30:25  [17955] [COMMIT] [databaseId:0]
+2015-10-19 23:30:46  [17967] [BEGIN] [databaseId:0]
+2015-10-19 23:30:46  [17967] INSERT INTO codes (`title`, `code`, `code_url`, `status`, `created_at`, `updated_at`) VALUES ('', 'text for test', NULL, 0, '2015-10-19T23:30:46', '2015-10-19T23:30:46')
+2015-10-19 23:30:46  [17967] SELECT COUNT(1) FROM codes
+2015-10-19 23:30:46  [17967] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:30:46  [17967] [COMMIT] [databaseId:0]
+2015-10-19 23:30:46  [17967] [BEGIN] [databaseId:0]
+2015-10-19 23:30:46  [17967] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:30:46  [17967] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=2 LIMIT 1
+2015-10-19 23:30:46  [17967] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:30:46  [17967] [COMMIT] [databaseId:0]
+2015-10-19 23:30:49  [17973] [BEGIN] [databaseId:0]
+2015-10-19 23:30:49  [17973] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:30:49  [17973] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=10 LIMIT 1
+2015-10-19 23:30:49  [17973] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:30:49  [17973] [COMMIT] [databaseId:0]
+2015-10-19 23:30:56  [17970] [BEGIN] [databaseId:0]
+2015-10-19 23:30:56  [17970] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:30:56  [17970] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=-1220231168 LIMIT 1
+2015-10-19 23:30:56  [17970] [COMMIT] [databaseId:0]
+2015-10-19 23:30:56  [17970] [BEGIN] [databaseId:0]
+2015-10-19 23:30:56  [17970] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:30:56  [17970] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=10 LIMIT 1
+2015-10-19 23:30:56  [17970] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:30:56  [17970] [COMMIT] [databaseId:0]
+2015-10-19 23:31:02  [17973] [BEGIN] [databaseId:0]
+2015-10-19 23:31:02  [17973] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:31:02  [17973] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=-1220231168 LIMIT 1
+2015-10-19 23:31:02  [17973] [COMMIT] [databaseId:0]
+2015-10-19 23:31:02  [17973] [BEGIN] [databaseId:0]
+2015-10-19 23:31:02  [17973] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:31:02  [17973] SELECT `id`, `username`, `created_at`, `updated_at` FROM users WHERE id=10 LIMIT 1
+2015-10-19 23:31:02  [17973] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:31:02  [17973] [COMMIT] [databaseId:0]
+2015-10-19 23:41:53  [18186] [BEGIN] [databaseId:0]
+2015-10-19 23:41:53  [18186] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:41:53  [18186] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:41:53  [18186] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:41:53  [18186] [COMMIT] [databaseId:0]
+2015-10-19 23:41:58  [18189] [BEGIN] [databaseId:0]
+2015-10-19 23:41:58  [18189] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:41:58  [18189] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:41:58  [18189] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:41:58  [18189] [COMMIT] [databaseId:0]
+2015-10-19 23:41:59  [18191] [BEGIN] [databaseId:0]
+2015-10-19 23:41:59  [18191] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:41:59  [18191] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:41:59  [18191] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:41:59  [18191] [COMMIT] [databaseId:0]
+2015-10-19 23:42:06  [18191] [BEGIN] [databaseId:0]
+2015-10-19 23:42:06  [18191] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments
+2015-10-19 23:42:06  [18191] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=128 LIMIT 1
+2015-10-19 23:42:06  [18191] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=136 LIMIT 1
+2015-10-19 23:42:06  [18191] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13274 LIMIT 1
+2015-10-19 23:42:06  [18191] [COMMIT] [databaseId:0]
+2015-10-19 23:42:13  [18190] [BEGIN] [databaseId:0]
+2015-10-19 23:42:13  [18190] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=2 LIMIT 1
+2015-10-19 23:42:13  [18190] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:42:13  [18190] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=2 ORDER BY id DESC
+2015-10-19 23:42:13  [18190] [COMMIT] [databaseId:0]
+2015-10-19 23:42:14  [18189] [BEGIN] [databaseId:0]
+2015-10-19 23:42:14  [18189] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:42:14  [18189] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:42:14  [18189] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:42:14  [18189] [COMMIT] [databaseId:0]
+2015-10-19 23:42:36  [18282] [BEGIN] [databaseId:0]
+2015-10-19 23:42:36  [18282] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=1 LIMIT 1
+2015-10-19 23:42:36  [18282] SELECT COUNT(1) FROM codes
+2015-10-19 23:42:36  [18282] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:42:36  [18282] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:42:36  [18282] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=1 ORDER BY id DESC
+2015-10-19 23:42:36  [18282] [COMMIT] [databaseId:0]
+2015-10-19 23:42:38  [18288] [BEGIN] [databaseId:0]
+2015-10-19 23:42:38  [18288] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:42:38  [18288] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:42:38  [18288] [COMMIT] [databaseId:0]
+2015-10-19 23:42:40  [18286] [BEGIN] [databaseId:0]
+2015-10-19 23:42:40  [18286] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13304 LIMIT 1
+2015-10-19 23:42:40  [18286] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:42:40  [18286] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13304 ORDER BY id DESC
+2015-10-19 23:42:40  [18286] [COMMIT] [databaseId:0]
+2015-10-19 23:42:42  [18282] [BEGIN] [databaseId:0]
+2015-10-19 23:42:42  [18282] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:42:42  [18282] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:42:42  [18282] [COMMIT] [databaseId:0]
+2015-10-19 23:42:44  [18285] [BEGIN] [databaseId:0]
+2015-10-19 23:42:44  [18285] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:42:44  [18285] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:42:44  [18285] [COMMIT] [databaseId:0]
+2015-10-19 23:43:08  [18310] [BEGIN] [databaseId:0]
+2015-10-19 23:43:08  [18310] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:43:08  [18310] UPDATE codes SET updated_at='2015-10-19T23:43:08' WHERE id=13305
+2015-10-19 23:43:08  [18310] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:43:08  [18310] [COMMIT] [databaseId:0]
+2015-10-19 23:43:08  [18310] [BEGIN] [databaseId:0]
+2015-10-19 23:43:08  [18310] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:43:08  [18310] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:43:08  [18310] [COMMIT] [databaseId:0]
+2015-10-19 23:47:07  [18414] [BEGIN] [databaseId:0]
+2015-10-19 23:47:07  [18414] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:07  [18414] SELECT COUNT(1) FROM codes
+2015-10-19 23:47:07  [18414] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:47:07  [18414] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:47:07  [18414] [COMMIT] [databaseId:0]
+2015-10-19 23:47:08  [18419] [BEGIN] [databaseId:0]
+2015-10-19 23:47:08  [18419] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:09  [18419] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:47:09  [18419] [COMMIT] [databaseId:0]
+2015-10-19 23:47:17  [18417] [BEGIN] [databaseId:0]
+2015-10-19 23:47:17  [18417] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:17  [18417] [COMMIT] [databaseId:0]
+2015-10-19 23:47:17  [18417] [BEGIN] [databaseId:0]
+2015-10-19 23:47:17  [18417] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:17  [18417] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:47:17  [18417] [COMMIT] [databaseId:0]
+2015-10-19 23:47:29  [18437] [BEGIN] [databaseId:0]
+2015-10-19 23:47:29  [18437] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:29  [18437] UPDATE codes SET updated_at='2015-10-19T23:47:29' WHERE id=13305
+2015-10-19 23:47:29  [18437] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:29  [18437] [COMMIT] [databaseId:0]
+2015-10-19 23:47:29  [18437] [BEGIN] [databaseId:0]
+2015-10-19 23:47:29  [18437] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:47:29  [18437] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:47:29  [18437] [COMMIT] [databaseId:0]
+2015-10-19 23:48:23  [18487] [BEGIN] [databaseId:0]
+2015-10-19 23:48:23  [18487] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:48:23  [18487] SELECT COUNT(1) FROM codes
+2015-10-19 23:48:23  [18487] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:48:23  [18487] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:48:23  [18487] [COMMIT] [databaseId:0]
+2015-10-19 23:48:25  [18491] [BEGIN] [databaseId:0]
+2015-10-19 23:48:25  [18491] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:48:25  [18491] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:48:25  [18491] [COMMIT] [databaseId:0]
+2015-10-19 23:48:40  [18507] [BEGIN] [databaseId:0]
+2015-10-19 23:48:40  [18507] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:48:40  [18507] UPDATE codes SET updated_at='2015-10-19T23:48:40' WHERE id=13305
+2015-10-19 23:48:40  [18507] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:48:40  [18507] [COMMIT] [databaseId:0]
+2015-10-19 23:48:40  [18507] [BEGIN] [databaseId:0]
+2015-10-19 23:48:40  [18507] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:48:40  [18507] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:48:40  [18507] [COMMIT] [databaseId:0]
+2015-10-19 23:48:44  [18511] [BEGIN] [databaseId:0]
+2015-10-19 23:48:44  [18511] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:48:44  [18511] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:48:44  [18511] [COMMIT] [databaseId:0]
+2015-10-19 23:49:23  [18582] [BEGIN] [databaseId:0]
+2015-10-19 23:49:23  [18582] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:49:23  [18582] SELECT COUNT(1) FROM codes
+2015-10-19 23:49:23  [18582] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:49:23  [18582] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:49:23  [18582] [COMMIT] [databaseId:0]
+2015-10-19 23:49:25  [18584] [BEGIN] [databaseId:0]
+2015-10-19 23:49:25  [18584] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13304 LIMIT 1
+2015-10-19 23:49:25  [18584] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:49:25  [18584] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13304 ORDER BY id DESC
+2015-10-19 23:49:25  [18584] [COMMIT] [databaseId:0]
+2015-10-19 23:49:29  [18582] [BEGIN] [databaseId:0]
+2015-10-19 23:49:29  [18582] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13303 LIMIT 1
+2015-10-19 23:49:29  [18582] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13303 ORDER BY id DESC
+2015-10-19 23:49:29  [18582] [COMMIT] [databaseId:0]
+2015-10-19 23:49:31  [18583] [BEGIN] [databaseId:0]
+2015-10-19 23:49:31  [18583] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13302 LIMIT 1
+2015-10-19 23:49:31  [18583] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13302 ORDER BY id DESC
+2015-10-19 23:49:31  [18583] [COMMIT] [databaseId:0]
+2015-10-19 23:51:03  [18644] [BEGIN] [databaseId:0]
+2015-10-19 23:51:03  [18644] SELECT COUNT(1) FROM codes
+2015-10-19 23:51:03  [18644] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:51:03  [18644] [COMMIT] [databaseId:0]
+2015-10-19 23:51:05  [18649] [BEGIN] [databaseId:0]
+2015-10-19 23:51:05  [18649] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:51:05  [18649] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:51:05  [18649] [COMMIT] [databaseId:0]
+2015-10-19 23:51:17  [18646] [BEGIN] [databaseId:0]
+2015-10-19 23:51:17  [18646] INSERT INTO codes (`title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from`) VALUES ('', 'Test...', NULL, 0, '2015-10-19T23:51:17', '2015-10-19T23:51:17', 0, 0, NULL)
+2015-10-19 23:51:17  [18646] SELECT COUNT(1) FROM codes
+2015-10-19 23:51:17  [18646] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:51:17  [18646] [COMMIT] [databaseId:0]
+2015-10-19 23:51:17  [18646] [BEGIN] [databaseId:0]
+2015-10-19 23:51:17  [18646] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:51:17  [18646] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:51:17  [18646] [COMMIT] [databaseId:0]
+2015-10-19 23:51:20  [18672] [BEGIN] [databaseId:0]
+2015-10-19 23:51:20  [18672] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:51:20  [18672] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:51:20  [18672] [COMMIT] [databaseId:0]
+2015-10-19 23:51:21  [18646] [BEGIN] [databaseId:0]
+2015-10-19 23:51:21  [18646] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:51:21  [18646] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:51:21  [18646] [COMMIT] [databaseId:0]
+2015-10-19 23:51:24  [18672] [BEGIN] [databaseId:0]
+2015-10-19 23:51:24  [18672] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13303 LIMIT 1
+2015-10-19 23:51:24  [18672] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13303 ORDER BY id DESC
+2015-10-19 23:51:24  [18672] [COMMIT] [databaseId:0]
+2015-10-19 23:51:26  [18645] [BEGIN] [databaseId:0]
+2015-10-19 23:51:26  [18645] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13304 LIMIT 1
+2015-10-19 23:51:26  [18645] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:51:26  [18645] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13304 ORDER BY id DESC
+2015-10-19 23:51:26  [18645] [COMMIT] [databaseId:0]
+2015-10-19 23:51:44  [18669] [BEGIN] [databaseId:0]
+2015-10-19 23:51:44  [18669] SELECT COUNT(1) FROM `users` WHERE `username` = ? OR `email` = ?
+2015-10-19 23:51:44  [18669] [COMMIT] [databaseId:0]
+2015-10-19 23:51:54  [18700] [BEGIN] [databaseId:0]
+2015-10-19 23:51:54  [18700] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:51:54  [18700] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:51:54  [18700] [COMMIT] [databaseId:0]
+2015-10-19 23:51:56  [18700] [BEGIN] [databaseId:0]
+2015-10-19 23:51:56  [18700] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:51:56  [18700] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:51:56  [18700] [COMMIT] [databaseId:0]
+2015-10-19 23:51:57  [18702] [BEGIN] [databaseId:0]
+2015-10-19 23:51:57  [18702] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:51:57  [18702] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:51:57  [18702] [COMMIT] [databaseId:0]
+2015-10-19 23:52:01  [18698] [BEGIN] [databaseId:0]
+2015-10-19 23:52:01  [18698] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:52:01  [18698] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:52:01  [18698] [COMMIT] [databaseId:0]
+2015-10-19 23:56:31  [18835] [BEGIN] [databaseId:0]
+2015-10-19 23:56:31  [18835] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:56:31  [18835] SELECT COUNT(1) FROM codes
+2015-10-19 23:56:31  [18835] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:56:31  [18835] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:56:31  [18835] [COMMIT] [databaseId:0]
+2015-10-19 23:56:32  [18842] [BEGIN] [databaseId:0]
+2015-10-19 23:56:32  [18842] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:56:32  [18842] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:56:32  [18842] [COMMIT] [databaseId:0]
+2015-10-19 23:56:33  [18840] [BEGIN] [databaseId:0]
+2015-10-19 23:56:33  [18840] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:56:33  [18840] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:56:33  [18840] [COMMIT] [databaseId:0]
+2015-10-19 23:56:35  [18838] [BEGIN] [databaseId:0]
+2015-10-19 23:56:35  [18838] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:56:35  [18838] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:56:35  [18838] [COMMIT] [databaseId:0]
+2015-10-19 23:56:37  [18842] [BEGIN] [databaseId:0]
+2015-10-19 23:56:37  [18842] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:56:37  [18842] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20 OFFSET 20
+2015-10-19 23:56:37  [18842] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:56:37  [18842] [COMMIT] [databaseId:0]
+2015-10-19 23:56:39  [18835] [BEGIN] [databaseId:0]
+2015-10-19 23:56:39  [18835] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:56:39  [18835] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:56:39  [18835] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:56:39  [18835] [COMMIT] [databaseId:0]
+2015-10-19 23:56:42  [18841] [BEGIN] [databaseId:0]
+2015-10-19 23:56:42  [18841] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:56:42  [18841] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:56:42  [18841] [COMMIT] [databaseId:0]
+2015-10-19 23:56:43  [18841] [BEGIN] [databaseId:0]
+2015-10-19 23:56:43  [18841] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:56:43  [18841] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:56:43  [18841] [COMMIT] [databaseId:0]
+2015-10-19 23:56:45  [18842] [BEGIN] [databaseId:0]
+2015-10-19 23:56:45  [18842] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:56:45  [18842] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:56:45  [18842] [COMMIT] [databaseId:0]
+2015-10-19 23:57:12  [18913] [BEGIN] [databaseId:0]
+2015-10-19 23:57:12  [18913] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:57:12  [18913] SELECT COUNT(1) FROM codes
+2015-10-19 23:57:12  [18913] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes ORDER BY id DESC LIMIT 20
+2015-10-19 23:57:12  [18913] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:57:12  [18913] [COMMIT] [databaseId:0]
+2015-10-19 23:57:18  [18916] [BEGIN] [databaseId:0]
+2015-10-19 23:57:18  [18916] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13304 LIMIT 1
+2015-10-19 23:57:18  [18916] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:57:18  [18916] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13304 ORDER BY id DESC
+2015-10-19 23:57:18  [18916] [COMMIT] [databaseId:0]
+2015-10-19 23:57:20  [18917] [BEGIN] [databaseId:0]
+2015-10-19 23:57:20  [18917] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13303 LIMIT 1
+2015-10-19 23:57:20  [18917] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13303 ORDER BY id DESC
+2015-10-19 23:57:20  [18917] [COMMIT] [databaseId:0]
+2015-10-19 23:57:21  [18913] [BEGIN] [databaseId:0]
+2015-10-19 23:57:21  [18913] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13302 LIMIT 1
+2015-10-19 23:57:21  [18913] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13302 ORDER BY id DESC
+2015-10-19 23:57:21  [18913] [COMMIT] [databaseId:0]
+2015-10-19 23:57:23  [18915] [BEGIN] [databaseId:0]
+2015-10-19 23:57:23  [18915] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13306 LIMIT 1
+2015-10-19 23:57:23  [18915] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13306 ORDER BY id DESC
+2015-10-19 23:57:23  [18915] [COMMIT] [databaseId:0]
+2015-10-19 23:57:25  [18916] [BEGIN] [databaseId:0]
+2015-10-19 23:57:25  [18916] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13305 LIMIT 1
+2015-10-19 23:57:25  [18916] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13305 ORDER BY id DESC
+2015-10-19 23:57:25  [18916] [COMMIT] [databaseId:0]
+2015-10-19 23:57:26  [18913] [BEGIN] [databaseId:0]
+2015-10-19 23:57:26  [18913] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM codes WHERE id=13304 LIMIT 1
+2015-10-19 23:57:27  [18913] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM users WHERE id=1 LIMIT 1
+2015-10-19 23:57:27  [18913] SELECT `id`, `code_id`, `image`, `created_at`, `updated_at` FROM attachments WHERE code_id=13304 ORDER BY id DESC
+2015-10-19 23:57:27  [18913] [COMMIT] [databaseId:0]

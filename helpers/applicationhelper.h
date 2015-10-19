@@ -14,7 +14,8 @@
 #include <QCryptographicHash>
 #include <QDateTime>
 #include <QImage>
-#include <QPainter>
+
+#include <Magick++.h>
 
 #include <QRegularExpression>
 

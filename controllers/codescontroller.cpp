@@ -60,9 +60,9 @@ void CodesController::create()
 
     if(!isUserLoggedIn())
     {
-        if(!httpRequest().hasFormItem("captcha"))
+        if(!httpRequest().hasFormItem("captcha") || httpRequest().formItemValue("captcha", "").isEmpty())
         {
-            QString error = ("Enter captcha");
+            QString error = H::tr("Enter captcha");
             tflash(error);
             redirect(H::createUrl({"codes", "new"}));
             return ;
@@ -70,13 +70,20 @@ void CodesController::create()
 
         if(!session().contains("c_id") || httpRequest().formItemValue("captcha", "").toUpper() != session()["c_id"].toString().toUpper())
         {
-            QString error = ("Wrong captcha");
+            QString error = H::tr("Wrong captcha");
             tflash(error);
             redirect(H::createUrl({"codes", "new"}));
             return ;
         }
     }
 
+    if(!form.contains("code") || form.value("code", "").toString().trimmed().isEmpty())
+    {
+        QString error = H::tr("Enter message text");
+        tflash(error);
+        redirect(H::createUrl({"codes", "new"}));
+        return ;
+    }
     auto codes = Codes::create(form);
     if (!codes.isNull())
     {
@@ -126,7 +133,9 @@ void CodesController::create()
             status = query.exec(q.left(q.length() - 2));
         }
 
-        QString notice = H::tr("Code was successfully created") + " " + H::tr(status ? "Picture was successfully uploaded" : "An error occurred while downloading picture. Please, try later");
+        QString notice = H::tr("Code was successfully created");
+        if(!lst.isEmpty())
+            notice += ". " + H::tr(status ? "Picture was successfully uploaded" : "An error occurred while downloading picture. Please, try later");
 
         tflash(notice);
         redirect(H::createUrl({"codes", QString::number(codes.id())}, httpRequest().queryItemValue("page", "1")));
@@ -200,9 +209,9 @@ void CodesController::save(const QString &pk)
 
     if(!isUserLoggedIn())
     {
-        if(!httpRequest().hasFormItem("captcha"))
+        if(!httpRequest().hasFormItem("captcha") || httpRequest().formItemValue("captcha", "").isEmpty())
         {
-            QString error = ("Enter captcha");
+            QString error = H::tr("Enter captcha");
             tflash(error);
             redirect(H::createUrl({"codes", "edit", QString::number(id)}, httpRequest().queryItemValue("page", "1")));
             return ;
@@ -210,7 +219,7 @@ void CodesController::save(const QString &pk)
 
         if(!session().contains("c_id") || httpRequest().formItemValue("captcha", "").toUpper() != session()["c_id"].toString().toUpper())
         {
-            QString error = ("Wrong captcha");
+            QString error = H::tr("Wrong captcha");
             tflash(error);
             redirect(H::createUrl({"codes", "edit", QString::number(id)}, httpRequest().queryItemValue("page", "1")));
             return ;
@@ -263,7 +272,9 @@ void CodesController::save(const QString &pk)
             status = query.exec(q.left(q.length() - 2));
         }
 
-        QString notice = H::tr("Code was successfully created") + " " + H::tr(status ? "Picture was successfully uploaded" : "An error occurred while downloading picture. Please, try later");
+        QString notice = H::tr("Code was successfully updated");
+        if(!lst.isEmpty())
+            notice += ". " + H::tr(status ? "Picture was successfully uploaded" : "An error occurred while downloading picture. Please, try later");
 
         tflash(notice);
         redirect(H::createUrl({"codes", QString::number(id)}, httpRequest().queryItemValue("page", "1")));

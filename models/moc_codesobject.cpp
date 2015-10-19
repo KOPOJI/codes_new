@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'codesobject.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'codesobject.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.0. It"
+#error "This file was generated using the moc from 5.2.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,12 +20,12 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CodesObject_t {
     QByteArrayData data[11];
-    char stringdata[91];
+    char stringdata[92];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_CodesObject_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData)) \
+    offsetof(qt_meta_stringdata_CodesObject_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
     )
 static const qt_meta_stringdata_CodesObject_t qt_meta_stringdata_CodesObject = {
     {
@@ -43,7 +43,7 @@ QT_MOC_LITERAL(10, 81, 9)
     },
     "CodesObject\0id\0title\0code\0code_url\0"
     "status\0created_at\0updated_at\0editable\0"
-    "user_id\0show_from"
+    "user_id\0show_from\0"
 };
 #undef QT_MOC_LITERAL
 

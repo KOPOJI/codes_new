@@ -43,7 +43,7 @@ QString account_registerView::toString()
   responsebody += tr("</label>\n    <input type=\"password\" name=\"password_confirmation\" value=\"");
   responsebody += THttpUtility::htmlEscape(pass_confirm);
   responsebody += tr("\" class=\"form-input\" required>\n    </div>\n\n    <div>\n        <input type=\"submit\" value=\"");
-  responsebody += THttpUtility::htmlEscape(H::tr("Sign Up"));
+  responsebody += THttpUtility::htmlEscape(H::tr("Sign up"));
   responsebody += tr("\" class=\"button\">\n    </div>\n\n");
   responsebody += QVariant(endTag()).toString();
   responsebody += tr("\n\n\n");

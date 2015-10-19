@@ -5,9 +5,9 @@ QT += sql gui
 QT -=
 DEFINES += TF_DLL
 DESTDIR = ../lib
-INCLUDEPATH += ../helpers sqlobjects mongoobjects /usr/include/botan-1.10/
+INCLUDEPATH += ../helpers sqlobjects mongoobjects /usr/include/botan-1.10/ /usr/include/ImageMagick/
 DEPENDPATH  += ../helpers sqlobjects mongoobjects
-LIBS += -L../lib -lhelper -I/usr/include/botan-1.10/ -lbotan-1.10
+LIBS += -L../lib -lhelper -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore
 
 include(../appbase.pri)
 

@@ -4,10 +4,10 @@ CONFIG += shared c++11 crypto
 QT += network xml sql gui
 QT -=
 DEFINES += TF_DLL
-INCLUDEPATH += ../../helpers ../../models /usr/include/botan-1.10/
+INCLUDEPATH += ../../helpers ../../models /usr/include/botan-1.10/ /usr/include/ImageMagick/
 DEPENDPATH  += ../../helpers ../../models
 DESTDIR = ../../lib
-LIBS += -L../../lib -lhelper -lmodel -I/usr/include/botan-1.10/ -lbotan-1.10
+LIBS += -L../../lib -lhelper -lmodel -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore
 QMAKE_CLEAN = *.cpp source.list
 
 tmake.target = source.list

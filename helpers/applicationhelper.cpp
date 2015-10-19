@@ -343,40 +343,35 @@ QByteArray ApplicationHelper::getCaptcha(const QString& text, const int &width, 
 {
     qsrand(QTime::currentTime().msec());
 
-    QImage image(width, height, QImage::Format_ARGB32);
-    image.fill(QColor::fromRgb(50, 50, qrand() % 200 + 55, qrand() % 50 + 100));
+    Magick::InitializeMagick(NULL);
 
+    Magick::Image image( QString("%1x%2").arg(width).arg(height).toStdString().c_str(), "white" );
 
-    QPainter painter(&image);
+    image.addNoise(Magick::GaussianNoise);
 
+    image.fontPointsize(25);
+    image.strokeColor("black");
 
-    QMatrix mat = QMatrix().translate( qrand() % 5 + 1, qrand() % 15 + 15 ).rotate( qrand() % 12 - 5 );
+    image.floodFillColor(Magick::Geometry(0, 0, 1, 1), Magick::ColorRGB(qrand() % 200, qrand() % 150, qrand() % 10 + 200));
 
-    painter.setMatrix( mat );
+    const QList<int> v{10, 10,10, 5,10, height - 20,10, height - 5,width - 10, 10,width - 10, 20,width - 10, height - 10,width - 10, height - 30};
 
-    QColor color;
-    color.setRgb(0, 0, 200, 100);
+    double * controlPoints = new double[v.size()];
+    std::copy(v.begin(), v.end(), controlPoints);
 
-    QFont font;
-    font.setStretch(120 + qrand() % 15);
-    font.setPixelSize(20);
-    font.setBold(qrand() % 2 == 1);
-    font.setStrikeOut(qrand() % 2 == 1);
-    font.setItalic(qrand() % 2 == 1);
-    painter.setFont(font);
+    image.distort(Magick::PerspectiveDistortion, v.size(), controlPoints);
 
-    painter.setBrush(Qt::NoBrush);
-    painter.setPen(color);
+    image.annotate("\n" + text.toStdString(), Magick::Geometry(150, 110), Magick::NorthGravity);
 
-    painter.drawText(qrand() % 5 + 3, 7, text);
+    image.blur(1, 5);
+    image.addNoise(Magick::GaussianNoise);
+    image.opacity(0.3);
 
-    painter.end();
+    //image.randomThreshold(Magick::Geometry(4,4));
 
-    QByteArray ba;
+    Magick::Blob blob;
 
-    QBuffer buffer(&ba);
-    buffer.open(QIODevice::WriteOnly);
-    image.save(&buffer, "PNG");
+    image.write(&blob, "PNG");
 
-    return ba;
+    return QByteArray((char *) blob.data(), blob.length());
 }

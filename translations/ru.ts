@@ -4,46 +4,46 @@
 <context>
     <name>H</name>
     <message>
+        <location filename="../views/codes/edit.erb" line="8"/>
+        <location filename="../views/attachments/edit.erb" line="13"/>
+        <location filename="../views/attachments/entry.erb" line="11"/>
+        <location filename="../views/attachments/show.erb" line="7"/>
+        <location filename="../helpers/applicationhelper.cpp" line="107"/>
         <location filename="../models/codes.cpp" line="37"/>
         <location filename="../models/codes.cpp" line="38"/>
-        <location filename="../views/attachments/edit.erb" line="13"/>
-        <location filename="../views/attachments/show.erb" line="7"/>
-        <location filename="../views/attachments/entry.erb" line="11"/>
-        <location filename="../views/codes/edit.erb" line="8"/>
-        <location filename="../helpers/applicationhelper.cpp" line="107"/>
         <source>Code</source>
         <translation>Код</translation>
     </message>
     <message>
-        <location filename="../models/codes.cpp" line="162"/>
         <location filename="../views/codes/show.erb" line="9"/>
+        <location filename="../models/codes.cpp" line="162"/>
         <source>Guest</source>
         <translation>Гость</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="38"/>
         <location filename="../views/account/form.erb" line="3"/>
+        <location filename="../controllers/accountcontroller.cpp" line="38"/>
         <source>Sign in</source>
         <translation>Войти</translation>
     </message>
     <message>
-        <location filename="../views/account/register.erb" line="23"/>
         <location filename="../views/account/form.erb" line="12"/>
+        <location filename="../views/account/register.erb" line="23"/>
         <source>Password</source>
         <translation>Пароль</translation>
     </message>
     <message>
+        <location filename="../views/partial/links.erb" line="41"/>
         <location filename="../controllers/applicationcontroller.cpp" line="142"/>
         <location filename="../controllers/applicationcontroller.cpp" line="165"/>
-        <location filename="../views/partial/links.erb" line="41"/>
         <source>Sign</source>
         <translation>Авторизация</translation>
     </message>
     <message>
+        <location filename="../views/account/register.erb" line="9"/>
+        <location filename="../views/partial/links.erb" line="42"/>
         <location filename="../controllers/applicationcontroller.cpp" line="143"/>
         <location filename="../controllers/applicationcontroller.cpp" line="166"/>
-        <location filename="../views/partial/links.erb" line="42"/>
-        <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Регистрация</translation>
     </message>
@@ -79,8 +79,8 @@
         <translation>Подтверждение пароля</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="146"/>
         <location filename="../views/account/users.erb" line="3"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="146"/>
         <source>Users list</source>
         <translation>Список пользователей</translation>
     </message>
@@ -115,20 +115,20 @@
         <translation>Ни одного изображения еще не добавили</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="158"/>
         <location filename="../views/attachments/index.erb" line="17"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="158"/>
         <source>View code</source>
         <translation>Просмотр кода</translation>
     </message>
     <message>
-        <location filename="../views/attachments/index.erb" line="24"/>
         <location filename="../views/codes/edit.erb" line="8"/>
+        <location filename="../views/attachments/index.erb" line="24"/>
         <source>Edit</source>
         <translation>Редактировать</translation>
     </message>
     <message>
-        <location filename="../views/attachments/index.erb" line="27"/>
         <location filename="../views/codes/edit.erb" line="55"/>
+        <location filename="../views/attachments/index.erb" line="27"/>
         <location filename="../views/privatemessages/index.erb" line="27"/>
         <source>Destroy</source>
         <translation>Удалить</translation>
@@ -164,10 +164,15 @@
         <translation>Показывать только при переходе с сайта</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="159"/>
         <location filename="../views/codes/entry.erb" line="4"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="159"/>
         <source>Adding new code</source>
         <translation>Добавление нового кода</translation>
+    </message>
+    <message>
+        <location filename="../views/codes/entry.erb" line="58"/>
+        <source>Update code</source>
+        <translation>Обновить код</translation>
     </message>
     <message>
         <location filename="../views/account/profile.erb" line="28"/>
@@ -291,15 +296,15 @@
         <translation>Изображения</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="151"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="151"/>
         <source>Listing pictures</source>
         <translation>Список изображений</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="152"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="152"/>
         <source>Uploading picture</source>
         <translation>Загрузка изображения</translation>
     </message>
@@ -309,10 +314,10 @@
         <translation>Изменить изображение</translation>
     </message>
     <message>
-        <location filename="../views/attachments/edit.erb" line="23"/>
-        <location filename="../views/attachments/show.erb" line="12"/>
-        <location filename="../views/attachments/entry.erb" line="21"/>
         <location filename="../views/codes/entry.erb" line="35"/>
+        <location filename="../views/attachments/edit.erb" line="23"/>
+        <location filename="../views/attachments/entry.erb" line="21"/>
+        <location filename="../views/attachments/show.erb" line="12"/>
         <source>Image</source>
         <translation>Изображение</translation>
     </message>
@@ -328,8 +333,8 @@
         <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="168"/>
         <location filename="../views/partial/links.erb" line="33"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="168"/>
         <source>Users</source>
         <translation>Пользователи</translation>
     </message>
@@ -339,8 +344,8 @@
         <translation>Список пользователей</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="167"/>
         <location filename="../views/partial/links.erb" line="37"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="167"/>
         <source>Profile</source>
         <translation>Профиль</translation>
     </message>
@@ -443,23 +448,44 @@
         <translation>не оставлял сообщений</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="129"/>
-        <location filename="../controllers/codescontroller.cpp" line="266"/>
+        <location filename="../controllers/codescontroller.cpp" line="65"/>
+        <location filename="../controllers/codescontroller.cpp" line="214"/>
+        <source>Enter captcha</source>
+        <translation>Введите проверочный код</translation>
+    </message>
+    <message>
+        <location filename="../controllers/codescontroller.cpp" line="73"/>
+        <location filename="../controllers/codescontroller.cpp" line="222"/>
+        <source>Wrong captcha</source>
+        <translation>Неверный проверочный код</translation>
+    </message>
+    <message>
+        <location filename="../controllers/codescontroller.cpp" line="82"/>
+        <source>Enter message text</source>
+        <translation>Введите текст сообщения</translation>
+    </message>
+    <message>
+        <location filename="../controllers/codescontroller.cpp" line="136"/>
         <source>Code was successfully created</source>
         <translation>Код был успешно добавлен</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="136"/>
+        <location filename="../controllers/codescontroller.cpp" line="145"/>
         <source>Failed to create.</source>
         <translation>Произошла ошибка при создании.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="192"/>
+        <location filename="../controllers/codescontroller.cpp" line="201"/>
         <source>Original data not found. It may have been updated/removed by another transaction.</source>
         <translation>Исходные данные не найдены. Возможно, истекло время ожидания или запись уже создана/обновлена.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="273"/>
+        <location filename="../controllers/codescontroller.cpp" line="275"/>
+        <source>Code was successfully updated</source>
+        <translation>Код был успешно изменен</translation>
+    </message>
+    <message>
+        <location filename="../controllers/codescontroller.cpp" line="284"/>
         <source>Failed to update.</source>
         <translation>Произошла ошибка при обновлении записи.</translation>
     </message>
@@ -530,10 +556,10 @@
         <translation>Произошла ошибка при удалении изображения</translation>
     </message>
     <message>
-        <location filename="../views/attachments/edit.erb" line="22"/>
-        <location filename="../views/attachments/entry.erb" line="20"/>
         <location filename="../views/codes/edit.erb" line="41"/>
         <location filename="../views/codes/entry.erb" line="34"/>
+        <location filename="../views/attachments/edit.erb" line="22"/>
+        <location filename="../views/attachments/entry.erb" line="20"/>
         <source>Note: If picture less than 150x150, it will be resized to it</source>
         <translation>Если картинка менее 150x150, то ее размер будет увеличен до 150x150</translation>
     </message>

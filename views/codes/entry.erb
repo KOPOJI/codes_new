@@ -55,7 +55,7 @@
 
 <div class="field">
     <img id="captcha_code" src="data:image/png;base64,<%= captcha %>"><br>
-    <small><a href="#" id="update_captcha" class="link">Update code</a></small><br>
+    <small><a href="#" id="update_captcha" class="link"><%= H::tr("Update code") %></a></small><br>
     <input type="text" name="captcha" value="">
 </div>
 <script type="text/javascript">

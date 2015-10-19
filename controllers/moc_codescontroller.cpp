@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'codescontroller.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'codescontroller.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.0. It"
+#error "This file was generated using the moc from 5.2.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,12 +20,12 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CodesController_t {
     QByteArrayData data[11];
-    char stringdata[72];
+    char stringdata[73];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_CodesController_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData)) \
+    offsetof(qt_meta_stringdata_CodesController_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
     )
 static const qt_meta_stringdata_CodesController_t qt_meta_stringdata_CodesController = {
     {
@@ -42,7 +42,7 @@ QT_MOC_LITERAL(9, 60, 4),
 QT_MOC_LITERAL(10, 65, 6)
     },
     "CodesController\0index\0\0show\0pk\0entry\0"
-    "create\0findByUser\0edit\0save\0remove"
+    "create\0findByUser\0edit\0save\0remove\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -60,14 +60,14 @@ static const uint qt_meta_data_CodesController[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   54,    2, 0x0a /* Public */,
-       3,    1,   55,    2, 0x0a /* Public */,
-       5,    0,   58,    2, 0x0a /* Public */,
-       6,    0,   59,    2, 0x0a /* Public */,
-       7,    1,   60,    2, 0x0a /* Public */,
-       8,    1,   63,    2, 0x0a /* Public */,
-       9,    1,   66,    2, 0x0a /* Public */,
-      10,    1,   69,    2, 0x0a /* Public */,
+       1,    0,   54,    2, 0x0a,
+       3,    1,   55,    2, 0x0a,
+       5,    0,   58,    2, 0x0a,
+       6,    0,   59,    2, 0x0a,
+       7,    1,   60,    2, 0x0a,
+       8,    1,   63,    2, 0x0a,
+       9,    1,   66,    2, 0x0a,
+      10,    1,   69,    2, 0x0a,
 
  // slots: parameters
     QMetaType::Void,
