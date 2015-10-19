@@ -1,7 +1,7 @@
 TARGET = view
 TEMPLATE = lib
 CONFIG += shared c++11 crypto
-QT += network xml sql gui
+QT += network xml sql core
 QT -=
 DEFINES += TF_DLL
 INCLUDEPATH += ../../helpers ../../models /usr/include/botan-1.10/ /usr/include/ImageMagick/
