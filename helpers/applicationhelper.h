@@ -31,7 +31,7 @@ public:
     static QUrl createUrl(const QString& url, const QString& page);
     static QUrl createUrl(const QStringList &urlParts, const QString& page = "1");
 
-    static QString parseCode(const QString& code, bool getLangOnly = false);
+    static QString parseCode(const QString& code, const bool& getLangOnly = false, const bool& parseQuotes = true);
     static QString codeFile(const QString& tagName);
     static QString codeTitle(const QString& tagName);
 
@@ -51,6 +51,7 @@ public:
     static QString specifiedText(const QString& value, const QString& returnValue = QString());
 
     static bool imageExists(const QString& path);
+    static bool fileExists(const QString& path);
 
     static QString cycle(const QStringList& values);
 

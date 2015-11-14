@@ -14,7 +14,7 @@ public:
 
 QString layouts_applicationView::toString()
 {
-  responsebody.reserve(5167);
+  responsebody.reserve(5183);
     tfetch(QString, title);
   responsebody += tr("\n<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"keywords\" content=\"заметка, добавить заметку, pastebin, загрузка картинок\">\n  <meta name=\"description\" content=\"SaveCode.RU - это сайт, где Вы можете сохранить любой текст с картинками или без них, без регистрации и навязчивой рекламы.\">\n  <title>");
   responsebody += THttpUtility::htmlEscape(title);
@@ -31,7 +31,7 @@ QString layouts_applicationView::toString()
   responsebody += tr("\n  ");
   responsebody += QVariant(styleSheetTag("/images/favicon.ico", a("type", "image/vnd.microsoft.icon") | a("rel", "shortcut icon"))).toString();
   responsebody += tr("\n    <script data-turbolinks-track=\"true\" src=\"/js/jquery-2.1.4.min.js\" charset=\"utf-8\" type=\"text/javascript\"></script>\n    <script data-turbolinks-track=\"true\" src=\"/js/application.js\" charset=\"utf-8\" type=\"text/javascript\"></script>\n    <script data-turbolinks-track=\"true\" src=\"/js/prettyPhoto.js\" charset=\"utf-8\" type=\"text/javascript\"></script>\n        ");
-  if(QString(httpRequest().header().path()).contains("codes/", Qt::CaseInsensitive)) {;
+  if(QString(httpRequest().header().path()).contains(QRegExp("(?:codes|pm)/", Qt::CaseInsensitive))) {;
   responsebody += tr("            <script src=\"/ace/src-min-noconflict/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n            <script data-turbolinks-track=\"true\" src=\"/js/bbcodes.js\" charset=\"utf-8\" type=\"text/javascript\"></script>\n        ");
   };
   responsebody += tr("</head>\n<body>\n");

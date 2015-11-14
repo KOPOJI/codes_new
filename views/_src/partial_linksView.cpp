@@ -1,6 +1,7 @@
 #include <QtCore>
 #include <TreeFrogView>
 #include "applicationhelper.h" 
+#include "privatemessages.h" 
 #include "applicationhelper.h"
 
 class T_VIEW_EXPORT partial_linksView : public TActionView
@@ -14,7 +15,7 @@ public:
 
 QString partial_linksView::toString()
 {
-  responsebody.reserve(5238);
+  responsebody.reserve(5334);
     responsebody += tr("<div class=\"navbar navbar-fluid-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container-fluid\">\n\n      ");
   responsebody += QVariant(linkTo("SaveCode.RU", QUrl("/"), Tf::Get, "", a("class", "navbar-brand"))).toString();
   responsebody += tr("\n\n      <div class=\"container-fluid nav-collapse\" role=\"navigation\">\n\n        <ul class=\"nav navbar-nav\" aria-labelledby=\"dLabel\">\n\n          <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">");
@@ -39,10 +40,12 @@ QString partial_linksView::toString()
   responsebody += QVariant(linkTo(H::tr("Listing users"), H::createUrl("users", 1))).toString();
   responsebody += tr("</li>\n              ");
   if(controller()->isUserLoggedIn()) {;
+    responsebody += tr("              ");
+  tfetch(Users, user);
   responsebody += tr("                 <li>");
   responsebody += QVariant(linkTo(H::tr("Profile"), H::createUrl({"user", "profile"}))).toString();
   responsebody += tr("</li>\n                 <li>");
-  /*== linkTo("#{H::tr("Private Messages")} (#{PrivateMessage.where(user_to_id: current_user.id, read: false).count})", H::createUrl({"pm", "inbox"})) */
+  responsebody += QVariant(linkTo(QString("%1 (%2)").arg(H::tr("Private Messages")).arg(QString::number(PrivateMessages::count(user.id()))), H::createUrl({"pm", "inbox"}))).toString();
   responsebody += tr("</li>\n                 <li>");
   responsebody += QVariant(linkTo(H::tr("Log out"), H::createUrl({"user", "logout"}), Tf::Delete)).toString();
   responsebody += tr("</li>\n              ");

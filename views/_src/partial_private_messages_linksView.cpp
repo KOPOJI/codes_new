@@ -13,17 +13,17 @@ public:
 
 QString partial_private_messages_linksView::toString()
 {
-  responsebody.reserve(761);
+  responsebody.reserve(751);
   responsebody += tr("<div class=\"span7\">\n  ");
   responsebody += THttpUtility::htmlEscape(H::tr("Go to"));
   responsebody += tr(" ");
   responsebody += QVariant(linkTo(H::tr("inbox"), H::createUrl({"pm", "inbox"}), Tf::Get, a("class", "link"))).toString();
   responsebody += tr("\n  |\n  ");
-  responsebody += THttpUtility::htmlEscape(linkTo(H::tr("outbox"), H::createUrl({"pm", "outbox"}), Tf::Get, a("class", "link")));
+  responsebody += QVariant(linkTo(H::tr("outbox"), H::createUrl({"pm", "outbox"}), Tf::Get, a("class", "link"))).toString();
   responsebody += tr("\n  <br>\n  ");
   responsebody += THttpUtility::htmlEscape(H::tr("Or"));
   responsebody += tr("\n  ");
-  responsebody += THttpUtility::htmlEscape(linkTo(H::tr("New Private message"), H::createUrl({"pm", "new"}), Tf::Get, a("class", "link")));
+  responsebody += QVariant(linkTo(H::tr("New Private message"), H::createUrl({"pm", "new"}), Tf::Get, a("class", "link"))).toString();
   responsebody += tr("\n</div>\n<div style=\"clear:both\"></div>\n");
 
   return responsebody;

@@ -34,8 +34,10 @@
             <ul class="dropdown-menu">
               <li><%== linkTo(H::tr("Listing users"), H::createUrl("users", 1)) %></li>
               <% if(controller()->isUserLoggedIn()) { %>
+<%#include "privatemessages.h" %>
+              <% tfetch(Users, user); %>
                  <li><%== linkTo(H::tr("Profile"), H::createUrl({"user", "profile"})) %></li>
-                 <li><%#== linkTo("#{H::tr("Private Messages")} (#{PrivateMessage.where(user_to_id: current_user.id, read: false).count})", H::createUrl({"pm", "inbox"})) %></li>
+                 <li><%== linkTo(QString("%1 (%2)").arg(H::tr("Private Messages")).arg(QString::number(PrivateMessages::count(user.id()))), H::createUrl({"pm", "inbox"})) %></li>
                  <li><%== linkTo(H::tr("Log out"), H::createUrl({"user", "logout"}), Tf::Delete) %></li>
               <% } else { %>
               <li><%== linkTo(H::tr("Sign"), H::createUrl({"user", "login"})) %></li>

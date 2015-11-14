@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'privatemessagesobject.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'privatemessagesobject.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.2.1. It"
+#error "This file was generated using the moc from 5.3.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,12 +20,12 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PrivateMessagesObject_t {
     QByteArrayData data[13];
-    char stringdata[147];
+    char stringdata[146];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    offsetof(qt_meta_stringdata_PrivateMessagesObject_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData) \
+    qptrdiff(offsetof(qt_meta_stringdata_PrivateMessagesObject_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_PrivateMessagesObject_t qt_meta_stringdata_PrivateMessagesObject = {
     {
@@ -46,7 +46,7 @@ QT_MOC_LITERAL(12, 132, 13)
     "PrivateMessagesObject\0id\0user_from_id\0"
     "user_to_id\0title\0text\0file\0"
     "deleted_by_from_user\0deleted_by_to_user\0"
-    "read\0created_at\0updated_at\0to_message_id\0"
+    "read\0created_at\0updated_at\0to_message_id"
 };
 #undef QT_MOC_LITERAL
 

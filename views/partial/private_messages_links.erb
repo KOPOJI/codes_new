@@ -1,9 +1,9 @@
 <div class="span7">
   <%= H::tr("Go to") %> <%== linkTo(H::tr("inbox"), H::createUrl({"pm", "inbox"}), Tf::Get, a("class", "link")) %>
   |
-  <%= linkTo(H::tr("outbox"), H::createUrl({"pm", "outbox"}), Tf::Get, a("class", "link")) %>
+  <%== linkTo(H::tr("outbox"), H::createUrl({"pm", "outbox"}), Tf::Get, a("class", "link")) %>
   <br>
   <%= H::tr("Or") %>
-  <%= linkTo(H::tr("New Private message"), H::createUrl({"pm", "new"}), Tf::Get, a("class", "link")) %>
+  <%== linkTo(H::tr("New Private message"), H::createUrl({"pm", "new"}), Tf::Get, a("class", "link")) %>
 </div>
 <div style="clear:both"></div>

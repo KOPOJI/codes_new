@@ -14,9 +14,12 @@ public:
 
 QString privatemessages_indexView::toString()
 {
-  responsebody.reserve(2564);
+  responsebody.reserve(2743);
     responsebody += tr("\n");
-  tfetch(PrivateMessages, message); tfetch(QString, action);
+  responsebody += QVariant(renderPartial("private_messages_links")).toString();
+  responsebody += tr("\n\n");
+  tfetch(QList<PrivateMessages>, privateMessagesList); tfetch(QString, action);
+  for(auto& message: privateMessagesList) {;
   responsebody += tr("<div class=\"private_message span9\" style=\"background-color:");
   responsebody += THttpUtility::htmlEscape(H::cycle({"#f9f9f9", "#f7f7f7"}));
   responsebody += tr("\">\n          <h4 style=\"margin-bottom: -15px;margin-top:3px;font-weight:");
@@ -48,6 +51,7 @@ QString privatemessages_indexView::toString()
   responsebody += tr("\n            |\n    ");
   responsebody += QVariant(linkTo(H::tr("Destroy"), H::createUrl({"pm", QString::number(message.id()), "remove"}), Tf::Get, "confirm (" + H::tr("Are you sure?") + ")")).toString();
   responsebody += tr("\n          </div>\n        </div>\n");
+  };
 
   return responsebody;
 }

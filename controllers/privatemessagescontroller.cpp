@@ -6,27 +6,29 @@ PrivateMessagesController::PrivateMessagesController(const PrivateMessagesContro
     : ApplicationController()
 { }
 
-void PrivateMessagesController::inbox()
+void PrivateMessagesController::index()
 {
+    updateUser();
     const auto& user = getUser();
-    QList<PrivateMessages> privateMessagesList = PrivateMessages::getAll(user.id());
 
-    texport(privateMessagesList);
-    render("index");
-}
-void PrivateMessagesController::outbox()
-{
-    const auto& user = getUser();
-    QList<PrivateMessages> privateMessagesList = PrivateMessages::getAll(user.id(), false);
 
+    QList<PrivateMessages> privateMessagesList = PrivateMessages::getAll(user.id(), httpRequest().header().path().contains("inbox"));
     texport(privateMessagesList);
+
+    QString action = httpRequest().header().path().contains("inbox") ? "inbox" : "outbox";
+    texport(action);
+
     render("index");
 }
 
 void PrivateMessagesController::show(const QString &pk)
 {
-    auto privateMessages = PrivateMessages::get(pk.toInt());
-    texport(privateMessages);
+    auto message = PrivateMessages::get(pk.left(pk.indexOf(QRegExp("\\.(?=html)"))).toInt());
+    texport(message);
+
+    QString action = httpRequest().header().path().contains("inbox") ? "inbox" : "outbox";
+    texport(action);
+
     render();
 }
 

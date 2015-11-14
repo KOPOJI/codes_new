@@ -33,3 +33,9 @@
     text-decoration: none;
     color: #FF4400;
 }
+
+.quote_container {
+    border: 1px solid #3774A4;
+    margin: 5px;
+    border-radius: 3px;
+}

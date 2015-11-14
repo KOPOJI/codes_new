@@ -12,8 +12,7 @@ public:
     PrivateMessagesController(const PrivateMessagesController &other);
 
 public slots:
-    void inbox();
-    void outbox();
+    void index();
     void show(const QString &pk);
     void entry();
     void create();

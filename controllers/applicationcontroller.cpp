@@ -117,6 +117,9 @@ bool ApplicationController::preFilter()
     QString title = getTitle();
     texport(title);
 
+    Users user = getUser();
+    texport(user);
+
     return true;
 }
 

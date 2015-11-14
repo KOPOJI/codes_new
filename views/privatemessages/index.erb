@@ -1,6 +1,9 @@
 <%#include "privatemessages.h" %>
 
-<% tfetch(PrivateMessages, message); tfetch(QString, action) %>
+<%== renderPartial("private_messages_links") %>
+
+<% tfetch(QList<PrivateMessages>, privateMessagesList); tfetch(QString, action) %>
+<% for(auto& message: privateMessagesList) { %>
 <div class="private_message span9" style="background-color:<%= H::cycle({"#f9f9f9", "#f7f7f7"}) %>">
           <h4 style="margin-bottom: -15px;margin-top:3px;font-weight:<%= message.read() ? "normal" : "bold" %>">
 
@@ -27,3 +30,4 @@
     <%== linkTo(H::tr("Destroy"), H::createUrl({"pm", QString::number(message.id()), "remove"}), Tf::Get, "confirm (" + H::tr("Are you sure?") + ")") %>
           </div>
         </div>
+<% } %>

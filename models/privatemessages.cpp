@@ -31,10 +31,14 @@ PrivateMessages::~PrivateMessages()
 
 Users PrivateMessages::userTo()
 {
+    if(!d->user_to_id)
+        return Users();
     return Users::get(d->user_to_id);
 }
 Users PrivateMessages::userFrom()
 {
+    if(!d->user_from_id)
+        return Users();
     return Users::get(d->user_from_id);
 }
 
@@ -187,6 +191,15 @@ int PrivateMessages::count()
 {
     TSqlORMapper<PrivateMessagesObject> mapper;
     return mapper.findCount();
+}
+
+int PrivateMessages::count(const int& userId)
+{
+    TSqlQuery query;
+    query.prepare("SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?");
+    query.addBind(userId).addBind(false);
+    query.exec();
+    return query.next() ? query.value(0).toInt() : 0;
 }
 
 QList<PrivateMessages> PrivateMessages::getAll()

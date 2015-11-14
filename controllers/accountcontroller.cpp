@@ -82,6 +82,8 @@ void AccountController::logout()
     user.setLastSignInIp(httpRequest().clientAddress().toString());
     user.update();
 
+    addCookie("user_id", "", QDateTime::currentDateTime().addMonths(-3), "/");
+
     userLogout();
 
     QString success = H::tr("signed_out");

@@ -65,7 +65,7 @@ QUrl ApplicationHelper::createUrl(const QString& url, const int& page)
     return QUrl(QString("%1%2%3?page=%4").arg(urlRoot, url, urlSuffix).arg(page));
 }
 
-QString ApplicationHelper::parseCode(const QString &code, bool getLangOnly)
+QString ApplicationHelper::parseCode(const QString &code, const bool &getLangOnly, const bool &parseQuotes)
 {
     QFile f("./languages.txt");
 
@@ -125,6 +125,25 @@ QString ApplicationHelper::parseCode(const QString &code, bool getLangOnly)
     {
         rx.setPattern("\\[" + bb_codes[i] + "\\](.*)\\[/" + bb_codes[i] + "\\]");
         result.replace(rx, "<span class='" + classes[i] + "'>\\1</span>");
+    }
+
+    if(parseQuotes)
+    {
+        rx.setPattern("\\[quote\\s*(?:=\\s*\"([^\"]*)\"\\s*)?\\](.+)\\[/quote\\]");
+
+        s = -1;
+        while((s = rx.indexIn(result, s+1)) >= 0)
+        {
+           result.replace(rx.cap(0), QString("<div class='quote_container'>"
+                                                "<div class='bbcode_postedby'>"
+                                                    "<img title='Цитата' src='/images/quote_icon.png' alt='Цитата' > Сообщение от <b>%1</b>"
+                                                "</div>"
+                                                "<div style='padding-left:20px;padding-top:10px'>"
+                                                    "<div class='message'>%2</div>"
+                                                "</div>"
+                                             "</div>").arg(rx.cap(1)).arg(rx.cap(2)));
+            //s+= rx.cap(0).length();
+        }
     }
 
     result.replace("\n", "<br>");
@@ -306,6 +325,12 @@ QString ApplicationHelper::specifiedText(const QString &value, const QString &re
 bool ApplicationHelper::imageExists(const QString &path)
 {
     QFileInfo checkFile("./public/images/" + path);
+    return checkFile.exists() && checkFile.isFile();
+}
+
+bool ApplicationHelper::fileExists(const QString &path)
+{
+    QFileInfo checkFile("./public/private_messages/" + path);
     return checkFile.exists() && checkFile.isFile();
 }
 

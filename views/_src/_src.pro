@@ -57,7 +57,8 @@ HEADERS += \
     ../attachments/show.erb \
     ../account/profile.erb \
     ../privatemessages/index.erb \
-    ../privatemessages/entry.erb
+    ../privatemessages/entry.erb \
+    ../privatemessages/show.erb
 
 OTHER_FILES += \
     ../partial/_form_footer.erb \
