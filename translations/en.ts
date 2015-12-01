@@ -456,43 +456,43 @@
     </message>
     <message>
         <location filename="../controllers/codescontroller.cpp" line="65"/>
-        <location filename="../controllers/codescontroller.cpp" line="214"/>
+        <location filename="../controllers/codescontroller.cpp" line="218"/>
         <source>Enter captcha</source>
         <translation>Enter captcha</translation>
     </message>
     <message>
         <location filename="../controllers/codescontroller.cpp" line="73"/>
-        <location filename="../controllers/codescontroller.cpp" line="222"/>
+        <location filename="../controllers/codescontroller.cpp" line="226"/>
         <source>Wrong captcha</source>
         <translation>Wrong captcha</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="82"/>
+        <location filename="../controllers/codescontroller.cpp" line="84"/>
         <source>Enter message text</source>
         <translation>Enter message text</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="136"/>
+        <location filename="../controllers/codescontroller.cpp" line="140"/>
         <source>Code was successfully created</source>
         <translation>Code was successfully created</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="145"/>
+        <location filename="../controllers/codescontroller.cpp" line="149"/>
         <source>Failed to create.</source>
         <translation>Failed to create.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="201"/>
+        <location filename="../controllers/codescontroller.cpp" line="205"/>
         <source>Original data not found. It may have been updated/removed by another transaction.</source>
         <translation>Original data not found. It may have been updated/removed by another transaction.</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="275"/>
+        <location filename="../controllers/codescontroller.cpp" line="279"/>
         <source>Code was successfully updated</source>
         <translation>Code was successfully updated</translation>
     </message>
     <message>
-        <location filename="../controllers/codescontroller.cpp" line="284"/>
+        <location filename="../controllers/codescontroller.cpp" line="288"/>
         <source>Failed to update.</source>
         <translation>Failed to update.</translation>
     </message>

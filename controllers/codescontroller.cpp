@@ -236,6 +236,8 @@ void CodesController::save(const QString &pk)
     {
         //update cashed code
         codes.get(codes.id(), true);
+        codes.getAll(httpRequest().queryItemValue("page", "1").toInt(), true);
+        codes.count(true);
 
         //upload pictures
         QList<TMimeEntity> lst = httpRequest().multipartFormData().entityList( "attachments[]" );

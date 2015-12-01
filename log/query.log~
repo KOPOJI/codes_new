@@ -1,0 +1,27 @@
+2015-12-02 00:02:02  [11116] [BEGIN] [databaseId:0]
+2015-12-02 00:02:02  [11116] SELECT `id`, `username`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `unconfirmed_email`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at` FROM `users` t0 WHERE t0.`username`='KOPOJI' LIMIT 1
+2015-12-02 00:02:02  [11116] UPDATE users SET updated_at='2015-12-02T00:02:02' WHERE id=1
+2015-12-02 00:02:02  [11116] SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?
+2015-12-02 00:02:02  [11116] SELECT COUNT(*) FROM (SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM `codes` t0) t
+2015-12-02 00:02:02  [11116] SELECT `id`, `title`, `code`, `code_url`, `status`, `created_at`, `updated_at`, `editable`, `user_id`, `show_from` FROM `codes` t0 ORDER BY t0.`id` DESC LIMIT 20
+2015-12-02 00:02:02  [11116] [COMMIT] [databaseId:0]
+2015-12-02 00:02:06  [11116] [BEGIN] [databaseId:0]
+2015-12-02 00:02:06  [11116] UPDATE users SET updated_at='2015-12-02T00:02:06' WHERE id=1
+2015-12-02 00:02:06  [11116] SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?
+2015-12-02 00:02:06  [11116] [COMMIT] [databaseId:0]
+2015-12-02 00:02:11  [11118] [BEGIN] [databaseId:0]
+2015-12-02 00:02:11  [11118] UPDATE users SET updated_at='2015-12-02T00:02:11' WHERE id=1
+2015-12-02 00:02:11  [11118] SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?
+2015-12-02 00:02:11  [11118] [COMMIT] [databaseId:0]
+2015-12-02 00:02:26  [12477] [BEGIN] [databaseId:0]
+2015-12-02 00:02:26  [12477] UPDATE users SET updated_at='2015-12-02T00:02:26' WHERE id=1
+2015-12-02 00:02:26  [12477] SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?
+2015-12-02 00:02:26  [12477] [COMMIT] [databaseId:0]
+2015-12-02 00:02:56  [14162] [BEGIN] [databaseId:0]
+2015-12-02 00:02:56  [14162] UPDATE users SET updated_at='2015-12-02T00:02:56' WHERE id=1
+2015-12-02 00:02:56  [14162] SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?
+2015-12-02 00:02:57  [14162] [COMMIT] [databaseId:0]
+2015-12-02 00:03:02  [14162] [BEGIN] [databaseId:0]
+2015-12-02 00:03:02  [14162] UPDATE users SET updated_at='2015-12-02T00:03:02' WHERE id=1
+2015-12-02 00:03:02  [14162] SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?
+2015-12-02 00:03:02  [14162] [COMMIT] [databaseId:0]

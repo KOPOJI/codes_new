@@ -281,10 +281,17 @@ Users Users::create(const QVariantMap &values)
     return model;
 }
 
-Users Users::get(int id)
+Users Users::get(int id, const bool &updateNeeded)
 {
-    TSqlORMapper<UsersObject> mapper;
-    return Users(mapper.findByPrimaryKey(id));
+    static Users user;
+    static int currentId = 0;
+    if(user.isNull() || currentId != id || updateNeeded)
+    {
+        currentId = id;
+        TSqlORMapper<UsersObject> mapper;
+        user = Users(mapper.findByPrimaryKey(id));
+    }
+    return user;
 }
 
 Profiles Users::profile() const
@@ -314,11 +321,16 @@ bool Users::isOnline(const int& userId) const
     return query.value(0).toBool();
 }
 
-Users Users::getByIdentityKey(const QString& username)
+Users Users::getByIdentityKey(const QString& username, const bool &updateNeeded)
 {
-    TSqlORMapper<UsersObject> mapper;
-    TCriteria cri(UsersObject::Username, username);
-    return Users(mapper.findFirst(cri));
+    static Users user;
+    if(user.isNull() || updateNeeded)
+    {
+        TSqlORMapper<UsersObject> mapper;
+        TCriteria cri(UsersObject::Username, username);
+        user = Users(mapper.findFirst(cri));
+    }
+    return user;
 }
 
 int Users::count()

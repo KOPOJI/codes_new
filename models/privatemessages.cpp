@@ -193,13 +193,20 @@ int PrivateMessages::count()
     return mapper.findCount();
 }
 
-int PrivateMessages::count(const int& userId)
+int PrivateMessages::count(const int& userId, const bool &updateNeeded)
 {
-    TSqlQuery query;
-    query.prepare("SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?");
-    query.addBind(userId).addBind(false);
-    query.exec();
-    return query.next() ? query.value(0).toInt() : 0;
+    static int currentUserId = 0;
+    static int currentCount = 0;
+    if(currentUserId != userId || updateNeeded)
+    {
+        currentUserId = userId;
+        TSqlQuery query;
+        query.prepare("SELECT COUNT(1) FROM `private_messages` WHERE `user_to_id` = ? AND `read` = ?");
+        query.addBind(userId).addBind(false);
+        query.exec();
+        currentCount =  query.next() ? query.value(0).toInt() : 0;
+    }
+    return currentCount;
 }
 
 QList<PrivateMessages> PrivateMessages::getAll()

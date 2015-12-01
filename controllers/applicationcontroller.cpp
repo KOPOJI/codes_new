@@ -22,8 +22,11 @@ bool ApplicationController::isUserLoggedIn() const
 
 void ApplicationController::updateUser()
 {
-    if(isUserLoggedIn())
+    static int countActions = 0;
+    const int countForUpdate = 10;
+    if(isUserLoggedIn() && ++countActions == countForUpdate)
     {
+        countActions = 0;
         Users user = TActionController::isUserLoggedIn() ? Users::getByIdentityKey(identityKeyOfLoginUser()) : Users::get(httpRequest().cookie("user_id").toInt());
         if(!TActionController::isUserLoggedIn())
             userLogin(&user);

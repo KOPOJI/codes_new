@@ -97,10 +97,17 @@ Attachments Attachments::create(const QVariantMap &values)
     return model;
 }
 
-Attachments Attachments::get(int id)
+Attachments Attachments::get(int id, const bool& updateNeeded)
 {
-    TSqlORMapper<AttachmentsObject> mapper;
-    return Attachments(mapper.findByPrimaryKey(id));
+    static Attachments attach;
+    static int currentId = 0;
+    if(attach.isNull() || id != currentId || updateNeeded)
+    {
+        currentId = id;
+        TSqlORMapper<AttachmentsObject> mapper;
+        attach = Attachments(mapper.findByPrimaryKey(id));
+    }
+    return attach;
 }
 
 int Attachments::count()
@@ -114,13 +121,16 @@ QList<Attachments> Attachments::getAll()
     return tfGetModelListByCriteria<Attachments, AttachmentsObject>(TCriteria());
 }
 
-QList<Attachments> Attachments::getAll(const int &codeId)
+QList<Attachments> Attachments::getAll(const int &codeId, const bool &updateNeeded)
 {
-    static QList<Attachments> attachments = QList<Attachments>();
+    static QList<Attachments> attachments;
     static int currentCodeId = 0;
 
-    if(!currentCodeId || currentCodeId != codeId || attachments.isEmpty())
+    if(currentCodeId != codeId || updateNeeded)
+    {
+        currentCodeId = codeId;
         attachments = tfGetModelListByCriteria<Attachments, AttachmentsObject>(TCriteria(AttachmentsObject::CodeId, codeId), AttachmentsObject::Id, Tf::DescendingOrder);
+    }
     return attachments;
 }
 

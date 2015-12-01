@@ -147,10 +147,11 @@ Codes Codes::create(const QVariantMap &values)
 
 Codes Codes::get(int id, const bool &updateNeeded)
 {
-    static Codes code = Codes();
-    static int currentId = id;
-    if(true || code.isNull() || currentId != id || updateNeeded)
+    static Codes code;
+    static int currentId = 0;
+    if(code.isNull() || currentId != id || updateNeeded)
     {
+        currentId = id;
         TSqlORMapper<CodesObject> mapper;
         code = Codes(mapper.findByPrimaryKey(id));
     }
@@ -158,6 +159,8 @@ Codes Codes::get(int id, const bool &updateNeeded)
 }
 QString Codes::author() const
 {
+    if(!userId())
+        return H::tr("Guest");
     Users user = Users::get(userId());
     return user.isNull() ? H::tr("Guest") : user.username();
 }

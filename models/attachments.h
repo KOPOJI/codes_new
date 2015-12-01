@@ -42,10 +42,10 @@ public:
     bool canBeDeleted(const Users &user) const;
     static Attachments create(int codeId, const QString &image);
     static Attachments create(const QVariantMap &values);
-    static Attachments get(int id);
+    static Attachments get(int id, const bool &updateNeeded = false);
     static int count();
     static QList<Attachments> getAll();
-    static QList<Attachments> getAll(const int &codeId);
+    static QList<Attachments> getAll(const int &codeId, const bool& updateNeeded = false);
     static QJsonArray getAllJson();
 
 private:
