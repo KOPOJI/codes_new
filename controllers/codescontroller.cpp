@@ -76,6 +76,8 @@ void CodesController::create()
             return ;
         }
     }
+    else
+        form["userId"] = getUser().id();
 
     if(!form.contains("code") || form.value("code", "").toString().trimmed().isEmpty())
     {
@@ -84,7 +86,9 @@ void CodesController::create()
         redirect(H::createUrl({"codes", "new"}));
         return ;
     }
+
     auto codes = Codes::create(form);
+
     if (!codes.isNull())
     {
         if(codes.title().trimmed().isEmpty())
