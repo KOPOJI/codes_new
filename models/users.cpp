@@ -281,7 +281,7 @@ Users Users::create(const QVariantMap &values)
     return model;
 }
 
-Users Users::get(int id, const bool &updateNeeded)
+const Users &Users::get(int id, const bool updateNeeded)
 {
     static Users user;
     static int currentId = 0;
@@ -307,21 +307,33 @@ bool Users::isOnline() const
 
 bool Users::isAdmin() const
 {
-    return username() == "KOPOJI";
+    return username() == "KOPOJI"; //This is hard! Don't hack me!)
 }
 
-bool Users::isOnline(const int& userId) const
+bool Users::isOnline(const int& userId, bool updateNeeded) const
 {
-    TSqlQuery query;
-    query.prepare("SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)");
-    query.addBind(userId);
-    query.exec();
-    if(!query.next())
-        return false;
-    return query.value(0).toBool();
+    static QDateTime currentTime = QDateTime();
+    static bool online = false;
+
+    if(currentTime.isNull()) //first init, get user status
+    {
+        currentTime = QDateTime::currentDateTime();
+        updateNeeded = true;
+    }
+    if(updateNeeded || currentTime.addSecs(60 * 5) < QDateTime::currentDateTime())
+    {
+        TSqlQuery query;
+        query.prepare("SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)");
+        query.addBind(userId);
+        query.exec();
+
+        online = query.next() && query.value(0).toBool();
+    }
+
+    return online;
 }
 
-Users Users::getByIdentityKey(const QString& username, const bool &updateNeeded)
+const Users &Users::getByIdentityKey(const QString& username, const bool updateNeeded)
 {
     static Users user;
     if(user.isNull() || updateNeeded)

@@ -53,19 +53,19 @@ public:
 
     static Codes create(const QString &title, const QString &code, const QString &codeUrl, int status, int editable, int userId, const QString &showFrom);
     static Codes create(const QVariantMap &values);
-    static Codes get(int id, const bool& updateNeeded = false);
-    static int count(const bool& updateNeeded = false);
+    static const Codes& get(int id, const bool updateNeeded = false);
+    static int count(const bool updateNeeded = false);
     static QList<Codes> getAll();
-    static QList<Codes> getAll(const int &page, const bool& updateNeeded = false);
+    static const QList<Codes>& getAll(const int page, const bool updateNeeded = false);
     static QJsonArray getAllJson();
 
     static int pageSize() ;
     static int pagesCount() ;
 
-    static void updateCount(const int& page = 1);
+    static void updateCount(const int page = 1);
 
-    static QList<Codes> userCodes(const int& userId);
-    static int userCodesCount(const int& userId);
+    static QList<Codes> userCodes(const int userId);
+    static int userCodesCount(const int userId, const bool updateNeeded = false);
 
     bool canBeEdited() const;
 

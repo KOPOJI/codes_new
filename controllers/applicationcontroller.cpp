@@ -38,7 +38,7 @@ void ApplicationController::updateUser()
     }
 }
 
-void ApplicationController::loadLanguage(const bool &updateNeeded)
+void ApplicationController::loadLanguage(const bool updateNeeded)
 {
     static QStringList languages{"ru", "en"};
     static QString defaultLanguage = languages.first();

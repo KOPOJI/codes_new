@@ -140,7 +140,7 @@ Profiles Profiles::create(const QVariantMap &values)
     return model;
 }
 
-Profiles Profiles::get(const int& userId)
+Profiles Profiles::get(const int userId)
 {
     TSqlORMapper<ProfilesObject> mapper;
     return Profiles(mapper.findFirstBy(ProfilesObject::UserId, userId));

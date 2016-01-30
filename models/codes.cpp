@@ -145,7 +145,7 @@ Codes Codes::create(const QVariantMap &values)
     return model;
 }
 
-Codes Codes::get(int id, const bool &updateNeeded)
+const Codes &Codes::get(int id, const bool updateNeeded)
 {
     static Codes code;
     static int currentId = 0;
@@ -165,7 +165,7 @@ QString Codes::author() const
     return user.isNull() ? H::tr("Guest") : user.username();
 }
 
-int Codes::count(const bool& updateNeeded)
+int Codes::count(const bool updateNeeded)
 {
     static int codesCnt = 0;
     if(!codesCnt || updateNeeded)
@@ -176,7 +176,7 @@ int Codes::count(const bool& updateNeeded)
     return codesCnt;
 }
 
-void Codes::updateCount(const int &page)
+void Codes::updateCount(const int page)
 {
     count(true);
     getAll(page, true);
@@ -200,17 +200,24 @@ int Codes::pagesCount()
     return std::ceil(count() * 1. / pageSize());
 }
 
-int Codes::userCodesCount(const int& userId)
+int Codes::userCodesCount(const int userId, const bool updateNeeded)
 {
-    TSqlQuery query;
-    query.prepare("SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?");
-    query.addBind(userId);
-    query.exec();
-    if(!query.next())
-        return 0;
-    return query.value(0).toInt();
+    static int codesCnt = -1;
+
+    if(updateNeeded || codesCnt == -1)
+    {
+        TSqlQuery query;
+        query.prepare("SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?");
+        query.addBind(userId);
+        query.exec();
+        if(!query.next())
+            return 0;
+        codesCnt = query.value(0).toInt();
+    }
+
+    return codesCnt;
 }
-QList<Codes> Codes::userCodes(const int& userId)
+QList<Codes> Codes::userCodes(const int userId)
 {
     return tfGetModelListByCriteria<Codes, CodesObject>(TCriteria(CodesObject::UserId, userId));
 }
@@ -220,13 +227,13 @@ QList<Codes> Codes::getAll()
     return tfGetModelListByCriteria<Codes, CodesObject>(TCriteria(), CodesObject::Id, Tf::DescendingOrder);
 }
 
-QList<Codes> Codes::getAll(const int &page, const bool &updateNeeded)
+const QList<Codes> &Codes::getAll(const int page, const bool updateNeeded)
 {
     static int currentPage = page;
     static QList<Codes> codes = QList<Codes>();
     //current page is wrong
     if(page > pagesCount() || page < 1)
-        return QList<Codes>();
+        return codes;
 
     if(currentPage != page || codes.isEmpty() || updateNeeded)
     {

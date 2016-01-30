@@ -47,7 +47,7 @@ public:
 
     static Profiles create(const QString &name, const QString &interests, const QString &exp, const QString &aboutMe, const QString &signature, int userId, const QString &avatar);
     static Profiles create(const QVariantMap &values);
-    static Profiles get(const int &userId);
+    static Profiles get(const int userId);
     static int count();
     static QList<Profiles> getAll();
     static QJsonArray getAllJson();

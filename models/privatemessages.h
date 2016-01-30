@@ -57,9 +57,9 @@ public:
     static PrivateMessages create(const QVariantMap &values);
     static PrivateMessages get(int id);
     static int count();
-    static int count(const int& userId, const bool& updateNeeded = false);
+    static int count(const int userId, const bool updateNeeded = false);
     static QList<PrivateMessages> getAll();
-    static QList<PrivateMessages> getAll(const int& userId, const bool& inbox = true);
+    static QList<PrivateMessages> getAll(const int userId, const bool inbox = true);
     static QJsonArray getAllJson();
 
 private:

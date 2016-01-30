@@ -193,7 +193,7 @@ int PrivateMessages::count()
     return mapper.findCount();
 }
 
-int PrivateMessages::count(const int& userId, const bool &updateNeeded)
+int PrivateMessages::count(const int userId, const bool updateNeeded)
 {
     static int currentUserId = 0;
     static int currentCount = 0;
@@ -214,7 +214,7 @@ QList<PrivateMessages> PrivateMessages::getAll()
     return tfGetModelListByCriteria<PrivateMessages, PrivateMessagesObject>(TCriteria());
 }
 
-QList<PrivateMessages> PrivateMessages::getAll(const int &userId, const bool &inbox)
+QList<PrivateMessages> PrivateMessages::getAll(const int userId, const bool inbox)
 {
     return tfGetModelListByCriteria<PrivateMessages, PrivateMessagesObject>(TCriteria(inbox ? PrivateMessagesObject::UserToId : PrivateMessagesObject::UserFromId, userId));
 }

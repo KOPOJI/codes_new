@@ -18,7 +18,7 @@ public:
 
     virtual bool isUserLoggedIn() const;
     void updateUser();
-    void loadLanguage(const bool &updateNeeded = false);
+    void loadLanguage(const bool updateNeeded = false);
 
 
     virtual ~ApplicationController();

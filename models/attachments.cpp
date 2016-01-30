@@ -97,7 +97,7 @@ Attachments Attachments::create(const QVariantMap &values)
     return model;
 }
 
-Attachments Attachments::get(int id, const bool& updateNeeded)
+const Attachments &Attachments::get(int id, const bool updateNeeded)
 {
     static Attachments attach;
     static int currentId = 0;
@@ -121,7 +121,7 @@ QList<Attachments> Attachments::getAll()
     return tfGetModelListByCriteria<Attachments, AttachmentsObject>(TCriteria());
 }
 
-QList<Attachments> Attachments::getAll(const int &codeId, const bool &updateNeeded)
+const QList<Attachments>& Attachments::getAll(const int codeId, const bool updateNeeded)
 {
     static QList<Attachments> attachments;
     static int currentCodeId = 0;

@@ -80,13 +80,13 @@ public:
     Profiles profile() const;
     bool isAdmin() const;
     bool isOnline() const;
-    bool isOnline(const int& userId) const;
+    bool isOnline(const int& userId, bool updateNeeded = false) const;
     static Users authenticate(const QString &email, const QString &password);
     static Users create(const QString &username, const QString &email, const QString &encryptedPassword, const QString &resetPasswordToken, const QDateTime &resetPasswordSentAt, const QDateTime &rememberCreatedAt, int signInCount, const QDateTime &currentSignInAt, const QDateTime &lastSignInAt, const QString &currentSignInIp, const QString &lastSignInIp, const QString &confirmationToken, const QDateTime &confirmedAt, const QDateTime &confirmationSentAt, const QString &unconfirmedEmail, int failedAttempts, const QString &unlockToken, const QDateTime &lockedAt);
     static Users create(const QVariantMap &values);
-    static Users get(int id, const bool& updateNeeded = false);
+    static const Users& get(int id, const bool updateNeeded = false);
 
-    static Users getByIdentityKey(const QString& username, const bool& updateNeeded = false);
+    static const Users& getByIdentityKey(const QString& username, const bool updateNeeded = false);
 
     static int count();
     static QList<Users> getAll();

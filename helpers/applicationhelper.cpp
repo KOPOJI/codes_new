@@ -1,6 +1,6 @@
 #include "applicationhelper.h"
 
-QString ApplicationHelper::paginationLinks(const int& pageNumber, const int& pagesCount, const QString& linkName, const int& show)
+QString ApplicationHelper::paginationLinks(const int pageNumber, const int pagesCount, const QString& linkName, const int show)
 {
     QString links = "";
 
@@ -40,7 +40,7 @@ QString ApplicationHelper::paginationLinks(const int& pageNumber, const int& pag
     return links;
 }
 
-QString ApplicationHelper::truncate(const QString& str, const int& size, const QString& separator)
+QString ApplicationHelper::truncate(const QString& str, const int size, const QString& separator)
 {
     if(str.size() > size)
         return str.left(size) + separator;
@@ -56,7 +56,7 @@ QUrl ApplicationHelper::createUrl(const QStringList &urlParts, const QString& pa
     return createUrl(urlParts.join('/'), page);
 }
 
-QUrl ApplicationHelper::createUrl(const QString& url, const int& page)
+QUrl ApplicationHelper::createUrl(const QString& url, const int page)
 {
     const QString urlSuffix = url.endsWith(".html") ? "" : ".html";
     const QString urlRoot = url.startsWith('/') ? "": "/";
@@ -65,7 +65,7 @@ QUrl ApplicationHelper::createUrl(const QString& url, const int& page)
     return QUrl(QString("%1%2%3?page=%4").arg(urlRoot, url, urlSuffix).arg(page));
 }
 
-QString ApplicationHelper::parseCode(const QString &code, const bool &getLangOnly, const bool &parseQuotes)
+QString ApplicationHelper::parseCode(const QString &code, const bool getLangOnly, const bool parseQuotes)
 {
     QFile f("./languages.txt");
 
@@ -242,12 +242,12 @@ QMap<QString, QString> ApplicationHelper::codesTitles()
     return result;
 }
 
-QString ApplicationHelper::userStatusImage(const bool& isOnline)
+QString ApplicationHelper::userStatusImage(const bool isOnline)
 {
     return QString("<img src=\"/images/user_%1line.gif\">").arg(isOnline ? "on" : "off");
 }
 
-QString ApplicationHelper::language(const bool &updateNeeded)
+QString ApplicationHelper::language(const bool updateNeeded)
 {
     static QString lang;
 
@@ -280,7 +280,7 @@ QString ApplicationHelper::tr(const char *sourceText, const char *disambiguation
     return translator.translate("H", sourceText, disambiguation, n);
 }
 
-QString ApplicationHelper::imageResize(const QString& imagePath, const QString& imageType, const int &MAX_WIDTH, const int &MAX_HEIGHT, const bool &isAvatar)
+QString ApplicationHelper::imageResize(const QString& imagePath, const QString& imageType, const int MAX_WIDTH, const int MAX_HEIGHT, const bool isAvatar)
 {
     //generate new image name
     const QString& hash = QCryptographicHash::hash(std::to_string(QDateTime::currentMSecsSinceEpoch()).c_str(), QCryptographicHash::Sha256).toHex();
@@ -347,7 +347,7 @@ QString ApplicationHelper::cycle(const QStringList& values)
     return it.next();
 }
 
-QString ApplicationHelper::getCaptchaCode(const int& length)
+QString ApplicationHelper::getCaptchaCode(const int length)
 {
    const QString chars("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
    const int charsLength = chars.length();
@@ -364,7 +364,7 @@ QString ApplicationHelper::getCaptchaCode(const int& length)
    return s;
 }
 
-QByteArray ApplicationHelper::getCaptcha(const QString& text, const int &width, const int &height)
+QByteArray ApplicationHelper::getCaptcha(const QString& text, const int width, const int height)
 {
     qsrand(QTime::currentTime().msec());
 
@@ -397,6 +397,8 @@ QByteArray ApplicationHelper::getCaptcha(const QString& text, const int &width, 
     Magick::Blob blob;
 
     image.write(&blob, "PNG");
+
+    delete[] controlPoints;
 
     return QByteArray((char *) blob.data(), blob.length());
 }
