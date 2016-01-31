@@ -203,8 +203,9 @@ int Codes::pagesCount()
 int Codes::userCodesCount(const int userId, const bool updateNeeded)
 {
     static int codesCnt = -1;
+    static int savedUserId = 0;
 
-    if(updateNeeded || codesCnt == -1)
+    if(updateNeeded || codesCnt == -1 || userId != savedUserId)
     {
         TSqlQuery query;
         query.prepare("SELECT COUNT(1) FROM `codes` WHERE `user_id` = ?");
