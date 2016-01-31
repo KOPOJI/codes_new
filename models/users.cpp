@@ -312,15 +312,10 @@ bool Users::isAdmin() const
 
 bool Users::isOnline(const int& userId, bool updateNeeded) const
 {
-    static QDateTime currentTime = QDateTime();
     static bool online = false;
+    static int savedUserId = -1;
 
-    if(currentTime.isNull()) //first init, get user status
-    {
-        currentTime = QDateTime::currentDateTime();
-        updateNeeded = true;
-    }
-    if(updateNeeded || currentTime.addSecs(60 * 5) < QDateTime::currentDateTime())
+    if(savedUserId == -1 || updateNeeded || savedUserId != userId)
     {
         TSqlQuery query;
         query.prepare("SELECT COUNT(1) FROM `users` WHERE `id` = ? AND `updated_at` >= (NOW() - INTERVAL 15 MINUTE)");
