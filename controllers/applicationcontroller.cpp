@@ -118,7 +118,7 @@ bool ApplicationController::preFilter()
     const QStringList languages{"ru", "en"};
     QString path = httpRequest().header().path();
 
-    if(!path.endsWith(".html", Qt::CaseInsensitive) && !path.endsWith('/'))
+    if(!path.endsWith(".html", Qt::CaseInsensitive) && !path.endsWith('/') && !path.contains("?page=", Qt::CaseInsensitive))
         path += '/';
 
     if(0 != QRegExp(QString("/(?:%1)/").arg(languages.join('|')), Qt::CaseInsensitive).indexIn(path))
