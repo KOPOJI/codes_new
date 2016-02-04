@@ -3,6 +3,8 @@
 
 #include "applicationcontroller.h"
 
+#include "../models/codes.h"
+
 #include <QImage>
 
 class T_CONTROLLER_EXPORT AttachmentsController : public ApplicationController

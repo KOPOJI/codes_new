@@ -12,13 +12,13 @@ MAKEFILE      = Makefile
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DTF_DLL -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DTF_DLL -DQT_XML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=c++0x -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I. -I../helpers -Isqlobjects -Imongoobjects -isystem /usr/include/botan-1.10 -isystem /usr/include/ImageMagick -isystem /usr/include/treefrog -isystem /usr/include/qt5/QtCrypto -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtSql -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I.
+INCPATH       = -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I. -I../helpers -Isqlobjects -Imongoobjects -isystem /usr/include/botan-1.10 -isystem /usr/include/ImageMagick -isystem /usr/include/treefrog -isystem /usr/include/qt5/QtCrypto -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtXml -isystem /usr/include/i386-linux-gnu/qt5/QtNetwork -isystem /usr/include/i386-linux-gnu/qt5/QtSql -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I.
 LINK          = g++
 LFLAGS        = -shared -Wl,-soname,libmodel.so.1
-LIBS          = $(SUBLIBS) -L../lib -lhelper -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore -ltreefrog -L/usr/lib/i386-linux-gnu -lqca-qt5 -lQt5Sql -lQt5Gui -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -L../lib -lhelper -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore -ltreefrog -L/usr/lib/i386-linux-gnu -lqca-qt5 -lQt5Xml -lQt5Network -lQt5Sql -lQt5Gui -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 QMAKE         = /usr/lib/i386-linux-gnu/qt5/bin/qmake
@@ -284,8 +284,10 @@ Makefile: models.pro /usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /u
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/features/lex.prf \
 		models.pro \
-		/usr/lib/i386-linux-gnu/libQt5Sql.prl \
+		/usr/lib/i386-linux-gnu/libQt5Xml.prl \
 		/usr/lib/i386-linux-gnu/libQt5Core.prl \
+		/usr/lib/i386-linux-gnu/libQt5Network.prl \
+		/usr/lib/i386-linux-gnu/libQt5Sql.prl \
 		/usr/lib/i386-linux-gnu/libQt5Gui.prl
 	$(QMAKE) -spec linux-g++ CONFIG+=debug -o Makefile models.pro
 /usr/lib/i386-linux-gnu/qt5/mkspecs/features/spec_pre.prf:
@@ -367,8 +369,10 @@ Makefile: models.pro /usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /u
 /usr/lib/i386-linux-gnu/qt5/mkspecs/features/yacc.prf:
 /usr/lib/i386-linux-gnu/qt5/mkspecs/features/lex.prf:
 models.pro:
-/usr/lib/i386-linux-gnu/libQt5Sql.prl:
+/usr/lib/i386-linux-gnu/libQt5Xml.prl:
 /usr/lib/i386-linux-gnu/libQt5Core.prl:
+/usr/lib/i386-linux-gnu/libQt5Network.prl:
+/usr/lib/i386-linux-gnu/libQt5Sql.prl:
 /usr/lib/i386-linux-gnu/libQt5Gui.prl:
 qmake: FORCE
 	@$(QMAKE) -spec linux-g++ CONFIG+=debug -o Makefile models.pro
@@ -405,19 +409,19 @@ compiler_moc_header_make_all: moc_codesobject.cpp moc_usersobject.cpp moc_attach
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_codesobject.cpp moc_usersobject.cpp moc_attachmentsobject.cpp moc_profilesobject.cpp moc_privatemessagesobject.cpp
 moc_codesobject.cpp: sqlobjects/codesobject.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/models -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models/sqlobjects -I/home/kopoji/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/codesobject.h -o moc_codesobject.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/models -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models/sqlobjects -I/home/kopoji/Documents/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/codesobject.h -o moc_codesobject.cpp
 
 moc_usersobject.cpp: sqlobjects/usersobject.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/models -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models/sqlobjects -I/home/kopoji/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/usersobject.h -o moc_usersobject.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/models -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models/sqlobjects -I/home/kopoji/Documents/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/usersobject.h -o moc_usersobject.cpp
 
 moc_attachmentsobject.cpp: sqlobjects/attachmentsobject.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/models -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models/sqlobjects -I/home/kopoji/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/attachmentsobject.h -o moc_attachmentsobject.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/models -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models/sqlobjects -I/home/kopoji/Documents/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/attachmentsobject.h -o moc_attachmentsobject.cpp
 
 moc_profilesobject.cpp: sqlobjects/profilesobject.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/models -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models/sqlobjects -I/home/kopoji/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/profilesobject.h -o moc_profilesobject.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/models -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models/sqlobjects -I/home/kopoji/Documents/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/profilesobject.h -o moc_profilesobject.cpp
 
 moc_privatemessagesobject.cpp: sqlobjects/privatemessagesobject.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/models -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models/sqlobjects -I/home/kopoji/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/privatemessagesobject.h -o moc_privatemessagesobject.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/models -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models/sqlobjects -I/home/kopoji/Documents/codes/models/mongoobjects -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include sqlobjects/privatemessagesobject.h -o moc_privatemessagesobject.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -434,12 +438,14 @@ compiler_clean: compiler_moc_header_clean
 codes.o: codes.cpp codes.h \
 		users.h \
 		../helpers/applicationhelper.h \
+		../controllers/applicationcontroller.h \
 		profiles.h \
 		sqlobjects/codesobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o codes.o codes.cpp
 
 users.o: users.cpp users.h \
 		../helpers/applicationhelper.h \
+		../controllers/applicationcontroller.h \
 		profiles.h \
 		sqlobjects/usersobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o users.o users.cpp
@@ -448,6 +454,7 @@ attachments.o: attachments.cpp attachments.h \
 		codes.h \
 		users.h \
 		../helpers/applicationhelper.h \
+		../controllers/applicationcontroller.h \
 		profiles.h \
 		sqlobjects/attachmentsobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o attachments.o attachments.cpp
@@ -459,6 +466,7 @@ profiles.o: profiles.cpp profiles.h \
 privatemessages.o: privatemessages.cpp privatemessages.h \
 		users.h \
 		../helpers/applicationhelper.h \
+		../controllers/applicationcontroller.h \
 		profiles.h \
 		sqlobjects/privatemessagesobject.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o privatemessages.o privatemessages.cpp

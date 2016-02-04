@@ -89,18 +89,16 @@ void ApplicationController::language(const QString &language)
 {
     QStringList languages{"russian", "english"};
     const int MAX_SIZE = 7;
+    const int LANG_SIZE = 2;
 
     if(languages.contains(language.left(MAX_SIZE)))
     {
-        session()["language"] = language.left(2);
-        loadLanguage(true);
-        ApplicationHelper::language(true);
+        QString success = ("Language changed to " + QString(language.left(MAX_SIZE).replace(0,1, language.at(0).toUpper())));
+        texport(success);
+
+        redirect(QUrl('/' + language.left(LANG_SIZE) + '/'));
     }
 
-    QString success = ("Language changed to " + QString(language.left(MAX_SIZE).replace(0,1, language.at(0).toUpper())));
-    texport(success);
-
-    redirect(QUrl("/"));
 }
 
 void ApplicationController::captcha()
@@ -117,11 +115,30 @@ void ApplicationController::staticRelease()
 
 bool ApplicationController::preFilter()
 {
+    const QStringList languages{"ru", "en"};
+    QString path = httpRequest().header().path();
+
+    if(!path.endsWith(".html", Qt::CaseInsensitive) && !path.endsWith('/'))
+        path += '/';
+
+    if(0 != QRegExp(QString("/(?:%1)/").arg(languages.join('|')), Qt::CaseInsensitive).indexIn(path))
+        path  = "/ru" + path;
+
+    if(path != httpRequest().header().path() && !path.contains("language"))
+    {
+        redirect(QUrl(path), Tf::MovedPermanently);
+        return false;
+    }
+
+    const QString LANG_ID = path.mid(1, path.indexOf('/', 1) - 1).trimmed();
+
     QString title = getTitle();
     texport(title);
 
     Users user = getUser();
     texport(user);
+
+    texport(LANG_ID);
 
     return true;
 }

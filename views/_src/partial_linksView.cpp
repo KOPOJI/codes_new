@@ -15,9 +15,9 @@ public:
 
 QString partial_linksView::toString()
 {
-  responsebody.reserve(5334);
+  responsebody.reserve(5336);
     responsebody += tr("<div class=\"navbar navbar-fluid-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container-fluid\">\n\n      ");
-  responsebody += QVariant(linkTo("SaveCode.RU", QUrl("/"), Tf::Get, "", a("class", "navbar-brand"))).toString();
+  responsebody += QVariant(linkTo("SaveCode.RU", H::createUrl("/"), Tf::Get, "", a("class", "navbar-brand"))).toString();
   responsebody += tr("\n\n      <div class=\"container-fluid nav-collapse\" role=\"navigation\">\n\n        <ul class=\"nav navbar-nav\" aria-labelledby=\"dLabel\">\n\n          <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">");
   responsebody += THttpUtility::htmlEscape(H::tr("Codes"));
   responsebody += tr(" <b class=\"caret\"></b></a>\n            <ul class=\"dropdown-menu\">\n              <li>");
@@ -66,10 +66,10 @@ QString partial_linksView::toString()
   responsebody += THttpUtility::htmlEscape(H::tr("Language"));
   responsebody += tr(" <b class=\"caret\"></b></a>\n            <ul class=\"dropdown-menu\">\n              <li>\n                ");
   responsebody += QVariant(linkTo(imageTag(imagePath("flag_russian.gif"), a("alt", "Русский язык")) + " Русский",
-                            H::createUrl("/language/russian", 1), Tf::Get, "", a("alt", "Русский язык") | a("title", "Русский язык"))).toString();
+                            H::createUrl("/language/russian"), Tf::Get, "", a("alt", "Русский язык") | a("title", "Русский язык"))).toString();
   responsebody += tr("\n              </li>\n              <li>\n                ");
   responsebody += QVariant(linkTo(imageTag(imagePath("flag_english.gif"), a("alt", "English")) + " English",
-                            H::createUrl("/language/english", 1), Tf::Get, "", a("alt", "English") | a("title", "English"))).toString();
+                            H::createUrl("/language/english"), Tf::Get, "", a("alt", "English") | a("title", "English"))).toString();
   responsebody += tr("\n              </li>\n            </ul>\n          </li>\n\n      ");
   if(false && controller()->isUserLoggedIn() /* && current_user.admin*/) {;
   responsebody += tr("          <li>\n    ");

@@ -3,7 +3,7 @@
   <div class="navbar-inner">
     <div class="container-fluid">
 
-      <%== linkTo("SaveCode.RU", QUrl("/"), Tf::Get, "", a("class", "navbar-brand")) %>
+      <%== linkTo("SaveCode.RU", H::createUrl("/"), Tf::Get, "", a("class", "navbar-brand")) %>
 
       <div class="container-fluid nav-collapse" role="navigation">
 
@@ -55,11 +55,11 @@
             <ul class="dropdown-menu">
               <li>
                 <%== linkTo(imageTag(imagePath("flag_russian.gif"), a("alt", "Русский язык")) + " Русский",
-                            H::createUrl("/language/russian", 1), Tf::Get, "", a("alt", "Русский язык") | a("title", "Русский язык")) %>
+                            H::createUrl("/language/russian"), Tf::Get, "", a("alt", "Русский язык") | a("title", "Русский язык")) %>
               </li>
               <li>
                 <%== linkTo(imageTag(imagePath("flag_english.gif"), a("alt", "English")) + " English",
-                            H::createUrl("/language/english", 1), Tf::Get, "", a("alt", "English") | a("title", "English")) %>
+                            H::createUrl("/language/english"), Tf::Get, "", a("alt", "English") | a("title", "English")) %>
               </li>
             </ul>
           </li>

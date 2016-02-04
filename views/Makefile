@@ -29,29 +29,29 @@ SUBTARGETS    =  \
 
 sub-_src-qmake_all:  FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile
+	cd _src/ && $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile
 	cd _src/ && $(MAKE) -f Makefile qmake_all
 sub-_src: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile
 sub-_src-make_first: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile 
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile 
 sub-_src-all: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile all
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile all
 sub-_src-clean: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile clean
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile clean
 sub-_src-distclean: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile distclean
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile distclean
 sub-_src-install_subtargets: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile install
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile install
 sub-_src-uninstall_subtargets: FORCE
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile uninstall
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile uninstall
 
 Makefile: views.pro /usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /usr/lib/i386-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/common/shell-unix.conf \
@@ -211,7 +211,7 @@ uninstall_subtargets: sub-_src-uninstall_subtargets FORCE
 
 sub-_src-check:
 	@test -d _src/ || mkdir -p _src/
-	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile check
+	cd _src/ && ( test -e Makefile || $(QMAKE) /home/kopoji/Documents/codes/views/_src/_src.pro -spec linux-g++ CONFIG+=debug -o Makefile ) && $(MAKE) -f Makefile check
 check: sub-_src-check
 install: install_subtargets  FORCE
 

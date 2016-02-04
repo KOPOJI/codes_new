@@ -12,13 +12,13 @@ MAKEFILE      = Makefile
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DTF_DLL -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DTF_DLL -DQT_XML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=c++0x -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I. -isystem /usr/include -isystem /usr/include/ImageMagick -isystem /usr/include/treefrog -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtSql -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I.
+INCPATH       = -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I. -isystem /usr/include -isystem /usr/include/botan-1.10 -isystem /usr/include/ImageMagick -isystem /usr/include/treefrog -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtXml -isystem /usr/include/i386-linux-gnu/qt5/QtNetwork -isystem /usr/include/i386-linux-gnu/qt5/QtSql -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I.
 LINK          = g++
 LFLAGS        = -shared -Wl,-soname,libhelper.so.1
-LIBS          = $(SUBLIBS) -L../lib -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore -ltreefrog -lQt5Sql -L/usr/lib/i386-linux-gnu -lQt5Gui -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -L../lib -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore -ltreefrog -lQt5Xml -L/usr/lib/i386-linux-gnu -lQt5Network -lQt5Sql -lQt5Gui -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 QMAKE         = /usr/lib/i386-linux-gnu/qt5/bin/qmake
@@ -261,8 +261,10 @@ Makefile: helpers.pro /usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/features/lex.prf \
 		helpers.pro \
-		/usr/lib/i386-linux-gnu/libQt5Sql.prl \
+		/usr/lib/i386-linux-gnu/libQt5Xml.prl \
 		/usr/lib/i386-linux-gnu/libQt5Core.prl \
+		/usr/lib/i386-linux-gnu/libQt5Network.prl \
+		/usr/lib/i386-linux-gnu/libQt5Sql.prl \
 		/usr/lib/i386-linux-gnu/libQt5Gui.prl
 	$(QMAKE) -spec linux-g++ CONFIG+=debug -o Makefile helpers.pro
 /usr/lib/i386-linux-gnu/qt5/mkspecs/features/spec_pre.prf:
@@ -343,8 +345,10 @@ Makefile: helpers.pro /usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /
 /usr/lib/i386-linux-gnu/qt5/mkspecs/features/yacc.prf:
 /usr/lib/i386-linux-gnu/qt5/mkspecs/features/lex.prf:
 helpers.pro:
-/usr/lib/i386-linux-gnu/libQt5Sql.prl:
+/usr/lib/i386-linux-gnu/libQt5Xml.prl:
 /usr/lib/i386-linux-gnu/libQt5Core.prl:
+/usr/lib/i386-linux-gnu/libQt5Network.prl:
+/usr/lib/i386-linux-gnu/libQt5Sql.prl:
 /usr/lib/i386-linux-gnu/libQt5Gui.prl:
 qmake: FORCE
 	@$(QMAKE) -spec linux-g++ CONFIG+=debug -o Makefile helpers.pro
@@ -391,7 +395,8 @@ compiler_clean:
 
 ####### Compile
 
-applicationhelper.o: applicationhelper.cpp applicationhelper.h
+applicationhelper.o: applicationhelper.cpp applicationhelper.h \
+		../controllers/includecontroller.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o applicationhelper.o applicationhelper.cpp
 
 ####### Install

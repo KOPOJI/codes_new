@@ -10,7 +10,7 @@
         <location filename="../views/attachments/show.erb" line="7"/>
         <location filename="../views/attachments/entry.erb" line="11"/>
         <location filename="../views/codes/edit.erb" line="8"/>
-        <location filename="../helpers/applicationhelper.cpp" line="107"/>
+        <location filename="../helpers/applicationhelper.cpp" line="114"/>
         <source>Code</source>
         <translation>Код</translation>
     </message>
@@ -34,37 +34,37 @@
         <translation>Пароль</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="148"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="171"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="165"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="188"/>
         <location filename="../views/partial/links.erb" line="43"/>
         <source>Sign</source>
         <translation>Авторизация</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="149"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="172"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="189"/>
         <location filename="../views/partial/links.erb" line="44"/>
         <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Регистрация</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="150"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="167"/>
         <source>Show user profile</source>
         <translation>Просмотр профиля пользователя</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="151"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="168"/>
         <source>Show profile</source>
         <translation>Просмотр профиля</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="159"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="176"/>
         <source>Editing picture</source>
         <translation>Редактирование изображения</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="183"/>
         <source>Editing code</source>
         <translation>Редактирование кода</translation>
     </message>
@@ -80,7 +80,7 @@
         <translation>Подтверждение пароля</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="152"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="169"/>
         <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Список пользователей</translation>
@@ -116,7 +116,7 @@
         <translation>Ни одного изображения еще не добавили</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="164"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="181"/>
         <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Просмотр кода</translation>
@@ -166,7 +166,7 @@
         <translation>Показывать только при переходе с сайта</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="165"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="182"/>
         <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Добавление нового кода</translation>
@@ -303,14 +303,14 @@
         <translation>Личные сообщения</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="157"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="174"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
         <source>Listing pictures</source>
         <translation>Список изображений</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="158"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="175"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Загрузка изображения</translation>
@@ -341,7 +341,7 @@
         <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="174"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="191"/>
         <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Пользователи</translation>
@@ -352,7 +352,7 @@
         <translation>Список пользователей</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="173"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="190"/>
         <location filename="../views/partial/links.erb" line="39"/>
         <source>Profile</source>
         <translation>Профиль</translation>
@@ -616,7 +616,7 @@
         <translation>Просмотр</translation>
     </message>
     <message>
-        <location filename="../helpers/applicationhelper.cpp" line="322"/>
+        <location filename="../helpers/applicationhelper.cpp" line="312"/>
         <source>not_specified</source>
         <translation>Не указано</translation>
     </message>

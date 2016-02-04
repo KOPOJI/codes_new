@@ -46,6 +46,7 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = applicationcontroller.cpp \
+		includecontroller.cpp \
 		codescontroller.cpp \
 		accountcontroller.cpp \
 		attachmentscontroller.cpp \
@@ -56,6 +57,7 @@ SOURCES       = applicationcontroller.cpp \
 		moc_attachmentscontroller.cpp \
 		moc_privatemessagescontroller.cpp
 OBJECTS       = applicationcontroller.o \
+		includecontroller.o \
 		codescontroller.o \
 		accountcontroller.o \
 		attachmentscontroller.o \
@@ -145,6 +147,7 @@ DIST          = /usr/lib/i386-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/i386-linux-gnu/qt5/mkspecs/features/lex.prf \
 		controllers.pro applicationcontroller.cpp \
+		includecontroller.cpp \
 		codescontroller.cpp \
 		accountcontroller.cpp \
 		attachmentscontroller.cpp \
@@ -384,7 +387,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d .tmp/controller1.0.0 || mkdir -p .tmp/controller1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.h codescontroller.h accountcontroller.h attachmentscontroller.h informationmailer.h privatemessagescontroller.h .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.cpp codescontroller.cpp accountcontroller.cpp attachmentscontroller.cpp informationmailer.cpp privatemessagescontroller.cpp .tmp/controller1.0.0/ && (cd `dirname .tmp/controller1.0.0` && $(TAR) controller1.0.0.tar controller1.0.0 && $(COMPRESS) controller1.0.0.tar) && $(MOVE) `dirname .tmp/controller1.0.0`/controller1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/controller1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.h includecontroller.h codescontroller.h accountcontroller.h attachmentscontroller.h informationmailer.h privatemessagescontroller.h .tmp/controller1.0.0/ && $(COPY_FILE) --parents applicationcontroller.cpp includecontroller.cpp codescontroller.cpp accountcontroller.cpp attachmentscontroller.cpp informationmailer.cpp privatemessagescontroller.cpp .tmp/controller1.0.0/ && (cd `dirname .tmp/controller1.0.0` && $(TAR) controller1.0.0.tar controller1.0.0 && $(COMPRESS) controller1.0.0.tar) && $(MOVE) `dirname .tmp/controller1.0.0`/controller1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/controller1.0.0
 
 
 clean:compiler_clean 
@@ -412,43 +415,43 @@ compiler_moc_header_make_all: moc_applicationcontroller.cpp moc_codescontroller.
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_applicationcontroller.cpp moc_codescontroller.cpp moc_accountcontroller.cpp moc_attachmentscontroller.cpp moc_privatemessagescontroller.cpp
 moc_applicationcontroller.cpp: ../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
 		applicationcontroller.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/controllers -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include applicationcontroller.h -o moc_applicationcontroller.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include applicationcontroller.h -o moc_applicationcontroller.cpp
 
 moc_codescontroller.cpp: applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
 		codescontroller.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/controllers -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include codescontroller.h -o moc_codescontroller.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include codescontroller.h -o moc_codescontroller.cpp
 
 moc_accountcontroller.cpp: applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
 		accountcontroller.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/controllers -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include accountcontroller.h -o moc_accountcontroller.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include accountcontroller.h -o moc_accountcontroller.cpp
 
 moc_attachmentscontroller.cpp: applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
 		attachmentscontroller.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/controllers -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include attachmentscontroller.h -o moc_attachmentscontroller.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include attachmentscontroller.h -o moc_attachmentscontroller.cpp
 
 moc_privatemessagescontroller.cpp: applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
 		privatemessagescontroller.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/codes/controllers -I/home/kopoji/codes/helpers -I/home/kopoji/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessagescontroller.h -o moc_privatemessagescontroller.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/home/kopoji/Documents/codes/controllers -I/home/kopoji/Documents/codes/helpers -I/home/kopoji/Documents/codes/models -I/usr/include/botan-1.10 -I/usr/include/ImageMagick -I/usr/include/treefrog -I/usr/include/qt5/QtCrypto -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtXml -I/usr/include/i386-linux-gnu/qt5/QtSql -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/4.9 -I/usr/include/i386-linux-gnu/c++/4.9 -I/usr/include/c++/4.9/backward -I/usr/lib/gcc/i686-linux-gnu/4.9/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/4.9/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include privatemessagescontroller.h -o moc_privatemessagescontroller.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -464,23 +467,27 @@ compiler_clean: compiler_moc_header_clean
 
 applicationcontroller.o: applicationcontroller.cpp applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o applicationcontroller.o applicationcontroller.cpp
 
+includecontroller.o: includecontroller.cpp includecontroller.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o includecontroller.o includecontroller.cpp
+
 codescontroller.o: codescontroller.cpp codescontroller.h \
 		applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
-		../models/profiles.h
+		../models/profiles.h \
+		../models/codes.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o codescontroller.o codescontroller.cpp
 
 accountcontroller.o: accountcontroller.cpp accountcontroller.h \
 		applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o accountcontroller.o accountcontroller.cpp
@@ -488,15 +495,17 @@ accountcontroller.o: accountcontroller.cpp accountcontroller.h \
 attachmentscontroller.o: attachmentscontroller.cpp attachmentscontroller.h \
 		applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
-		../models/attachments.h
+		../models/attachments.h \
+		../models/codes.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o attachmentscontroller.o attachmentscontroller.cpp
 
 informationmailer.o: informationmailer.cpp informationmailer.h \
 		../models/users.h \
 		../helpers/applicationhelper.h \
+		includecontroller.h \
 		../models/profiles.h \
 		../models/privatemessages.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o informationmailer.o informationmailer.cpp
@@ -504,7 +513,7 @@ informationmailer.o: informationmailer.cpp informationmailer.h \
 privatemessagescontroller.o: privatemessagescontroller.cpp privatemessagescontroller.h \
 		applicationcontroller.h \
 		../helpers/applicationhelper.h \
-		../models/codes.h \
+		includecontroller.h \
 		../models/users.h \
 		../models/profiles.h \
 		../models/privatemessages.h

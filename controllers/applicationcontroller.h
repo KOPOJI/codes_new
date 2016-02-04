@@ -4,7 +4,7 @@
 #include <TActionController>
 #include <TWebApplication>
 #include "applicationhelper.h"
-#include "codes.h"
+#include "../models/users.h"
 
 class T_CONTROLLER_EXPORT ApplicationController : public TActionController
 {

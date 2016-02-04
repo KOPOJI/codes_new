@@ -58,11 +58,18 @@ QUrl ApplicationHelper::createUrl(const QStringList &urlParts, const QString& pa
 
 QUrl ApplicationHelper::createUrl(const QString& url, const int page)
 {
+    static IncludeController ic;
+    const QString path = ic.getRequest().header().path();
+    const QString LANG = path.left(path.indexOf('/', 1) + 1).trimmed();
+
+    if(url == "/")
+        return LANG;
+
     const QString urlSuffix = url.endsWith(".html") ? "" : ".html";
-    const QString urlRoot = url.startsWith('/') ? "": "/";
+    const QString urlBegin = url.startsWith('/') ? (url.startsWith(LANG) ? "" : LANG.left(LANG.length() - 1)): LANG;
     if(page < 2)
-        return QUrl(urlRoot + url + urlSuffix);
-    return QUrl(QString("%1%2%3?page=%4").arg(urlRoot, url, urlSuffix).arg(page));
+        return QUrl(urlBegin + url + urlSuffix);
+    return QUrl(QString("%1%2%3?page=%4").arg(urlBegin, url, urlSuffix).arg(page));
 }
 
 QString ApplicationHelper::parseCode(const QString &code, const bool getLangOnly, const bool parseQuotes)
@@ -247,35 +254,18 @@ QString ApplicationHelper::userStatusImage(const bool isOnline)
     return QString("<img src=\"/images/user_%1line.gif\">").arg(isOnline ? "on" : "off");
 }
 
-QString ApplicationHelper::language(const bool updateNeeded)
-{
-    static QString lang;
-
-    if(lang.isEmpty() || updateNeeded)
-    {
-        QFile file("./translations/tr_language.txt");
-
-        if(!file.open(QIODevice::ReadOnly))
-            return "en";
-
-        lang = file.readAll().trimmed();
-
-        file.close();
-    }
-    return lang;
-}
-
 QString ApplicationHelper::tr(const char *sourceText, const char *disambiguation, int n)
 {
+    static IncludeController ic;
     static QTranslator translator;
-    static QString lang = language();
 
-    if(translator.isEmpty() || lang != language())
-    {
-        lang = language();
-        if(!translator.load(language(), "./translations/"))
-            return sourceText;
-    }
+    const QString path = ic.getRequest().header().path();
+    int pos = path.indexOf('/') + 1;
+
+    QString language = path.mid(pos, path.indexOf('/', pos) - 1);
+
+    if(!translator.load(language, "./translations/"))
+        return sourceText;
 
     return translator.translate("H", sourceText, disambiguation, n);
 }

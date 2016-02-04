@@ -1,7 +1,7 @@
 TARGET = model
 TEMPLATE = lib
 CONFIG += shared c++11 crypto
-QT += sql gui
+QT += sql gui network xml
 QT -=
 DEFINES += TF_DLL
 DESTDIR = ../lib

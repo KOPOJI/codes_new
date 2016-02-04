@@ -10,9 +10,11 @@ DEPENDPATH  += ../helpers ../models
 LIBS += -L../lib -lhelper -lmodel -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/ -lMagick++ -lMagickCore
 include(../appbase.pri)
 
-HEADERS += applicationcontroller.h
+HEADERS += applicationcontroller.h \
+    includecontroller.h
 
-SOURCES += applicationcontroller.cpp
+SOURCES += applicationcontroller.cpp \
+    includecontroller.cpp
 
 HEADERS += codescontroller.h
 SOURCES += codescontroller.cpp

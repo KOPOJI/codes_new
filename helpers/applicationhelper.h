@@ -21,6 +21,8 @@
 
 #include <QBuffer>
 
+#include "../controllers/includecontroller.h"
+
 class T_HELPER_EXPORT ApplicationHelper
 {
 public:
@@ -42,8 +44,6 @@ public:
     static QString userStatusImage(const bool isOnline);
 
     static QString tr(const char * sourceText, const char * disambiguation = 0, int n = -1);
-
-    static QString language(const bool updateNeeded = false);
 
     static QString imageResize(const QString &imagePath, const QString &imageType, const int width = 1280, const int MAX_HEIGHT = 960, const bool isAvatar = false);
 

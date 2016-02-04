@@ -10,7 +10,7 @@
         <location filename="../views/attachments/show.erb" line="7"/>
         <location filename="../views/attachments/entry.erb" line="11"/>
         <location filename="../views/codes/edit.erb" line="8"/>
-        <location filename="../helpers/applicationhelper.cpp" line="107"/>
+        <location filename="../helpers/applicationhelper.cpp" line="114"/>
         <source>Code</source>
         <translation>Code</translation>
     </message>
@@ -34,37 +34,37 @@
         <translation>Password</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="148"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="171"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="165"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="188"/>
         <location filename="../views/partial/links.erb" line="43"/>
         <source>Sign</source>
         <translation>Sign</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="149"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="172"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="189"/>
         <location filename="../views/partial/links.erb" line="44"/>
         <location filename="../views/account/register.erb" line="9"/>
         <source>Sign up</source>
         <translation>Sign up</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="150"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="167"/>
         <source>Show user profile</source>
         <translation>View user profile</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="151"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="168"/>
         <source>Show profile</source>
         <translation>View profile</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="159"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="176"/>
         <source>Editing picture</source>
         <translation>Editing picture</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="183"/>
         <source>Editing code</source>
         <translation>Editing code</translation>
     </message>
@@ -80,7 +80,7 @@
         <translation>Password Confirmation</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="152"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="169"/>
         <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Users list</translation>
@@ -116,7 +116,7 @@
         <translation>Nobody hasn&apos;t added any picture ye</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="164"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="181"/>
         <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Show code</translation>
@@ -166,7 +166,7 @@
         <translation>Show only from</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="165"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="182"/>
         <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Adding new code</translation>
@@ -303,14 +303,14 @@
         <translation>Private Messages</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="157"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="174"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
         <source>Listing pictures</source>
         <translation>Listing pictures</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="158"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="175"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Uploading picture</translation>
@@ -341,7 +341,7 @@
         <translation>Back</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="174"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="191"/>
         <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Users</translation>
@@ -352,7 +352,7 @@
         <translation>Listing users</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="173"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="190"/>
         <location filename="../views/partial/links.erb" line="39"/>
         <source>Profile</source>
         <translation>Profile</translation>
@@ -616,7 +616,7 @@
         <translation>Show</translation>
     </message>
     <message>
-        <location filename="../helpers/applicationhelper.cpp" line="322"/>
+        <location filename="../helpers/applicationhelper.cpp" line="312"/>
         <source>not_specified</source>
         <translation>Not specified</translation>
     </message>
