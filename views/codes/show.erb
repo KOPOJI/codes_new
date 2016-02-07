@@ -29,15 +29,18 @@
 <% } %>
 
 <script type="text/javascript">
-var editors = [], i = 0;
+var editors = [], i = 0, defaultHeight = 500, minHeight = 200
 $('.editor').each(function(key, editor) {
     editors[i] = ace.edit(editor);
     editors[i].setTheme("ace/theme/eclipse");
     editors[i].getSession().setMode("ace/mode/" + (editor.lang ? editor.lang.toLowerCase() : 'javascript'));
     editor.style.fontSize='16px';
-    var height = editors[i].getSession().getLength() * 18;
-    editor.style.height = (height > 500 ? 500 : (height < 150 ? 150 : height)) + 'px'
+    var fullHeight = editors[i].getSession().getScreenLength() * editors[i].renderer.lineHeight + editors[i].renderer.scrollBar.getWidth()
+    var height = (fullHeight > defaultHeight ? defaultHeight : (fullHeight < minHeight ? minHeight : fullHeight))
+    editor.style.height = height + 'px'
+    $(editor).attr('data-height', height)
     editors[i].setReadOnly(true)
+    editors[i].resize()
     ++i;
 })
 
@@ -52,4 +55,15 @@ $('.select_code').on('click', function() {
 
     return false;
 })
+
+$('.unfold_code').on('click', function() {
+    i = $(this).attr('data-id')
+    var folded = $(this).text() == 'Развернуть код',
+        editorHeight = $($('.editor').get(i)).attr('data-height'),
+        fullHeight = editors[i].getSession().getScreenLength() * editors[i].renderer.lineHeight + editors[i].renderer.scrollBar.getWidth()
+    $('.editor').get(i).style.height = (folded && fullHeight > editorHeight ? fullHeight : editorHeight)  + 'px'
+    editors[i].resize()
+    $(this).text(folded ? 'Свернуть код' : 'Развернуть код')
+    return false;
+    })
 </script>

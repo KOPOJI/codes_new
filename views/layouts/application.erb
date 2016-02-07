@@ -30,9 +30,9 @@
 <body>
 <%== renderPartial("links") %>
 
-<div class="container-fluid">
+<div class="container-fluid" style="display:table;width: 100%;">
   <div class="row-fluid">
-  <div class="col-md-2" style="width: 250px;display: inline-block">
+  <div class="col-lg-2 col-md-3 col-xs-3">
     <div class="well sidebar-nav">
       <ul class="nav nav-list">
         <li class="nav-header"><%= H::tr("Listing codes") + QString(" (%1)").arg(Codes::count()) %></li>
@@ -52,11 +52,11 @@
            } %>
    </ul>
        <div class="apple_pagination">
-         <%== H::paginationLinks(httpRequest().queryItemValue("page", "1").toInt(), Codes::pagesCount()) %>
+         <%== H::paginationLinks(httpRequest().queryItemValue("page", "1").toInt(), Codes::pagesCount(), "page", 2) %>
        </div>
      </div>
    </div>
-    <div class="col-md-8" style="min-width: 650px;display: inline-block">
+    <div class="col-lg-10 col-md-8 col-xs-8">
 
 
 <% tfetch(QString, notice) %>
