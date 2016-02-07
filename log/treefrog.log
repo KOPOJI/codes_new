@@ -1,0 +1,24 @@
+2016-01-31 03:31:15 INFO  [28473] TreeFrog Framework version 1.10.0
+2016-01-31 03:31:15 INFO  [28473] Qt 5.0.2 / Linux 2.6.32-042stab112.15
+2016-01-31 03:31:15 INFO  [28473] TreeFrog application servers started up.
+2016-02-04 20:27:59 INFO  [28473] TreeFrog application servers shutting down
+2016-02-04 20:28:00 INFO  [28473] TreeFrog application servers shutdown completed
+2016-02-04 20:28:06 INFO  [14613] TreeFrog Framework version 1.10.0
+2016-02-04 20:28:06 INFO  [14613] Qt 5.0.2 / Linux 2.6.32-042stab112.15
+2016-02-04 20:28:06 INFO  [14613] TreeFrog application servers started up.
+2016-02-04 22:05:03 WARN  [17374] userLogin: Duplicate login detected. Force logout [user:]
+2016-02-04 22:15:57 INFO  [14613] TreeFrog application servers shutting down
+2016-02-04 22:15:57 INFO  [14613] TreeFrog application servers shutdown completed
+2016-02-04 22:16:04 INFO  [18412] TreeFrog Framework version 1.10.0
+2016-02-04 22:16:04 INFO  [18412] Qt 5.0.2 / Linux 2.6.32-042stab112.15
+2016-02-04 22:16:04 INFO  [18412] TreeFrog application servers started up.
+2016-02-07 15:24:03 INFO  [18412] TreeFrog application servers shutting down
+2016-02-07 15:24:05 INFO  [18412] TreeFrog application servers shutdown completed
+2016-02-07 15:24:11 INFO  [24697] TreeFrog Framework version 1.10.0
+2016-02-07 15:24:11 INFO  [24697] Qt 5.0.2 / Linux 2.6.32-042stab112.15
+2016-02-07 15:24:11 INFO  [24697] TreeFrog application servers started up.
+2016-02-07 15:27:35 INFO  [24697] TreeFrog application servers shutting down
+2016-02-07 15:27:35 INFO  [24697] TreeFrog application servers shutdown completed
+2016-02-07 15:28:57 INFO  [25207] TreeFrog Framework version 1.10.0
+2016-02-07 15:28:57 INFO  [25207] Qt 5.0.2 / Linux 2.6.32-042stab112.15
+2016-02-07 15:28:57 INFO  [25207] TreeFrog application servers started up.

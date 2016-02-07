@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'profilesobject.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.0.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'profilesobject.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.0. It"
+#error "This file was generated using the moc from 5.0.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,12 +20,12 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_ProfilesObject_t {
     QByteArrayData data[11];
-    char stringdata[93];
+    char stringdata[94];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ProfilesObject_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData)) \
+    offsetof(qt_meta_stringdata_ProfilesObject_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
     )
 static const qt_meta_stringdata_ProfilesObject_t qt_meta_stringdata_ProfilesObject = {
     {
@@ -43,7 +43,7 @@ QT_MOC_LITERAL(10, 86, 6)
     },
     "ProfilesObject\0id\0name\0interests\0exp\0"
     "about_me\0signature\0user_id\0created_at\0"
-    "updated_at\0avatar"
+    "updated_at\0avatar\0"
 };
 #undef QT_MOC_LITERAL
 

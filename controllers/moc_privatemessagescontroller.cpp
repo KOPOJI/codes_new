@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'privatemessagescontroller.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.0.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'privatemessagescontroller.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.0. It"
+#error "This file was generated using the moc from 5.0.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,12 +20,12 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PrivateMessagesController_t {
     QByteArrayData data[10];
-    char stringdata[71];
+    char stringdata[72];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_PrivateMessagesController_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData)) \
+    offsetof(qt_meta_stringdata_PrivateMessagesController_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
     )
 static const qt_meta_stringdata_PrivateMessagesController_t qt_meta_stringdata_PrivateMessagesController = {
     {
@@ -41,7 +41,7 @@ QT_MOC_LITERAL(8, 59, 4),
 QT_MOC_LITERAL(9, 64, 6)
     },
     "PrivateMessagesController\0index\0\0show\0"
-    "pk\0entry\0create\0edit\0save\0remove"
+    "pk\0entry\0create\0edit\0save\0remove\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,13 +59,13 @@ static const uint qt_meta_data_PrivateMessagesController[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   49,    2, 0x0a /* Public */,
-       3,    1,   50,    2, 0x0a /* Public */,
-       5,    0,   53,    2, 0x0a /* Public */,
-       6,    0,   54,    2, 0x0a /* Public */,
-       7,    1,   55,    2, 0x0a /* Public */,
-       8,    1,   58,    2, 0x0a /* Public */,
-       9,    1,   61,    2, 0x0a /* Public */,
+       1,    0,   49,    2, 0x0a,
+       3,    1,   50,    2, 0x0a,
+       5,    0,   53,    2, 0x0a,
+       6,    0,   54,    2, 0x0a,
+       7,    1,   55,    2, 0x0a,
+       8,    1,   58,    2, 0x0a,
+       9,    1,   61,    2, 0x0a,
 
  // slots: parameters
     QMetaType::Void,

@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.0">
 <context>
     <name>H</name>
     <message>
+        <location filename="../views/codes/edit.erb" line="8"/>
+        <location filename="../views/attachments/show.erb" line="7"/>
+        <location filename="../views/attachments/edit.erb" line="13"/>
+        <location filename="../views/attachments/entry.erb" line="11"/>
+        <location filename="../helpers/applicationhelper.cpp" line="114"/>
         <location filename="../models/codes.cpp" line="37"/>
         <location filename="../models/codes.cpp" line="38"/>
-        <location filename="../views/attachments/edit.erb" line="13"/>
-        <location filename="../views/attachments/show.erb" line="7"/>
-        <location filename="../views/attachments/entry.erb" line="11"/>
-        <location filename="../views/codes/edit.erb" line="8"/>
-        <location filename="../helpers/applicationhelper.cpp" line="114"/>
         <source>Code</source>
         <translation>Code</translation>
     </message>
     <message>
+        <location filename="../views/codes/show.erb" line="9"/>
         <location filename="../models/codes.cpp" line="163"/>
         <location filename="../models/codes.cpp" line="165"/>
-        <location filename="../views/codes/show.erb" line="9"/>
         <source>Guest</source>
         <translation>Guest</translation>
     </message>
     <message>
-        <location filename="../controllers/accountcontroller.cpp" line="38"/>
         <location filename="../views/account/form.erb" line="3"/>
+        <location filename="../controllers/accountcontroller.cpp" line="38"/>
         <source>Sign in</source>
         <translation>Sign in</translation>
     </message>
     <message>
-        <location filename="../views/account/register.erb" line="23"/>
         <location filename="../views/account/form.erb" line="12"/>
+        <location filename="../views/account/register.erb" line="23"/>
         <source>Password</source>
         <translation>Password</translation>
     </message>
     <message>
+        <location filename="../views/partial/links.erb" line="43"/>
         <location filename="../controllers/applicationcontroller.cpp" line="165"/>
         <location filename="../controllers/applicationcontroller.cpp" line="188"/>
-        <location filename="../views/partial/links.erb" line="43"/>
         <source>Sign</source>
         <translation>Sign</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
-        <location filename="../controllers/applicationcontroller.cpp" line="189"/>
         <location filename="../views/partial/links.erb" line="44"/>
         <location filename="../views/account/register.erb" line="9"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="166"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="189"/>
         <source>Sign up</source>
         <translation>Sign up</translation>
     </message>
@@ -80,8 +80,8 @@
         <translation>Password Confirmation</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="169"/>
         <location filename="../views/account/users.erb" line="3"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="169"/>
         <source>Users list</source>
         <translation>Users list</translation>
     </message>
@@ -116,27 +116,27 @@
         <translation>Nobody hasn&apos;t added any picture ye</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="181"/>
         <location filename="../views/attachments/index.erb" line="17"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="181"/>
         <source>View code</source>
         <translation>Show code</translation>
     </message>
     <message>
-        <location filename="../views/attachments/index.erb" line="24"/>
         <location filename="../views/codes/edit.erb" line="8"/>
+        <location filename="../views/attachments/index.erb" line="24"/>
         <source>Edit</source>
         <translation>Edit</translation>
     </message>
     <message>
-        <location filename="../views/attachments/index.erb" line="27"/>
         <location filename="../views/codes/edit.erb" line="55"/>
         <location filename="../views/privatemessages/index.erb" line="30"/>
+        <location filename="../views/attachments/index.erb" line="27"/>
         <source>Destroy</source>
         <translation>Delete</translation>
     </message>
     <message>
-        <location filename="../views/attachments/index.erb" line="30"/>
         <location filename="../views/privatemessages/index.erb" line="30"/>
+        <location filename="../views/attachments/index.erb" line="30"/>
         <source>Are you sure?</source>
         <translation>Are you sure?</translation>
     </message>
@@ -166,8 +166,8 @@
         <translation>Show only from</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="182"/>
         <location filename="../views/codes/entry.erb" line="4"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="182"/>
         <source>Adding new code</source>
         <translation>Adding new code</translation>
     </message>
@@ -303,15 +303,15 @@
         <translation>Private Messages</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="174"/>
         <location filename="../views/partial/links.erb" line="27"/>
         <location filename="../views/attachments/index.erb" line="3"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="174"/>
         <source>Listing pictures</source>
         <translation>Listing pictures</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="175"/>
         <location filename="../views/attachments/entry.erb" line="5"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="175"/>
         <source>Uploading picture</source>
         <translation>Uploading picture</translation>
     </message>
@@ -321,11 +321,11 @@
         <translation>Edit picture</translation>
     </message>
     <message>
-        <location filename="../views/attachments/edit.erb" line="23"/>
-        <location filename="../views/attachments/show.erb" line="12"/>
-        <location filename="../views/attachments/entry.erb" line="21"/>
         <location filename="../views/codes/entry.erb" line="35"/>
         <location filename="../views/privatemessages/show.erb" line="66"/>
+        <location filename="../views/attachments/show.erb" line="12"/>
+        <location filename="../views/attachments/edit.erb" line="23"/>
+        <location filename="../views/attachments/entry.erb" line="21"/>
         <source>Image</source>
         <translation>Image</translation>
     </message>
@@ -341,8 +341,8 @@
         <translation>Back</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="191"/>
         <location filename="../views/partial/links.erb" line="33"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="191"/>
         <source>Users</source>
         <translation>Users</translation>
     </message>
@@ -352,8 +352,8 @@
         <translation>Listing users</translation>
     </message>
     <message>
-        <location filename="../controllers/applicationcontroller.cpp" line="190"/>
         <location filename="../views/partial/links.erb" line="39"/>
+        <location filename="../controllers/applicationcontroller.cpp" line="190"/>
         <source>Profile</source>
         <translation>Profile</translation>
     </message>
@@ -513,8 +513,8 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../views/codes/edit.erb" line="49"/>
         <location filename="../views/codes/show.erb" line="22"/>
+        <location filename="../views/codes/edit.erb" line="49"/>
         <source>Attachments</source>
         <translation>Attachments</translation>
     </message>
@@ -564,11 +564,11 @@
         <translation>Attachment can not be deleted, sorry</translation>
     </message>
     <message>
-        <location filename="../views/attachments/edit.erb" line="22"/>
-        <location filename="../views/attachments/entry.erb" line="20"/>
         <location filename="../views/codes/edit.erb" line="41"/>
         <location filename="../views/codes/entry.erb" line="34"/>
         <location filename="../views/privatemessages/show.erb" line="65"/>
+        <location filename="../views/attachments/edit.erb" line="22"/>
+        <location filename="../views/attachments/entry.erb" line="20"/>
         <source>Note: If picture less than 150x150, it will be resized to it</source>
         <translation>Note: If picture less than 150x150, it will be resized to it</translation>
     </message>
