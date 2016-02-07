@@ -63,6 +63,7 @@ $('.unfold_code').on('click', function() {
         fullHeight = editors[i].getSession().getScreenLength() * editors[i].renderer.lineHeight + editors[i].renderer.scrollBar.getWidth()
     $('.editor').get(i).style.height = (folded && fullHeight > editorHeight ? fullHeight : editorHeight)  + 'px'
     editors[i].resize()
+    editors[i].focus()
     $(this).text(folded ? 'Свернуть код' : 'Развернуть код')
     return false;
     })
