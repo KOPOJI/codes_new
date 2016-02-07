@@ -40,4 +40,16 @@ $('.editor').each(function(key, editor) {
     editors[i].setReadOnly(true)
     ++i;
 })
+
+$('.select_code').on('click', function() {
+    for(i = 0; i < editors.length; ++i)
+        editors[i].clearSelection()
+
+    i = $(this).attr('data-id')
+
+    editors[i].focus()
+    editors[i].selectAll()
+
+    return false;
+})
 </script>

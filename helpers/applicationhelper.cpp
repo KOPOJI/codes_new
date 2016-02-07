@@ -99,7 +99,7 @@ QString ApplicationHelper::parseCode(const QString &code, const bool getLangOnly
     QRegExp rx("\\[(" + languages + ")\\](.*)\\[/\\1\\]", Qt::CaseInsensitive);
     rx.setMinimal(true);
 
-    int s = -1;
+    int s = -1, i = 0;
 
     QString ret = "";
 
@@ -110,8 +110,8 @@ QString ApplicationHelper::parseCode(const QString &code, const bool getLangOnly
             return rx.cap(1);
 
         ret += rx.cap(1);
-        result.replace(rx.cap(0), QString("<h6><b>%1 %2</b></h6><pre class='editor' lang='%3'>%4</pre>").arg(
-           H::tr("Code"), codeTitle(name).toHtmlEscaped(), name.toHtmlEscaped(), rx.cap(2).toHtmlEscaped()
+        result.replace(rx.cap(0), QString("<h6><b>%1 %2</b><a href='#' class='select_code' data-id='%5' style='float:right'>Выделить код</a></h6><pre class='editor' lang='%3'>%4</pre>").arg(
+           H::tr("Code"), codeTitle(name).toHtmlEscaped(), name.toHtmlEscaped(), rx.cap(2).toHtmlEscaped(), QString::number(i++)
         ));
         s+= rx.cap(0).length();
     }
