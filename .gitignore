@@ -1,4 +1,6 @@
 /log/
+/public/images/avatars/
+/public/images/uploads/
 /views/_src/*
 !/views/_src/_src.pro
 /tmp/
