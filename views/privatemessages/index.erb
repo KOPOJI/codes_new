@@ -1,0 +1,33 @@
+<%#include "privatemessages.h" %>
+
+<%== renderPartial("private_messages_links") %>
+
+<% tfetch(QList<PrivateMessages>, privateMessagesList); tfetch(QString, action) %>
+<% for(auto& message: privateMessagesList) { %>
+<div class="private_message span9" style="background-color:<%= H::cycle({"#f9f9f9", "#f7f7f7"}) %>">
+          <h4 style="margin-bottom: -15px;margin-top:3px;font-weight:<%= message.read() ? "normal" : "bold" %>">
+
+            <%== linkTo(message.title(), H::createUrl({"pm", action, QString::number(message.id())}), Tf::Get, a("class", "link")) %>
+            <small>
+              <% if(action == "outbox") { %>
+                  <%= H::tr("To") %>
+                  <span<%= H::specifiedClass(message.userTo().username()) %>>
+                    <%== H::specifiedText(message.userTo().username(), linkTo(message.userTo().username(), H::createUrl({"user", QString::number(message.userTo().id())}), Tf::Get, a("class", "link"))) %>
+                  </span>
+              <% } else { %>
+                  <%= H::tr("From") %>
+                  <span<%= H::specifiedClass(message.userFrom().username()) %>>
+                    <%== H::specifiedText(message.userFrom().username(), linkTo(message.userFrom().username(), H::createUrl({"user", QString::number(message.userFrom().id())}), Tf::Get, a("class", "link"))) %>
+                  </span>
+              <% } %>
+            </small>
+          </h4>
+          <br>
+          <%= H::truncate(message.text(), 50) %>
+          <div style="float: right">
+    <%== linkTo(H::tr("Show"), H::createUrl({"pm", action, QString::number(message.id())})) %>
+            |
+    <%== linkTo(H::tr("Destroy"), H::createUrl({"pm", QString::number(message.id()), "remove"}), Tf::Get, "confirm (" + H::tr("Are you sure?") + ")") %>
+          </div>
+        </div>
+<% } %>

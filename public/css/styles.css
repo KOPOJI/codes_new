@@ -1,0 +1,41 @@
+.post .field textarea[name="code"] {
+    width: 700px!important;
+}
+.editor {
+    margin: 5px;
+    /*width: 80%;*/
+    max-height: 500px;
+}
+
+.field > .ace_editor {
+    position: normal;
+    height: 350px;
+}
+.apple_pagination {
+    padding: 0;
+    margin: 5px 0;
+}
+.apple_pagination a.first_page, .apple_pagination a.previous_page, .apple_pagination a.next_page, .apple_pagination a.last_page {
+    background-color: #F6F4FB;
+    padding: 0;
+    margin: 1px;
+    font-style: normal;
+    color: #337ab7;
+}
+.apple_pagination em.current {
+    padding: 0;
+    background-color: #f5f5f5;
+    color: green;
+    margin: 3px;
+}
+.apple_pagination a.first_page:hover, .apple_pagination a.previous_page:hover, .apple_pagination a.next_page:hover, .apple_pagination a.last_page:hover {
+    border-radius:0;
+    text-decoration: none;
+    color: #FF4400;
+}
+
+.quote_container {
+    border: 1px solid #3774A4;
+    margin: 5px;
+    border-radius: 3px;
+}

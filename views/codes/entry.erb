@@ -1,0 +1,74 @@
+<%#include "codes.h" %>
+<% tfetch(QVariantMap, codes) %>
+
+<h3><%= H::tr("Adding new code") %></h3>
+
+<%== formTag(H::createUrl({"codes", "create"}, httpRequest().queryItemValue("page", "1")), Tf::Post, true) %>
+
+
+        <div class="field">
+        <label><%= H::tr("Title") %></label>
+        <input type="text" name="codes[title]" value="" style="width: 400px" class="form-input" />
+        </div>
+        <div class="bbcodes">
+            <div class="bold">
+                <%== linkTo("B", QUrl("#"), Tf::Get, "", a("class", "bbcode html") | a("data-editor", "b"))  %>
+                <%== linkTo("I", QUrl("#"), Tf::Get, "", a("class", "bbcode cursive") | a("data-editor", "i"))  %>
+                <%== linkTo("U", QUrl("#"), Tf::Get, "", a("class", "bbcode underline") | a("data-editor", "u"))  %>
+                <%== linkTo("S", QUrl("#"), Tf::Get, "", a("class", "bbcode del") | a("data-editor", "s"))  %>
+                <%== linkTo("IMG", QUrl("#"), Tf::Get, "", a("class", "bbcode html") | a("data-editor", "img"))  %>
+                <%== linkTo("URL", QUrl("#"), Tf::Get, "", a("class", "bbcode html") | a("data-editor", "url"))  %>
+            </div>
+            <% for(const auto& tag: H::codesTitles().toStdMap()) { %>
+                <%== linkTo(tag.first, QUrl("#"), Tf::Get, a("class", "bbcode") | a("data-editor", tag.second)) %>
+            <% } %>
+        </div>
+        <br>
+        <div class="field" style="">
+
+            <textarea rows="15" style="width:700px" class="editor" data-editor="javascript" class="form-input" required></textarea>
+        </div>
+<input type="hidden" id="code" name="codes[code]" value="">
+
+            <div class="field">
+            <small><i><%= H::tr("Note: If picture less than 150x150, it will be resized to it") %></i></small><br>
+            <label><%= H::tr("Image") %></label>
+                   <input type="file" name="attachments[]" multiple>
+            </div>
+
+<% if(controller()->isUserLoggedIn()) { %>
+        <div class="field">
+            <label><%= H::tr("Status") %></label>
+            <input type="checkbox" name="codes[status]" value="1" checked>
+        </div>
+        <div class="field">
+            <label><%= H::tr("Editable") %></label>
+            <input type="checkbox" name="codes[editable]" value="1" checked>
+        </div>
+        <div class="field">
+            <label><%= H::tr("Show from") %></label>
+            <input type="text" name="codes[showFrom]" value="">
+        </div>
+<% } else { %>
+
+<% tfetch(QString, captcha); %>
+
+<div class="field">
+    <img id="captcha_code" src="data:image/png;base64,<%= captcha %>"><br>
+    <small><a href="#" id="update_captcha" class="link"><%= H::tr("Update code") %></a></small><br>
+    <input type="text" name="captcha" value="">
+</div>
+<script type="text/javascript">
+$("#update_captcha").click(function() {
+   $.post('/captcha.html', function(data) {
+       $("#captcha_code").attr("src", "data:image/png;base64," + data);
+   })
+   return false;
+})
+</script>
+
+<% } %>
+         <div class="actions" style="margin-top: 20px;">
+            <input type="submit" id="save_code" value="<%= H::tr("Save") %>" />
+        </div>
+        </form>

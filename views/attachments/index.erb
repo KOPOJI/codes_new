@@ -1,0 +1,36 @@
+<%#include "attachments.h" %>
+<%#include "users.h" %>
+<h1><%= H::tr("Listing pictures") %></h1>
+
+<% tfetch(QList<Attachments>, attachmentsList); %>
+
+
+<% if(attachmentsList.isEmpty()) { %>
+    <%= H::tr("no_pictures") %>
+<% } else { %>
+    <div class="attachchments">
+        <% for (const auto &attachment : attachmentsList) { %>
+
+            <div class="attach_item">
+
+                <% if(attachment.codeId()) { %>
+                    <%== linkTo(H::tr("View code"), H::createUrl({"codes", QString::number(attachment.code().id())}), Tf::Get, a("class", "link")) %>
+                <% } %>
+
+                <a href="/images/uploads/<%= attachment.image() %>" rel="prettyPhoto[gallery]">
+                    <%== imageTag("/images/uploads/" + attachment.image(), a("class", "attach")) %>
+                </a>
+
+                <%== linkTo(H::tr("Edit"), H::createUrl({"attachments", QString::number(attachment.id()), "edit"}), Tf::Get, a("class", "link")) %>
+                <% tfetch(Users, user) %>
+        <% if(attachment.canBeDeleted(user)) { %>
+                <%== linkTo(H::tr("Destroy"),
+                    H::createUrl({"attachments", QString::number(attachment.id()), "remove"}),
+                    Tf::Post,
+                    QString("confirm('%1')").arg(H::tr("Are you sure?")),
+                    a("class", "link")) %>
+        <% } %>
+            </div>
+        <% } %>
+    </div>
+<% } %>

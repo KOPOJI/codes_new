@@ -1,0 +1,39 @@
+<%== renderPartial("_form_header"); %>
+
+<% tfetch(QString, login) %>
+<% tfetch(QString, email) %>
+<% tfetch(QString, pass) %>
+<% tfetch(QString, pass_confirm) %>
+<% if(httpRequest().hasForm()) { %><%==$message %></div><% } %>
+
+<h2><%= H::tr("Sign up") %></h2>
+
+<%== formTag(H::createUrl({"user", "register"})); %>
+<div>
+      <label><%= H::tr("Username") %></label>
+      <input type="text" name="username" value="<%=login %>" class="form-input" autofocus="true" required>
+    </div>
+
+    <div>
+    <label>E-mail</label>
+    <input type="email" name="email" value="<%=email %>" class="form-input" autofocus="true" required>
+    </div>
+
+    <div>
+    <label><%= H::tr("Password") %></label>
+    <input type="password" name="password" value="<%=pass %>" class="form-input" required>
+    </div>
+
+    <div>
+    <label><%= H::tr("Password Confirmation") %></label>
+    <input type="password" name="password_confirmation" value="<%=pass_confirm %>" class="form-input" required>
+    </div>
+
+    <div>
+        <input type="submit" value="<%= H::tr("Sign up") %>" class="button">
+    </div>
+
+<%== endTag() %>
+
+
+<%== renderPartial("_form_footer"); %>

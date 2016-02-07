@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<%#include "privatemessages.h" %>
+<% tfetch(QVariantMap, privateMessages); %>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+<p style="color: red"><%=$ error %></p>
+<p style="color: green"><%=$ notice %></p>
+
+<h1>New Private Messages</h1>
+
+<%== formTag(urla("create"), Tf::Post) %>
+  <p>
+    <label>User from ID<br /><input name="privateMessages[userFromId]" value="<%= privateMessages["userFromId"] %>" /></label>
+  </p>
+  <p>
+    <label>User to ID<br /><input name="privateMessages[userToId]" value="<%= privateMessages["userToId"] %>" /></label>
+  </p>
+  <p>
+    <label>Title<br /><input name="privateMessages[title]" value="<%= privateMessages["title"] %>" /></label>
+  </p>
+  <p>
+    <label>Text<br /><input name="privateMessages[text]" value="<%= privateMessages["text"] %>" /></label>
+  </p>
+  <p>
+    <label>File<br /><input name="privateMessages[file]" value="<%= privateMessages["file"] %>" /></label>
+  </p>
+  <p>
+    <label>Deleted by from User<br /><input name="privateMessages[deletedByFromUser]" value="<%= privateMessages["deletedByFromUser"] %>" /></label>
+  </p>
+  <p>
+    <label>Deleted by to User<br /><input name="privateMessages[deletedByToUser]" value="<%= privateMessages["deletedByToUser"] %>" /></label>
+  </p>
+  <p>
+    <label>Read<br /><input name="privateMessages[read]" value="<%= privateMessages["read"] %>" /></label>
+  </p>
+  <p>
+    <label>To Message ID<br /><input name="privateMessages[toMessageId]" value="<%= privateMessages["toMessageId"] %>" /></label>
+  </p>
+  <p>
+    <input type="submit" value="Create" />
+  </p>
+</form>
+
+<%== linkTo("Back", urla("index")) %>
+
+</body>
+</html>

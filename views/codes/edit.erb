@@ -1,0 +1,112 @@
+<%#include "codes.h" %>
+<%#include "attachments.h" %>
+
+<% tfetch(QVariantMap, codes) %>
+
+<% tfetch(Users, user) %>
+
+        <h3><%= H::tr("Edit") %> <%= codes["title"].toString().isEmpty() ? QString(H::tr("Code") + " #%1").arg(codes["id"].toString()) : codes["title"] %></h3>
+
+<%== formTag(H::createUrl({"codes", "save", codes["id"].toString()}, httpRequest().queryItemValue("page", "1")), Tf::Post, true) %>
+<input type="hidden" name="codes[id]" value="<%= codes["id"] %>" readonly="readonly" />
+
+        <div class="field">
+        <label><%= H::tr("Title") %></label>
+        <input type="text" name="codes[title]" value="<%= codes["title"] %>" style="width: 400px" class="form-input" />
+        </div>
+        <div class="bbcodes">
+            <div class="bold">
+                <%== linkTo("B", QUrl("#"), Tf::Get, "", a("class", "bbcode html") | a("data-editor", "b"))  %>
+                <%== linkTo("I", QUrl("#"), Tf::Get, "", a("class", "bbcode cursive") | a("data-editor", "i"))  %>
+                <%== linkTo("U", QUrl("#"), Tf::Get, "", a("class", "bbcode underline") | a("data-editor", "u"))  %>
+                <%== linkTo("S", QUrl("#"), Tf::Get, "", a("class", "bbcode del") | a("data-editor", "s"))  %>
+                <%== linkTo("IMG", QUrl("#"), Tf::Get, "", a("class", "bbcode html") | a("data-editor", "img"))  %>
+                <%== linkTo("URL", QUrl("#"), Tf::Get, "", a("class", "bbcode html") | a("data-editor", "url"))  %>
+            </div>
+            <% for(const auto& tag: H::codesTitles().toStdMap()) { %>
+                <%== linkTo(tag.first, QUrl("#"), Tf::Get, a("class", "bbcode") | a("data-editor", tag.second)) %>
+            <% } %>
+        </div>
+        <br>
+        <div class="field" style="">
+        <% QString dataEditor = H::parseCode(codes["code"].toString(), true);
+            if(dataEditor.isEmpty())
+                dataEditor = "javascript"; %>
+            <textarea rows="15" style="width:700px" data-editor='<%= dataEditor.toLower() %>' class="form-input" required>
+<%= codes["code"] %>
+        </textarea>
+        </div>
+<input type="hidden" id="code" name="codes[code]" value='<%= codes["code"] %>'>
+<br>
+<small><i><%= H::tr("Note: If picture less than 150x150, it will be resized to it") %></i></small><br>
+<input type="file" name="attachments[]" multiple>
+
+<% const auto& attachments = Attachments::getAll(codes["id"].toInt());
+
+    if(attachments.count()) { %>
+    <br>
+        <fieldset>
+            <legend> <%= H::tr("Attachments") %> </legend>
+            <% for(const auto& attach: attachments) { %>
+                <div class="attach_item">
+                   <a href="/images/uploads/<%= attach.image() %>" rel="prettyPhoto[gallery]">
+                       <%== imageTag("/images/uploads/" + attach.image(), a("class", "attach")) %>
+                   </a>
+                   <a href="<%= H::createUrl({"attachments", QString::number(attach.id()), "remove"}) %>" class="remove link"><%= H::tr("Destroy") %></a>
+                </div>
+            <% } %>
+        </fieldset>
+<% } %>
+
+<% if(controller()->isUserLoggedIn()) { %>
+        <div class="field">
+            <label><%= H::tr("Status") %></label>
+            <input type="text" name="codes[status]" value="<%= codes["status"] %>">
+        </div>
+        <div class="field">
+            <label><%= H::tr("Editable") %></label>
+            <input type="text" name="codes[editable]" value='<%= codes["editable"] %>'>
+        </div>
+        <div class="field">
+            <label><%= H::tr("Show from") %></label>
+            <input type="text" name="codes[showFrom]" value='<%= codes["showFrom"] %>'>
+        </div>
+<% } else { %>
+
+<% tfetch(QString, captcha); %>
+
+<div class="field">
+    <img id="captcha_code" src="data:image/png;base64,<%= captcha %>"><br>
+    <small><a href="#" id="update_captcha" class="link">Update code</a></small><br>
+    <input type="text" name="captcha" value="">
+</div>
+<script type="text/javascript">
+$("#update_captcha").click(function() {
+   $.post('/captcha.html', function(data) {
+       $("#captcha_code").attr("src", "data:image/png;base64," + data);
+   })
+   return false;
+})
+</script>
+
+<% } %>
+         <div class="actions" style="margin-top: 20px;">
+            <input type="submit" id="save_code" value="<%= H::tr("Save") %>" />
+        </div>
+        </form>
+
+<%== linkTo(H::tr("Show"), H::createUrl({"codes", codes["id"].toString()})) %>
+
+<script type="text/javascript">
+        $(function() {
+              $('a.remove').click(function() {
+                  var parent = $(this).parent()
+                  if(!confirm("<%= H::tr("Are you sure?") %>"))
+                    return false;
+                  $.post($(this).attr('href'), function() {
+                      parent.remove()
+                  })
+                  return false;
+              })
+          })
+</script>
