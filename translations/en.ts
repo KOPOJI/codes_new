@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>H</name>
     <message>
-        <location filename="../views/codes/edit.erb" line="8"/>
-        <location filename="../views/attachments/show.erb" line="7"/>
-        <location filename="../views/attachments/edit.erb" line="13"/>
-        <location filename="../views/attachments/entry.erb" line="11"/>
         <location filename="../helpers/applicationhelper.cpp" line="114"/>
         <location filename="../models/codes.cpp" line="37"/>
         <location filename="../models/codes.cpp" line="38"/>
+        <location filename="../views/codes/edit.erb" line="8"/>
+        <location filename="../views/attachments/edit.erb" line="13"/>
+        <location filename="../views/attachments/entry.erb" line="11"/>
+        <location filename="../views/attachments/show.erb" line="7"/>
         <source>Code</source>
         <translation>Code</translation>
     </message>
     <message>
-        <location filename="../views/codes/show.erb" line="9"/>
         <location filename="../models/codes.cpp" line="163"/>
         <location filename="../models/codes.cpp" line="165"/>
+        <location filename="../views/codes/show.erb" line="9"/>
         <source>Guest</source>
         <translation>Guest</translation>
     </message>
     <message>
-        <location filename="../views/account/form.erb" line="3"/>
         <location filename="../controllers/accountcontroller.cpp" line="38"/>
+        <location filename="../views/account/form.erb" line="3"/>
         <source>Sign in</source>
         <translation>Sign in</translation>
     </message>
@@ -34,17 +34,17 @@
         <translation>Password</translation>
     </message>
     <message>
-        <location filename="../views/partial/links.erb" line="43"/>
         <location filename="../controllers/applicationcontroller.cpp" line="165"/>
         <location filename="../controllers/applicationcontroller.cpp" line="188"/>
+        <location filename="../views/partial/links.erb" line="43"/>
         <source>Sign</source>
         <translation>Sign</translation>
     </message>
     <message>
-        <location filename="../views/partial/links.erb" line="44"/>
-        <location filename="../views/account/register.erb" line="9"/>
         <location filename="../controllers/applicationcontroller.cpp" line="166"/>
         <location filename="../controllers/applicationcontroller.cpp" line="189"/>
+        <location filename="../views/account/register.erb" line="9"/>
+        <location filename="../views/partial/links.erb" line="44"/>
         <source>Sign up</source>
         <translation>Sign up</translation>
     </message>
@@ -69,8 +69,8 @@
         <translation>Editing code</translation>
     </message>
     <message>
-        <location filename="../views/account/users.erb" line="11"/>
         <location filename="../views/account/register.erb" line="13"/>
+        <location filename="../views/account/users.erb" line="11"/>
         <source>Username</source>
         <translation>Username</translation>
     </message>
@@ -80,8 +80,8 @@
         <translation>Password Confirmation</translation>
     </message>
     <message>
-        <location filename="../views/account/users.erb" line="3"/>
         <location filename="../controllers/applicationcontroller.cpp" line="169"/>
+        <location filename="../views/account/users.erb" line="3"/>
         <source>Users list</source>
         <translation>Users list</translation>
     </message>
@@ -116,8 +116,8 @@
         <translation>Nobody hasn&apos;t added any picture ye</translation>
     </message>
     <message>
-        <location filename="../views/attachments/index.erb" line="17"/>
         <location filename="../controllers/applicationcontroller.cpp" line="181"/>
+        <location filename="../views/attachments/index.erb" line="17"/>
         <source>View code</source>
         <translation>Show code</translation>
     </message>
@@ -166,8 +166,8 @@
         <translation>Show only from</translation>
     </message>
     <message>
-        <location filename="../views/codes/entry.erb" line="4"/>
         <location filename="../controllers/applicationcontroller.cpp" line="182"/>
+        <location filename="../views/codes/entry.erb" line="4"/>
         <source>Adding new code</source>
         <translation>Adding new code</translation>
     </message>
@@ -303,15 +303,15 @@
         <translation>Private Messages</translation>
     </message>
     <message>
-        <location filename="../views/partial/links.erb" line="27"/>
-        <location filename="../views/attachments/index.erb" line="3"/>
         <location filename="../controllers/applicationcontroller.cpp" line="174"/>
+        <location filename="../views/attachments/index.erb" line="3"/>
+        <location filename="../views/partial/links.erb" line="27"/>
         <source>Listing pictures</source>
         <translation>Listing pictures</translation>
     </message>
     <message>
-        <location filename="../views/attachments/entry.erb" line="5"/>
         <location filename="../controllers/applicationcontroller.cpp" line="175"/>
+        <location filename="../views/attachments/entry.erb" line="5"/>
         <source>Uploading picture</source>
         <translation>Uploading picture</translation>
     </message>
@@ -323,9 +323,9 @@
     <message>
         <location filename="../views/codes/entry.erb" line="35"/>
         <location filename="../views/privatemessages/show.erb" line="66"/>
-        <location filename="../views/attachments/show.erb" line="12"/>
         <location filename="../views/attachments/edit.erb" line="23"/>
         <location filename="../views/attachments/entry.erb" line="21"/>
+        <location filename="../views/attachments/show.erb" line="12"/>
         <source>Image</source>
         <translation>Image</translation>
     </message>
@@ -341,8 +341,8 @@
         <translation>Back</translation>
     </message>
     <message>
-        <location filename="../views/partial/links.erb" line="33"/>
         <location filename="../controllers/applicationcontroller.cpp" line="191"/>
+        <location filename="../views/partial/links.erb" line="33"/>
         <source>Users</source>
         <translation>Users</translation>
     </message>
@@ -352,8 +352,8 @@
         <translation>Listing users</translation>
     </message>
     <message>
-        <location filename="../views/partial/links.erb" line="39"/>
         <location filename="../controllers/applicationcontroller.cpp" line="190"/>
+        <location filename="../views/partial/links.erb" line="39"/>
         <source>Profile</source>
         <translation>Profile</translation>
     </message>
@@ -513,23 +513,23 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../views/codes/show.erb" line="22"/>
         <location filename="../views/codes/edit.erb" line="49"/>
+        <location filename="../views/codes/show.erb" line="22"/>
         <source>Attachments</source>
         <translation>Attachments</translation>
     </message>
     <message>
+        <location filename="../controllers/accountcontroller.cpp" line="240"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="60"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="156"/>
-        <location filename="../controllers/accountcontroller.cpp" line="240"/>
         <source>Wrong image format</source>
         <translation>Wrong image format</translation>
     </message>
     <message>
+        <location filename="../controllers/accountcontroller.cpp" line="250"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="70"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="88"/>
         <location filename="../controllers/attachmentscontroller.cpp" line="166"/>
-        <location filename="../controllers/accountcontroller.cpp" line="250"/>
         <source>An error occurred while downloading picture. Please, try later</source>
         <translation>An error occurred while downloading picture. Please, try later</translation>
     </message>
