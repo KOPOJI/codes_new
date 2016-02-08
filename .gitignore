@@ -5,3 +5,4 @@
 !/views/_src/_src.pro
 /tmp/
 moc_*
+.o*
