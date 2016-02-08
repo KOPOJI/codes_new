@@ -1,8 +1,8 @@
 body {
     min-width:900px;
 }
-.post {
-    margin-top: -25px;
+.post > h3 {
+    margin-top: -5px;
 }
 .post .field textarea[name="code"] {
     width: 700px!important;
