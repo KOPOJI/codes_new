@@ -1,6 +1,19 @@
 body {
     min-width:900px;
 }
+.well.sidebar-nav {
+    width:220px;
+    background: none;
+    border: 1px solid #FCFCFC;
+}
+.nav.nav-list {
+    width:200px;
+}
+.nav-list .nav-header {
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: -70px;
+}
 .post > h3 {
     margin-top: -5px;
 }

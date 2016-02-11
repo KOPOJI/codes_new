@@ -143,7 +143,7 @@
     <message>
         <location filename="../views/codes/edit.erb" line="14"/>
         <location filename="../views/codes/entry.erb" line="10"/>
-        <location filename="../views/privatemessages/show.erb" line="9"/>
+        <location filename="../views/privatemessages/show.erb" line="10"/>
         <source>Title</source>
         <translation>Заголовок</translation>
     </message>
@@ -322,7 +322,7 @@
     </message>
     <message>
         <location filename="../views/codes/entry.erb" line="35"/>
-        <location filename="../views/privatemessages/show.erb" line="66"/>
+        <location filename="../views/privatemessages/show.erb" line="71"/>
         <location filename="../views/attachments/edit.erb" line="23"/>
         <location filename="../views/attachments/entry.erb" line="21"/>
         <location filename="../views/attachments/show.erb" line="12"/>
@@ -566,7 +566,7 @@
     <message>
         <location filename="../views/codes/edit.erb" line="41"/>
         <location filename="../views/codes/entry.erb" line="34"/>
-        <location filename="../views/privatemessages/show.erb" line="65"/>
+        <location filename="../views/privatemessages/show.erb" line="70"/>
         <location filename="../views/attachments/edit.erb" line="22"/>
         <location filename="../views/attachments/entry.erb" line="20"/>
         <source>Note: If picture less than 150x150, it will be resized to it</source>
@@ -599,13 +599,13 @@
     </message>
     <message>
         <location filename="../views/privatemessages/index.erb" line="13"/>
-        <location filename="../views/privatemessages/show.erb" line="21"/>
+        <location filename="../views/privatemessages/show.erb" line="24"/>
         <source>To</source>
         <translation>Кому</translation>
     </message>
     <message>
         <location filename="../views/privatemessages/index.erb" line="18"/>
-        <location filename="../views/privatemessages/show.erb" line="14"/>
+        <location filename="../views/privatemessages/show.erb" line="15"/>
         <source>From</source>
         <translation>От кого</translation>
     </message>
@@ -616,7 +616,7 @@
         <translation>Просмотр</translation>
     </message>
     <message>
-        <location filename="../helpers/applicationhelper.cpp" line="312"/>
+        <location filename="../helpers/applicationhelper.cpp" line="313"/>
         <source>not_specified</source>
         <translation>Не указано</translation>
     </message>
@@ -626,7 +626,7 @@
         <translation>Запомнить меня</translation>
     </message>
     <message>
-        <location filename="../views/privatemessages/show.erb" line="38"/>
+        <location filename="../views/privatemessages/show.erb" line="43"/>
         <source>file</source>
         <translation>Файл</translation>
     </message>

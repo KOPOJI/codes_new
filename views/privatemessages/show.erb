@@ -5,6 +5,7 @@
 
 <% tfetch(PrivateMessages, message) %>
 <% tfetch(QString, action) %>
+<form method="post" action='<%= H::createUrl({"pm", "create"}) %>'>
 <div class="field">
 <label><%= H::tr("Title") %></label>
 <input type="text" name="codes[title]" value="<%= message.title() %>" style="width: 400px" class="form-input" />
@@ -16,6 +17,8 @@
     <%== H::specifiedText(message.userFrom().username(), linkTo(message.userFrom().username(), H::createUrl({"user", QString::number(message.userFrom().id())}), Tf::Get, "", a("class", "link"))) %>
 </span></strong>
     </p>
+
+        <input type="hidden" name="codes[from]" value="<%= message.userFrom().id() %>">
 <% } else { %>
     <p>
       <label><%= H::tr("To") %>:<label>
@@ -23,6 +26,8 @@
     <%== H::specifiedText(message.userTo().username(), linkTo(message.userTo().username(), H::createUrl({"user", QString::number(message.userTo().id())}), Tf::Get, "", a("class", "link"))) %>
 </span></strong>
     </p>
+
+        <input type="hidden" name="codes[to]" value="<%= message.userTo().id() %>">
 <% } %>
 <p>
   Текст сообщения:
@@ -57,34 +62,26 @@
         <br>
         <div class="field" style="">
 
-            <textarea rows="15" style="width:700px" class="editor" data-editor="javascript" class="form-input" required><%= message.text() %></textarea>
+            <textarea rows="15" style="width:700px" id="editor" class="editor" data-editor="javascript" class="form-input" required><%= message.text() %></textarea>
         </div>
-<input type="hidden" id="code" name="codes[code]" value="<%= message.text() %>">
+        <input type="hidden" name="codes[code]" id="code" value="<%= message.text() %>">
 
             <div class="field">
             <small><i><%= H::tr("Note: If picture less than 150x150, it will be resized to it") %></i></small><br>
             <label><%= H::tr("Image") %></label>
                    <input type="file" name="attachments[]" multiple>
             </div>
-
+                   <p>
+                     <input type="submit" value="<%= H::tr("Reply") %>" />
+                   </p>
+</form>
         <script type="text/javascript">
-        var editors = [], i = 0;
-        $('.editor').each(function(key, editor) {
-            editors[i] = ace.edit(editor);
-            editors[i].setTheme("ace/theme/eclipse");
-            editors[i].getSession().setMode("ace/mode/" + (editor.lang ? editor.lang.toLowerCase() : 'javascript'));
-            editor.style.fontSize='16px';
-            var height = editors[i].getSession().getLength() * 18;
-            editor.style.height = (height > 500 ? 500 : (height < 150 ? 150 : height)) + 'px'
-            editors[i].setReadOnly(true)
-            ++i;
+
+        var textarea = $('#editor')
+        var editor = ace.edit('editor');
+        editor.setTheme("ace/theme/eclipse");
+        editor.getSession().setMode("ace/mode/" + (editor.lang ? editor.lang.toLowerCase() : 'javascript'));
+        editor.getSession().on('change', function() {
+            $('#code').val(editor.getSession().getValue())
         })
-
-        var editor = document.getElementById('message')
-
-        editors[i] = ace.edit('message');
-        editors[i].setTheme("ace/theme/eclipse");
-        editors[i].getSession().setMode("ace/mode/" + (editor.lang ? editor.lang.toLowerCase() : 'javascript'));
-        editor.style.fontSize='16px';
-        editor.style.height = '500px'
         </script>

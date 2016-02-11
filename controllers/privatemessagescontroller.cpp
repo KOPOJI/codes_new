@@ -43,7 +43,11 @@ void PrivateMessagesController::create()
         return;
     }
 
-    auto form = httpRequest().formItems("privateMessages");
+    auto form = httpRequest().formItems("codes");
+    QString text;
+    for(const auto& c: form)
+        text += c.toString();
+    renderText(text);
     auto privateMessages = PrivateMessages::create(form);
     if (!privateMessages.isNull()) {
         QString notice = "Created successfully.";

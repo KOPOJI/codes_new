@@ -266,8 +266,9 @@ QString ApplicationHelper::tr(const char *sourceText, const char *disambiguation
 
     if(!translator.load(language, "./translations/"))
         return sourceText;
+    const QString trans = translator.translate("H", sourceText, disambiguation, n);
 
-    return translator.translate("H", sourceText, disambiguation, n);
+    return trans.isEmpty() ? sourceText : trans;
 }
 
 QString ApplicationHelper::imageResize(const QString& imagePath, const QString& imageType, const int MAX_WIDTH, const int MAX_HEIGHT, const bool isAvatar)
