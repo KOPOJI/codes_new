@@ -9,12 +9,12 @@ DEPENDPATH  += ../../helpers ../../models
 DESTDIR = ../../lib
 LIBS += -L../../lib -lhelper -lmodel -I/usr/include/botan-1.10/ -lbotan-1.10 -L/usr/include/ImageMagick/
 
-CONFIG(debug, debug|release) {
-    QMAKE_CXXFLAGS += -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
-    LIBS += -lMagick++-6.Q16 -lMagickCore-6.Q16
-} else {
+#CONFIG(debug, debug|release) {
+#    QMAKE_CXXFLAGS += -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
+#    LIBS += -lMagick++-6.Q16 -lMagickCore-6.Q16
+#} else {
     LIBS += -lMagick++ -lMagickCore
-}
+#}
 
 
 QMAKE_CLEAN = *.cpp source.list
